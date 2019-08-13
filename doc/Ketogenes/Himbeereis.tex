@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime,
+    portion = {\portion[Portionen]{4}},
+    source = Lili
+]{Himbeereis}\index{Himbeereis}
+    \graph{
+        big=Himbeereis_0
+    }
+    \ingredients{
+        {\unit[150]{g}}     & Himbeeren\\
+        {\unit[100]{g}}     & Joghurt\\
+        {\unit[100]{g}}     & Sahne\\
+        {\unit[2]{EL}}      & Erythrit (gemahlen)\\
+        {\unit[2]{EL}}      & Xylit (gemahlen)
+    }
+    \preparation{
+        \step Alle Zutaten vermischen und in der Eismaschine zubereiten.
+    }
+    \hint{%
+        Man kann auch {\unit[1]{Msp.}} Guarkernmehl zum Binden dazu geben.
+    }
+\end{recipe}
+\end{document}
