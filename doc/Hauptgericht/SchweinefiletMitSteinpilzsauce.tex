@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Schweinefilet mit Steinpilzsauce}\index{Schweinefilet mit Steinpilzsauce}
+    \graph{
+        big=SchweinefiletMitSteinpilzsauce_0
+    }
+    \ingredients{
+        {\unit[6]{Stk.}}    & Schweinefilet\\
+        {\unit[2]{EL}}      & Butter\\
+        {\unit[1]{B.}}      & Sahne\\
+        {\unit[1]{Gl.}}     & Steinpilzpesto\\
+                            & Salz\\
+                            & Pfeffer, schwarz und weiß
+    }
+    \preparation{
+        \step Die Filetstücke in Butter von beiden Seiten scharf anbraten und zur Seite stellen.
+        \step Sahne in die Pfanne geben und kurz eindicken lassen, den Herd ausschalten und das Pesto unterrühren.
+        \step Mit Salz und Pfeffer abschmecken, das Fleisch in die Sauce legen und kurz ziehen lassen.
+    }
+\end{recipe}
+\end{document}

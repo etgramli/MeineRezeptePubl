@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[5]{Min}},
+    portion = {\portion[Stück]{10}},
+    source = Lili
+]{Quarkinis}\index{Quarkinis}
+    \graph{
+        big=Quarkinis_0
+    }
+    \ingredients{
+        2                  & Eier\\
+        {\unit[250]{g}}    & Quark\\
+        {\unit[1]{P.}}     & Vanille-Zucker\\
+        {\unit[2]{EL}}     & Öl\\
+        {\unit[3]{EL}}     & Zucker\\
+        {\unit[250]{g}}    & Mehl\\
+        {\unit[1]{P.}}     & Backpulver\\
+                           & Zitronenaroma
+    }
+    \preparation{
+        \step Eier, Quark, Vanille-Zucker, Öl, Zucker und Zitronenaroma gut vermischen.
+        \step Mehl und Backpulver vermischen und unter die anderen Zutaten mengen.
+        \step Avocadokerngroße Bollen formen, in heißem Öl ausbacken und in Zimt wenden.
+    }
+    \hint{%
+        Ging weg wie heiße Semmeln
+    }
+\end{recipe}
+\end{document}

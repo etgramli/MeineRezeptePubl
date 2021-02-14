@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Kartoffelgratin}\index{Kartoffelgratin}
+    \graph{
+        big=Kartoffelgratin_0
+    }
+    \ingredients{
+        8                   & Kartoffeln, groß\\
+        {\unit[200]{ml}}    & Sahne\\
+        {\unit[50]{ml}}     & Milch\\
+        {\unit[2]{TL}}      & Brühenpulver\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Die Kartoffeln schälen, waschen, hobeln und dachziegelartig auf ein Backblech auslegen.
+        \step Jede Schicht mit etwas Salz, Pfeffer und Brühe würzen.
+        \step Sahne über die Kartoffelscheiben gießen und mit Milch auffüllen, bis man zwischen ihnen Milch sieht.
+        \step Im Backofen 30~Minuten bei {\unit[180]{\celsius}} backen, bis das Gratin leicht bräunt.
+    }
+\end{recipe}
+\end{document}

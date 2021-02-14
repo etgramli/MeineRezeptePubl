@@ -1,0 +1,42 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[40]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{2}},
+    source = Lili
+]{Grillgemüse}\index{Grillgemuese@Grillgemüse}
+    \graph{
+        small=Grillgemuese_1,
+        big=Grillgemuese_0
+    }
+    \ingredients{
+        6                    & Kartoffeln\\
+        1                    & Aubergine\\
+        1                    & Zucchini\\
+        2                    & Knoblauchzehen\\
+        1                    & Paprika\\
+        {\unit[200]{g}}      & Pilze\\
+        etwas                & Brühe (Pulver)\\
+        etwas                & Paprikapulver\\
+        {\unit[4]{EL}}       & Olivenöl\\
+        {\unit[1]{Zweig}}    & Rosmarin\\
+        12                   & Salbeiblätter\\
+        {\unit[200]{g}}      & Schafskäse\\
+                             & Salz\\
+                             & Pfeffer
+    }
+    \preparation{
+        \step Das Gemüse in gleich große Stücke schneiden und auf ein Backblech verteilen.
+        \step Das Paprika- und Brühenpulver darauf streuen, das Öl darauf gießen und vermischen.
+        \step Backofen auf {\unit[180]{\celsius}} stellen und das Gemüse für 20~Minuten backen.
+        \step Danach die Kräuter und den Schafskäse darauf verteilen und für weitere 20~Minuten backen.
+        \step Die Portionen verteilen, salzen und pfeffern und noch warm servieren.
+    }
+\end{recipe}
+\end{document}

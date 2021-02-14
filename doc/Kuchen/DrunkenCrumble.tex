@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[35]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion[Portionen]{6}},
+    source = Etienne
+]{Drunken Crumble}\index{Drunken Crumble}
+    \graph{
+        big=DrunkenCrumble_0
+    }
+    \ingredients{
+        Füllung:                          & \\
+        {\unit[600]{g}}                   & Rhabarber / Äpfel\\
+        {\unit[120]{ml}}                  & Whisky\\
+        {\unit[100]{g}}                   & Zucker, braun\\
+        {\unit[1]{Msp.}}                  & Nelke\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Zimt\\
+                                          & Orangen- \& Zitronenschale, gerieben\\
+                                          & \\
+        Streusel:                         & \\
+        {\unit[180]{g}}                   & Mehl\\
+        {\unit[90]{g}}                    & Butter\\
+        {\unit[90]{g}}                    & Zucker\\
+        {\unit[1]{Msp.}}                  & Kardamom\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Zimt\\
+                                          & Orangen- \& Zitronenschale, gerieben
+    }
+    \preparation{
+        \step Rhabarber waschen, in Stücke schneiden und mit den anderen Füllungs-Zutaten in eine Auflaufform geben.
+        \step Die Zutaten für die Streusel vermischen, bis Krümel entstehen und über die Füllung streuen.
+        \step Etwa {\unit[35]{Minuten}} bei {\unit[200]{\celsius}} backen, bis die Streusel bräunen.
+    }
+\end{recipe}
+\end{document}

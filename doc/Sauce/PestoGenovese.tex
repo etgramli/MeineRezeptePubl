@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[8]{Min}},
+    portion = {\portion[Gläschen]{2}},
+    source = Etienne
+]{Pesto Genovese}\index{Pesto Genovese}\index{Pesto!Pesto Genovese}
+    \graph{
+        small=PestoGenovese_1,
+        big=PestoGenovese_0
+    }
+    \ingredients{
+        {\unit[80]{g}}                    & Basilikumblätter\\
+        {\unit[50]{g}}                    & Parmesan\\
+        {\unit[30]{g}}                    & Pinienkerne\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        {\unit[150]{g}}                   & Olivenöl\\
+        1                                 & Knoblauchzehe, klein
+    }
+    \preparation{
+        \step Die Pinienkerne anrösten, mit Käse in den Mixtopf geben und 5~Sekunden auf Stufe~8 zerkleinern.
+        \step Die restlichen Zutaten dazu geben und 20 Sekunden auf Stufe 7 zerkleinern.
+        \step Auf Brot oder Nudeln zügig servieren oder in kleine Gläschen mit etwas Öl darauf abfüllen.
+    }
+    \hint{%
+        Kann man in kleinen Gläschen gut einfrieren.\newline
+        Statt frischem Basilikum kann man auch gefrorenen verwenden, dann wird das Pesto milchig.\newline
+        Man kann es auch aus anderen Kräutern und Kernen herstellen; mit nur Bärlauch wird das Pesto sehr intensiv, dazu passen Walnusskerne.
+    }
+\end{recipe}
+\end{document}

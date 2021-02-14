@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[25-30]{Min}},
+    bakingtemperature = {\unit[175]{\celsius}},
+    source = Lili
+]{Zwetschgenkuchen (Mürbteig)}\index{Zwetschgenkuchen}
+    \graph{
+        big=ZwetschgenkuchenMuerbteig_0
+    }
+    \ingredients{
+        Boden:                            & \\
+        {\unit[75]{g}}                    & Butter, kalt\\
+        {\unit[75]{g}}                    & Zucker\\
+        {\unit[3]{EL}}                    & Öl\\
+        1                                 & Ei\\
+        {\unit[150]{g}}                   & Mehl\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Backpulver\\
+                                          & Gemahlene Nüsse / Semmelbrösel\\
+        {\unit[750]{g}}                   & Zwetschgen\\
+        {\unit[3]{EL}}                    & Zimt-Zucker
+    }
+    \preparation{
+        \step Den Teig in eine Springform ausrollen und mit Semmelbröseln bzw. Nüssen bestreuen.
+        \step Zwetschgen vierteln und fächerartig darauflegen und mit Zimt-Zucker bestreuen.
+        \step Im vorgeheizten Backofen 25-30 Minuten bei {\unit[175]{\celsius}} backen.
+        \step Abgekühlter Kuchen kann noch mit Hagelzucker bestreut werden. Sieht schön aus!!
+    }
+\end{recipe}
+\end{document}

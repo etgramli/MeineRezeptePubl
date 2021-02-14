@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[40]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Pfannkuchen}\index{Pfannkuchen}
+    \graph{
+        small=Pfannkuchen_1,
+        big=Pfannkuchen_0
+    }
+    \ingredients{
+        {\unit[100]{g}}      & Mehl\\
+        {\unit[50]{g}}       & Vollkornmehl\\
+        {\unit[300]{ml}}     & Milch\\
+        {\unit[1]{Prise}}    & Salz\\
+        4                    & Eier\\
+        {\unit[2]{EL}}       & Butter, flüssig
+    }
+    \preparation{
+        \step Mehl, Milch und Salz verrühren und mindestens 30 Minuten ausquellen lassen.
+        \step Die Eier und Butter dazu geben und gut durchrühren bis der Teig homogen ist.
+        \step Goldgelb ausbacken und mit einer Sauce oder Mus servieren.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[7]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Rettichsalat}\index{Rettichsalat}
+    \graph{
+        big=Rettichsalat_0
+    }
+    \ingredients{
+        {\unit[350]{g}}                   & Rettich\\
+        {\unit[1]{EL}}                    & Essig\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        {\unit[$\nicefrac{1}{4}$]{TL}}    & Weißer Pfeffer\\
+        {\unit[1]{Msp.}}                  & Paprikapulver\\
+        {\unit[1]{Bund}}                  & Schnittlauch\\
+        {\unit[1]{EL}}                    & Wasser\\
+        {\unit[2]{EL}}                    & Öl
+    }
+    \preparation{
+        \step Für die Salatsauce Salz in Essig und Wasser auflösen; dann Pfeffer und das Paprikapulver dazu geben.
+        \step Den Rettich in die Sauce raspeln und den Schnittlauch hinzufügen.
+        \step Den Salat abschmecken und mit Öl fertigstellen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[15-20]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Lili
+]{Quarkbrötchen}\index{Quarkbroetchen@Quarkbrötchen}
+    \graph{
+        big=Quarkbroetchen_0
+    }
+    \ingredients{
+        2                    & Eier\\
+        {\unit[250]{g}}      & Quark\\
+        {\unit[1]{P.}}       & Vanille-Zucker\\
+        {\unit[1]{Prise}}    & Salz\\
+        {\unit[3]{EL}}       & Zucker\\
+        {\unit[200]{g}}      & Mehl\\
+        {\unit[1]{P.}}       & Backpulver\\
+                             & Zitronenaroma\\
+                             & Rosinen\\
+                             & Nüsse, gehackt
+    }
+    \preparation{
+        \step Eier, Quark, Vanille-Zucker, Salz, Zucker und Zitronenaroma gut vermischen.
+        \step Das Mehl und das Backpulver mischen und zu der Quarkmasse geben.
+        \step Mit 2 Esslöffeln 9-12 Teighaufen auf ein Backblech setzen und mit Nüssen bestreuen.
+        \step Bei {\unit[180]{\celsius}} {\unit[15-20]{Minuten}} im Backofen backen.
+    }
+    \hint{%
+        Ist am nächsten Tag leider sehr trocken\newline
+        Geht auch gut als Muffins; geht auch mit etwas weniger Mehl
+    }
+\end{recipe}
+\end{document}

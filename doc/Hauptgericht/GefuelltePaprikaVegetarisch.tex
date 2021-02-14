@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[45]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Gefüllte Paprika (vegetarisch)}\index{Gefuellte Paprika@Gefüllte Paprika!Gefuellte Paprika vegetarisch@Gefüllte Paprika (vegetarisch)}
+    \graph{
+        small=GefuelltePaprika_1,
+        big=GefuelltePaprika_0
+    }
+    \ingredients{
+        6                  & Paprika, rot\\
+        {\unit[200]{g}}    & Schafskäse\\
+        {\unit[500]{g}}    & Passierte Tomaten\\
+        1                  & Zwiebel\\
+        1                  & Knoblauchzehe\\
+        1                  & Ei\\
+                           & Olivenöl\\
+                           & Salz\\
+                           & Pfeffer\\
+                           & Petersilie
+    }
+    \preparation{
+        \step Die Deckel der Paprika entfernen und die Samen entfernen.
+        \step Den Knoblauch und die Zwiebel klein schneiden und andünsten.
+        \step Schafskäse würfeln, mit Zwiebel, Knoblauch und Ei vermischen und würzen.
+        \step Paprikaschoten damit füllen und den Deckel leicht darauf drücken.
+        \step Die Paprika mit den Tomaten in eine Kasserolle legen und ca. 45 Minuten bei {\unit[200]{\celsius}} im Ofen backen.
+    }
+\end{recipe}
+\end{document}

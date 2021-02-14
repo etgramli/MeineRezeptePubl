@@ -1,0 +1,37 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[3]{h}},
+    portion = {\portion{6}},
+    source = Oma Tilda
+]{Tafelspitz}\index{Tafelspitz}
+    \graph{
+        small=Tafelspitz_1,
+        big=Tafelspitz_0
+    }
+    \ingredients{
+        {\unit[1]{kg}}                   & Tafelspitz\\
+        2-3                              & Zwiebeln\\
+        2                                & Knoblauchzehen\\
+        {\unit[2]{EL}}                   & Tomatenmark\\
+        {\unit[$\nicefrac{1}{2}$]{l}}    & Brühe\\
+        {\unit[$\nicefrac{1}{2}$]{l}}    & Rotwein\\
+        1                                & Lorbeerblatt
+    }
+    \preparation{
+        \step Die Zwiebeln in Würfel schneiden, andünsten und mit dem Tomatenmark kurz anbraten.
+        \step Den Tafelspitz am Stück von beiden Seiten anbraten und mit Wein und Brühe ablöschen.
+        \step Knoblauch und Lorbeerblatt dazu geben und 3~Stunden köcheln lassen.
+        \step Fleisch rausnehmen und ein Stück probieren ob es weich ist.
+        \step Fleisch gegen die Fasern aufschneiden und der Sauce eine halbe Stunde ziehen lassen.
+    }
+    \hint{%
+        Zu der Sauce kann man auch Schmand mischen.\newline
+        {\unit[250]{g}} pro Person sind etwas knapp.
+    }
+\end{recipe}
+\end{document}

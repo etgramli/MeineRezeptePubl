@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[35]{Min}},
+    portion = {\portion{4}},
+    source=Etienne
+]{Semmelknödel}\index{Semmelknoedel@Semmelknödel}
+    \graph{
+        big=Semmelknoedel_0
+    }
+    \ingredients{
+            5                                   & Brötchen, alt\\
+            1                                   & Zwiebel\\
+            {\unit[$\nicefrac{1}{2}$]{Bund}}    & Petersilie\\
+            {\unit[25]{g}}                      & Butter\\
+            {\unit[250]{g}}                     & Milch\\
+            3                                   & Eier\\
+            {\unit[2]{Prisen}}                  & Muskat\\
+                                                & Salz\\
+                                                & Pfeffer
+    }
+    \preparation{
+            \step Die Zwiebel schneiden und in Butter andünsten; die Milch erwärmen und das Brötchen darin einweichen.
+            \step Die Zwiebel Petersilie, Eier, {\unit[$\nicefrac{1}{2}$]{TL}} Salz, Pfeffer und Muskat zu den Brötchen geben und vermischen.
+        \step Etwa 12 Knödel formen und etwa {\unit[35]{Minuten}} dünsten oder etwa {\unit[15]{Minuten}} köcheln.
+    }
+\end{recipe}
+\end{document}

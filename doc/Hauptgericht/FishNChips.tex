@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[40]{Min}},
+    bakingtime = {\unit[20]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Fish'n'Chips}\index{Fish'n'Chips}\index{Pommes}
+    \graph{
+        big=FishNChips_0
+    }
+    \ingredients{
+        4                   & Fischfilets (Kabeljau oder Schellfisch)\\
+        5                   & Kartoffeln, groß\\
+        {\unit[1]{l}}       & Öl zum Frittieren\\
+        {\unit[150]{ml}}    & Bier\\
+        {\unit[110]{g}}     & Mehl\\
+        {\unit[1]{TL}}      & Backpulver\\
+                            & Salz\\
+                            & Pfeffer, schwarz\\
+                            & Malzessig oder Zitronensaft
+    }
+    \preparation{
+        \step Bier, Mehl, Backpulver und eine Priese Salz so lange verrühren bis keine Klümpchen mehr vorhanden sind.
+        \step Die Marinade etwa 20 Minuten ziehen lassen. Solange die Kartoffeln schälen und in grobe Stifte schneiden.
+        \step Die Stifte abtrocknen und bei mittlerer Hitze 4~Minuten frittieren. Darauf achten, dass sie nicht ankleben.
+        \step Pommes rausnehmen, nochmals bei großer Hitze goldbraun frittieren und mit Salz und Malzessig würzen.
+        \step Die Fischfilets trocken tupfen, mit Salz und Pfeffer würzen und mit Mehl bestreuen.
+        \step Den Fisch durch die Marinade ziehen, langsam ins Öl legen und bei mittlerer Hitze goldbraun frittieren.
+    }
+    \hint{%
+        Wenn man keinen Malzessig hat, kann man auch normalen Essig und Bier 1:1 mischen.\newline
+        Pommes kann man auch aus Karotten machen.
+    }
+\end{recipe}
+\end{document}

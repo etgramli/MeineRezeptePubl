@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[10]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion[Bleche]{3}},
+    source = Lili
+]{Zitronenplätzchen}\index{Zitronenplaetzchen@Zitronenplätzchen}
+    \graph{
+        big=Zitronenplaetzchen_0
+    }
+    \ingredients{
+        6                    & Eigelb\\
+        {\unit[250]{g}}      & Butter\\
+        {\unit[200]{g}}      & Zucker\\
+        {\unit[1]{Prise}}    & Salz\\
+        {\unit[500]{g}}      & Mehl\\
+        {\unit[1]{TL}}       & Backpulver\\
+        {\unit[2]{EL}}       & Zitronensaft\\
+                             & Zitronenschale\\
+                             & \\
+        Guss:                & \\
+        {\unit[1]{EL}}       & Puderzucker\\
+        {\unit[1]{EL}}       & Zitronensaft\\
+        {\unit[1]{EL}}       & Wasser, heiß
+    }
+    \preparation{
+        \step Butter, Zucker, Salz und Eigelb schaumig rühren; die restlichen Zutaten darunter arbeiten.
+        \step Mindestens 1 Stunde kalt stellen; mit Mehl ausrollen, ausstechen und bei {\unit[200]{\celsius}} ca. 10 Minuten backen.
+        \step Die Zutaten für den Guss verrühren und auf den Plätzchen verteilen.
+    }
+    \hint{%
+        Man kann daraus auch Orangenplätzchen machen.\newline
+        Schmecken wie Butterplätzchen.
+    }
+\end{recipe}
+\end{document}

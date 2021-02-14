@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Lili
+]{Zwetschgenkuchen (Hefeteig)}\index{Zwetschgenkuchen}
+    \graph{
+        big=ZwetschgenkuchenHefeteig_0
+    }
+    \ingredients{
+        {\unit[500]{g}}                       & Zwetschgen\\
+        {\unit[2]{EL}}                        & Semmelbrösel\\
+                                              & \\
+        Boden:                                & \\
+        {\unit[150]{g}}                       & Mehl\\
+        {\unit[70]{ml}}                       & Milch, lauwarm\\
+        {\unit[2]{EL}}                        & Zucker\\
+        {\unit[1]{Prise}}                     & Salz\\
+        {\unit[1]{EL}}                        & Butter\\
+        {\unit[$\nicefrac{1}{4}$]{Würfel}}    & Hefe\\
+                                              & \\
+        Streusel:                             & \\
+        {\unit[40]{g}}                        & Zucker\\
+        {\unit[40]{g}}                        & Butter\\
+        {\unit[60]{g}}                        & Mehl\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}        & Zimt
+    }
+    \preparation{
+        \step Hefeteig zubereiten und gehen lassen; die Zwetschgen entsteinen und vierteln.
+        \step Teig in eine gefettete Springform kneten, mit Semmelbröseln bestreuen.
+        \step Die Zwetschgen dachziegelartig auf dem Teig verteilen; die Streusel zubereiten und darauf streuen.
+        \step Im vorgeheizten Backofen in der Mitte 25-30 Minuten bei {\unit[180]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[35]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion[Laib]{1}},
+    source = Lili
+]{Glutenfreies Brot}\index{Glutenfreies Brot}\index{Brot!Glutenfreies Brot}
+    \graph{
+        small=GlutenfreiesBrot_1,
+        big=GlutenfreiesBrot_0
+    }
+    \ingredients{
+        {\unit[100]{g}}     & Reismehl\\
+        {\unit[100]{g}}     & Kartoffelmehl\\
+        {\unit[30]{g}}      & Sojamehl\\
+        {\unit[20]{g}}      & Flohsamenschalen\\
+        {\unit[2]{TL}}      & Johannisbrotkern"-mehl\\
+        {\unit[300]{ml}}    & Wasser, lauwarm\\
+        {\unit[1]{EL}}      & Sonnenblumenöl\\
+        {\unit[7]{g}}       & Trockenhefe\\
+        {\unit[1]{TL}}      & Zucker\\
+        {\unit[1]{TL}}      & Salz
+    }
+    \preparation{
+        \step Alle Zutaten zu einem Teig verarbeiten und eine Stunde in einer Kastenform ruhen lassen.
+        \step Im vorgeheizten Backofen 35 Minuten bei {\unit[200]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

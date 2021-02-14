@@ -1,0 +1,26 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion = {\portion[Kugeln]{4}},
+    source = Lili
+]{Schokoladeneis}\index{Schokoladeneis}
+    \graph{
+        big=Schokoladeneis_0
+    }
+    \ingredients{
+        {\unit[200]{ml}}    & Sahne\\
+        1                   & Eigelb\\
+        {\unit[40]{g}}      & Schokolade\\
+        {\unit[50]{g}}      & Xylit
+    }
+    \preparation{
+        \step Sahne im kleinen Topf erhitzen. Achtung: die Sahne darf nicht kochen.
+        \step Schokolade in der Sahne  schmelzen lassen und Xylith dazugeben; die Masse auf ca. {\unit[30]{\celsius}} abkühlen lassen.
+        \step Das Eigelb dazurühren, auf Zimmertemperatur abkühlen lassen; in die Eismaschine geben.
+    }
+\end{recipe}
+\end{document}

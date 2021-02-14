@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion[Glas]{1}},
+    source = Etienne
+]{Eingelegte Chilis}\index{Eingelegte Chilis}
+    \graph{
+        big=EingelegteChili_0
+    }
+    \ingredients{
+        6-8                 & Chilischoten\\
+        {\unit[500]{ml}}    & Wasser\\
+        {\unit[150]{ml}}    & Essig\\
+        {\unit[50]{g}}      & Salz\\
+                            & Olivenöl
+    }
+    \preparation{
+        \step Wasser, Essig und Salz in einem Topf zum Kochen bringen.
+        \step Die Chilischoten putzen, halbieren, die Kerne entfernen und klein schneiden.
+        \step Die Schoten im Essigwasser {\unit[5]{Minuten}} abkochen, abtropfen und in ein abgekochtes Glas geben.
+        \step Das Glas langsam mit Olivenöl füllen, sodass keine Luftbläschen übrig bleiben; kühl lagern.
+    }
+\end{recipe}
+\end{document}

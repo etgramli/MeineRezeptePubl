@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[40]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    source = Oma Rita
+]{Rahmkuchen}\index{Rahmkuchen}
+    \graph{
+        small=Rahmkuchen_1,
+        big=Rahmkuchen_0
+    }
+    \ingredients{
+        Boden:                                & \\
+        {\unit[150-200]{g}}                   & Mehl\\
+        {\unit[70]{ml}}                       & Milch, lauwarm\\
+        {\unit[2]{EL}}                        & Zucker\\
+        {\unit[1]{Prise}}                     & Salz\\
+        {\unit[1]{EL}}                        & Butter\\
+        {\unit[$\nicefrac{1}{4}$]{Würfel}}    & Hefe\\
+                                              & \\
+        Belag:                                & \\
+        {\unit[250]{ml}}                      & Sahne\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}        & Creme"-torten"-pul"-ver\\
+        {\unit[2-3]{EL}}                      & Zucker\\
+        2                                     & Eier\\
+        {\unit[200-250]{g}}                   & Sahnequark
+    }
+    \preparation{
+        \step Den Hefeteig zubereiten und in eine Springform aus-gewellten.
+        \step Zutaten für den Belag vermengen und auf den Teig leeren; etwas Zucker und Zimt darüber streuen.
+        \step Im vorgeheizten Backofen 30-40 Minuten bei {\unit[200]{\celsius}} backen bis der Kuchen goldbraun ist.
+    }
+    \hint{%
+        Sehr fein auch, wenn man dünne Apfelscheiben auf den Teig legt.
+    }
+\end{recipe}
+\end{document}

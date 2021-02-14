@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime={\unit[30]{Min}},
+    portion = {\portion[ml]{700}},
+    source = Etienne
+]{Zwetschgenlikör}\index{Zwetschgenlikoer@Zwetschgenlikör}
+    \graph{
+        small=Zwetschgenlikoer_1,
+        big=Zwetschgenlikoer_0
+    }
+    \ingredients{
+        {\unit[250]{g}}     & Zwetschgen\\
+        {\unit[700]{ml}}    & Wodka (\unit[40]{\%})\\
+        1                   & Sternanis\\
+        2                   & Nelken
+    }
+    \preparation{
+        \step Zwetschgen waschen, entsteinen und vierteln. Die Steine aufheben und trocknen.
+        \step Geviertelte Zwetschgen, Gewürze und Wodka in eine Flasche füllen und drei Wochen reifen lassen.
+        \step Durch einen Kaffeefilter abseihen und in saubere Flaschen füllen.
+    }
+    \hint{%
+        Mit etwas mehr Zwetschgen sollte er süßer werden.
+    }
+\end{recipe}
+\end{document}

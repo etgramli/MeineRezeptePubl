@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[50]{Min}},
+    bakingtemperature = {\unit[175]{\celsius}},
+    portion = {\portion[Stück]{4}},
+    source = Lili
+]{Keto-Semmeln mit Eiweiß}\index{Keto-Semmeln mit Eiweiss@Keto-Semmeln mit Eiweiß}\index{Brot!Keto-Semmeln mit Eiweiss@Keto-Semmeln mit Eiweiß}
+    \graph{
+        small=KetoSemmelnMitEiweiss_1,
+        big=KetoSemmelnMitEiweiss_0
+    }
+    \ingredients{
+        {\unit[160]{g}}                   & Mandeln, gemahlen\\
+        {\unit[25]{g}}                    & Flohsamenschalen, gemahlen\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Backpulver\\
+        {\unit[1]{Prise}}                 & Salz\\
+        3                                 & Eiklar\\
+        {\unit[150]{ml}}                  & Wasser, heiß
+    }
+    \preparation{
+        \step Mandeln, Flohsamenschalen, Backpulver und Salz gut vermischen; Eiklar dazu geben und vermischen.
+        \step Das Wasser dazu tun, gut verrühren, 4 Semmeln formen und auf ein Backblech mit Backpapier legen.
+        \step Im vorgeheizten Backofen 40-50~Minuten bei {\unit[175]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,25 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion{3}},
+    source = Oma Rita
+]{Rüben nach Oma Rita}\index{Rueben nach Oma Rita@Rüben nach Oma Rita}
+    \graph{
+        big=RuebleNachRita_0
+    }
+    \ingredients{
+        3                 & Rüben, groß\\
+        {\unit[1]{EL}}    & Butter\\
+        etwas             & Brühe
+    }
+    \preparation{
+        \step Die Rüben schälen, in Scheibchen schneiden und in Butter andünsten bis sie leicht bräunen.
+        \step Mit etwas Brühe ablöschen und einige Minuten köcheln lassen.
+    }
+\end{recipe}
+\end{document}

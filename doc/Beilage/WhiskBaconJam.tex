@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[20]{Min}},
+    source = Etienne
+]{Whisky-Bacon-Jam}\index{Whisky-Bacon-Jam}
+    \graph{
+        big=WhiskyBaconJam_0
+    }
+    \ingredients{
+        {\unit[200]{g}}    & Bacon\\
+        2                  & Zwiebeln, groß\\
+        {\unit[40]{ml}}    & Balsamico-Essig\\
+        {\unit[20]{ml}}    & Sherry, süß\\
+        {\unit[50]{ml}}    & Whisky, sherryfassgereift\\
+        {\unit[2]{TL}}     & Ahornsirup\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Zimt\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Chili-Flocken, oder\\
+        {\unit[1]{TL}}    & Chili-Salz
+    }
+    \preparation{
+        \step Den Bacon in mundgerechte Stücke schneiden und in der Pfanne so lange braten bis er knusprig ist.
+        \step Den Bacon aus der Pfanne nehmen, die Zwiebeln schneiden und im Fett des Bacons dünsten.
+        \step Wenn sie bräunen mit dem Balsamico-Essig, Sherry und Whisky ablöschen und die Gewürze dazu geben.
+        \step Den Bacon wieder in die Pfanne legen und nochmals etwa 10 Minuten köcheln.
+        \step Etwas abkühlen lassen, in Einmachgläser füllen, verschließen und kühl lagern.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion{4}},
+    source = Oma Tilda
+]{Gemüsesuppe}\index{Gemuesesuppe@Gemüsesuppe}
+    \graph{
+        small=Gemuesesuppe_1,
+        big=Gemuesesuppe_0
+    }
+    \ingredients{
+        1                     & Zwiebel\\
+        1                     & Knoblauchzehe\\
+        {\unit[1]{Stange}}    & Lauch\\
+        3                     & Kartoffeln\\
+        1                     & Paprika\\
+        1                     & Kohlrabi\\
+        {\unit[200]{g}}       & Sauerrahm
+    }
+    \preparation{
+        \step Das Gemüse in mundgerechte Stücke schneiden, dünsten, ablöschen und eine halbe Stunde köcheln lassen.
+        \step Dann den Sauerrahm unterrühren und servieren.
+    }
+\end{recipe}
+\end{document}

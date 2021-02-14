@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    bakingtime = {\unit[15]{Min}},
+    source = Etienne
+]{Eingelegte Paprika}\index{Eingelegte Paprika}
+    \graph{
+        big=EingelegtePaprika_0
+    }
+    \ingredients{
+        4-6                    & Paprika\\
+        {\unit[3]{EL}}         & Essig\\
+        1                      & Knoblauchzehe\\
+        {\unit[2]{EL}}         & Olivenöl\\
+        {\unit[6]{Blätter}}    & Basilikum\\
+                               & Salz\\
+                               & Pfeffer
+    }
+    \preparation{
+        \step Paprika waschen, abtrocknen und im Grill auf dem hohen Rost von der einen Seite 8-10 Minuten grillen.
+        \step Wenden, und von der anderen Seite wieder 6-8 Minuten grillen.
+        \step Die Paprika in einer geschlossenen Plastiktüte abkühlen lassen; dann Strunk und Kerne entfernen.
+        \step In ein Gefäß Essig, Salz, Pfeffer und geschnittenem Knoblauch füllen, darin die Paprika legen.
+        \step Etwas Öl darauf gießen, die Gefäße verschließen und kühlen.
+    }
+\end{recipe}
+\end{document}

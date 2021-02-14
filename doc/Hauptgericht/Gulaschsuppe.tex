@@ -1,0 +1,43 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    bakingtime = {\unit[90]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Gulaschsuppe}\index{Gulaschsuppe}\index{Gulasch!Gulaschsuppe}
+    \graph{
+        big=Gulaschsuppe_0
+    }
+    \ingredients{
+        {\unit[300]{g}}     & Rindfleisch\\
+        2                   & Zwiebeln\\
+        1                   & Paprika, rot\\
+        {\unit[50]{g}}      & Sellerie\\
+        {\unit[1]{EL}}      & Paprikapulver, scharf\\
+        {\unit[500]{ml}}    & Wasser\\
+        2                   & Kartoffeln\\
+        3-4                 & Möhren\\
+        {\unit[1]{P.}}      & Bratensauce / Brühe\\
+        2                   & Lorbeerblätter\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Fleisch in kleine Würfel schneiden und in heißem Öl kurz scharf anbraten, umfüllen.
+        \step Zwiebeln, Paprika und Sellerie in Würfel schneiden und dünsten; Paprikapulver dazu und leicht anrösten.
+        \step Mit Wasser ablöschen, Bratensauce einrühren und Fleisch wieder zugeben.
+        \step Lorbeerblätter dazu geben und mindestens eine Stunde köcheln lassen.
+        \step Kartoffeln und Möhren klein schneiden, dazu geben und mindestens $\nicefrac{1}{2}$ Stunde köcheln.
+        \step Zum Schluss noch abschmecken.
+    }
+    \hint{%
+        Für Gulasch nehme man {\unit[300]{g}} Fleisch pro Person\newline
+        Man kann auch mit etwas Rotwein ablöschen (dann etwas weniger Wasser)
+    }
+\end{recipe}
+\end{document}

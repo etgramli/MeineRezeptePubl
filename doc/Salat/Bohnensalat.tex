@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion[Portionen]{3}},
+    source = Etienne
+]{Bohnensalat}\index{Bohnensalat}
+    \graph{
+        big=Bohnensalat_0
+    }
+    \ingredients{
+        {\unit[500]{g}}      & Grüne Bohnen\\
+        {\unit[3]{EL}}       & Wasser\\
+        1                    & Zwiebel\\
+        {\unit[2]{EL}}       & Essig\\
+        {\unit[4]{EL}}       & Öl\\
+        {\unit[1]{Prise}}    & Salz\\
+                             & Pfeffer
+    }
+    \preparation{
+        \step Die grünen Bohnen in Wasser garen und abkühlen lassen.
+        \step Währenddessen die Zwiebel in feine Würfel schneiden und im Salz ziehen lassen.
+        \step Die lauwarmen Bohnen mit dem Kochwasser zur Zwiebel geben und mit Salz und Pfeffer abschmecken.
+        \step Mit dem Öl fertigstellen.
+    }
+\end{recipe}
+\end{document}

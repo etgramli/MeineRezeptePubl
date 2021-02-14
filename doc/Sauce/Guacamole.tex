@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Guacamole}\index{Guacamole}
+    \graph{
+        small=Guacamole_1,
+        big=Guacamole_0
+    }
+    \ingredients{
+        1                                 & Avocado\\
+        {\unit[1]{Msp.}}                  & Chili\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        $\nicefrac{1}{2}$                 & Zwiebel, oder\\
+        1                                 & Knoblauchzehe\\
+        etwas                             & Zitronensaft
+    }
+    \preparation{
+        \step Die Avocado schälen, den Kern entfernen, und in einer Schale mit einer Gabel zerdrücken.
+        \step Die Zwiebel oder Knoblauchzehe sehr fein schneiden und mit Salz und Chili unter die Avocado mischen.
+        \step Zitronensaft darüber träufeln und zügig servieren.
+    }
+    \hint{%
+        Passt auch zu Nudeln; und falls sie zu steif ist, kann man etwas Nudel-Wasser dazu geben.
+    }
+\end{recipe}
+\end{document}

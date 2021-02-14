@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    bakingtime = {\unit[45]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Paprikasch}\index{Paprikasch}
+    \graph{
+        big=Paprikasch_0
+    }
+    \ingredients{
+        1                   & Hähnchen\\
+        {\unit[250]{ml}}    & Brühe\\
+        2                   & Zwiebeln\\
+        3                   & Paprika, rot\\
+        {\unit[2]{EL}}      & Öl\\
+        {\unit[1]{EL}}      & Tomatenmark\\
+        {\unit[1]{EL}}      & Paprikapulver\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Hähnchen waschen, trocken tupfen, in Teile schneiden, mit Salz, Pfeffer und Paprikapulver einreiben.
+        \step Paprika und Zwiebel würfeln und in heißem Öl anbraten.
+        \step Hähnchenteile dazu geben und unter Rühren andünsten.
+        \step Mit Brühe aufgießen, Deckel schließen und 35-45~Minuten köcheln lassen, gelegentlich umrühren.
+    }
+    \hint{%
+        Dazu passen Baguette-Brot, Salzkartoffeln und Salat.\newline
+        Man kann das Hähnchen auch häuten. Schmeckt lecker!!
+    }
+\end{recipe}
+\end{document}

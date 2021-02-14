@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[2-4]{h}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Tomatensauce}\index{Tomatensauce}
+    \graph{
+        small=Tomatensauce_1,
+        big=Tomatensauce_0
+    }
+    \ingredients{
+        1                   & Zwiebel\\
+        1                   & Knoblauchzehe\\
+        {\unit[1]{Dose}}    & Tomaten, gehackt\\
+        {\unit[200]{g}}     & Tomaten, passiert\\
+                            & Oregano\\
+                            & Basilikum\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Zwiebel in kleine Würfel schneiden, Knoblauch pressen und beides in Olivenöl andünsten.
+        \step Alle Tomaten dazu geben und mehrere Stunden köcheln lassen, bis die gewünschte Dicke erreicht ist.
+        \step Mit Salz, Pfeffer und den Kräutern abschmecken; frische Kräuter erst beim Verwenden dazu geben.
+    }
+    \hint{%
+        Die Sauce passt sehr gut zu Nudeln oder als Pizza-Belag.
+    }
+\end{recipe}
+\end{document}

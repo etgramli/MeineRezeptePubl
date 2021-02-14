@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion[Portionen]{2}},
+    source = Oma Rita
+]{Bratensauce nach Rita}\index{Bratensauce nach Rita}
+    \graph{
+        small=BratenSauceNachRita_1,
+        big=BratenSauceNachRita_0
+    }
+    \ingredients{
+        1                     & Zwiebel\\
+        1                     & Knoblauchzehe\\
+        {\unit[350]{ml}}      & Brühe\\
+        {\unit[1]{Schuss}}    & Rotwein\\
+        {\unit[1]{TL}}        & Paprikapulver, süß\\
+        {\unit[1]{EL}}        & Tomatenmark\\
+        {\unit[1]{Prise}}     & Rosmarin\\
+                              & Salz\\
+                              & Pfeffer
+    }
+    \preparation{
+        \step Fleisch rausnehmen, Zwiebel und Knoblauch in kleine Würfel schneiden und im Fett glasig dünsten.
+        \step Paprikapulver und Tomatenmark dazu geben und kurz anbraten; es darf aber nicht bräunen.
+        \step Mit Brühe und Rotwein ablöschen und etwa 30 Minuten köcheln, bis die Zwiebel weich ist.
+        \step Mit Salz, Pfeffer und Rosmarin abschmecken.
+    }
+\end{recipe}
+\end{document}

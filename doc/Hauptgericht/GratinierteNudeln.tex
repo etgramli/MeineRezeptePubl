@@ -1,0 +1,39 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[20]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Gratinierte Nudeln}\index{Gratinierte Nudeln}
+    \graph{
+        big=GratinierteNudeln_0
+    }
+    \ingredients{
+        {\unit[200]{g}}      & Nudeln\\
+        {\unit[250]{g}}      & Passierte Tomaten\\
+        {\unit[100]{g}}      & Sahne\\
+        etwas                & Schinken, gekocht\\
+        $\nicefrac{1}{2}$    & Zwiebel\\
+                             & Basilikum\\
+                             & Oregano\\
+                             & Salz\\
+                             & Pfeffer\\
+                             & Käse, gerieben\\
+                             & Semmelbrösel
+    }
+    \preparation{
+        \step Nudeln kochen; wenn sie fertig sind in eine Auflaufform geben.
+        \step Zwiebel würfeln, würzen und in Öl köcheln; Sahne und klein gewürfelter Schinken dazu geben.
+        \step Sauce mit den Nudeln mischen, ein Teil vom Käse untermischen, den Rest darauf verstreuen.
+        \step Butterflöckchen und Semmelbrösel darauf geben und mit der Alu-Folie bedecken.
+        \step Ca. 20 Minuten mit Grill (Programm 4) überbacken; nach {\unit[13]{Minuten}} die Alu-Folie entfernen.
+    }
+    \hint{%
+        Weitere Verfeinerung: Statt Tomatensauce einfach 1 Dose Pizzatomaten unter die Nudeln msichen und kräftig mit italienischer Würzmischung, Oregano und Basilikum würzen
+    }
+\end{recipe}
+\end{document}

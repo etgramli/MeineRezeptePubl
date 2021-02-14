@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[60]{Min}},
+    portion = {\portion{4}},
+    source = Etienne
+]{Lammbraten an Sherry-Sauce}\index{Lammbraten an Sherry-Sauce}
+    \graph{
+        small=LammbratenSherrySauce_1,
+        big=LammbratenSherrySauce_0
+    }
+    \ingredients{
+        {\unit[1]{kg}}      & Lammkeule\\
+        1                   & Zwiebel, groß\\
+        {\unit[250]{ml}}    & Sherry\\
+        {\unit[2]{EL}}      & Tomatenmark\\
+        {\unit[1]{Bund}}    & Rosmarin\\
+        {\unit[1]{Bund}}    & Thymian\\
+        {\unit[200]{ml}}    & Sahne\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Das Lamm salzen, pfeffern und in heißem Fett von allen Seiten anbraten.
+        \step Die Zwiebel in Würfel schneiden und leicht andünsten, Tomatenmark dazu geben und kurz rösten.
+        \step Mit dem Sherry ablöschen. Rosmarin, Thymian und Sahne dazu geben und eine Stunde köcheln lassen.
+        \step Ab und zu Sauce über das Fleisch träufeln, damit es nicht austrocknet.
+        \step Das Fleisch herausnehmen und in Scheiben schneiden, die Sauce mit Salz und Pfeffer abschmecken.
+        \step Das Fleisch wieder hinein legen, kurz ziehen lassen und dann servieren.
+    }
+    \hint{%
+        Dazu passen gut Reis oder Bratkartoffeln und grüne Bohnen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[1]{h}},
+    portion = {\portion{6-8}},
+    source = Lili
+]{Rotkraut}\index{Rotkraut}
+    \graph{
+        big=Rotkraut_0
+    }
+    \ingredients{
+        1        & Rotkohl\\
+        1        & Zwiebel, klein\\
+        1        & Apfel\\
+        3-4      & Nelken\\
+        4        & Lorbeerblätter\\
+        etwas    & Essig / Brottrunk\\
+        etwas    & Wasser\\
+        opt.     & Rotwein\\
+                 & Salz
+    }
+    \preparation{
+        \step Die Zwiebel in Würfel schneiden und andünsten; Rotkohl kurz waschen, vierteln und in Streifen hobeln.
+        \step Den Apfel in grobe Würfel schneiden und mit dem Rotkraut und Gewürzen zu den Zwiebeln geben.
+        \step Mit Wasser bedecken und etwa eine Stunde kochen, bis das Rotkraut weich ist.
+    }
+\end{recipe}
+\end{document}

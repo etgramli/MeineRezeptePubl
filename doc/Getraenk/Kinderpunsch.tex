@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion[l]{3}},
+    source = Lili
+]{Kinderpunsch}\index{Kinderpunsch}
+    \graph{
+        small=Kinderpunsch_1,
+        big=Kinderpunsch_0
+    }
+    \ingredients{
+        {\unit[2]{l}}                     & Wasser\\
+        4                                 & Früchteteebeutel\\
+        {\unit[500]{ml}}                  & Traubensaft, rot\\
+        {\unit[500]{ml}}                  & Orangen- oder Apfelsaft\\
+        {\unit[1]{TL}}                    & Zimt\\
+        {\unit[1]{Msp.}}                  & Nelke\\
+        {\unit[$\nicefrac{1}{2}$]{EL}}    & Vanillezucker
+    }
+    \preparation{
+        \step Wasser zum Kochen bringen und in einem großen Topf einen starken Tee zubereiten.
+        \step Den Saft dazu geben, kurz aufkochen lassen und mit den Gewürzen abschmecken.
+    }
+    \hint{%
+        Für einen süßeren Punsch mehr Saft und evt. Honig dazugeben.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[60]{Min}},
+    portion = {\portion[Pizzen]{4}},
+    source = Etienne
+]{Glutenfreier Hefeteig}\index{Glutenfreier Hefeteig}\index{Teig!Glutenfreier Hefeteig}
+    \graph{
+        big=GlutenfreierHefeteig_0
+    }
+    \ingredients{
+        {\unit[300]{g}}       & Reis- und Kartoffelmehl\\
+        {\unit[2]{TL}}        & Jo"-han"-nis"-brot"-kern"-mehl\\
+        {\unit[2]{EL}}        & Öl\\
+        {\unit[1]{TL}}        & Salz\\
+        {\unit[175]{ml}}      & Wasser, kalt\\
+        {\unit[1]{Würfel}}    & Hefe\\
+        {\unit[1]{TL}}        & Zucker
+    }
+    \preparation{
+        \step Die Zutaten verkneten und eine Stunde an einem warmen Ort ruhen lassen.
+    }
+\end{recipe}
+\end{document}

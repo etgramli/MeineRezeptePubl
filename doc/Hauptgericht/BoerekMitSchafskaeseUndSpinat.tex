@@ -1,0 +1,43 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[25-30]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Börek mit Schafskäse und Spinat}\index{Boerek mit Schafskaese und Spinat@Börek mit Schafskäse und Spinat}
+    \graph{
+        big=Boerek_0
+    }
+    \ingredients{
+        {\unit[1]{P.}}     & Yufka-Teig\\
+        {\unit[200]{g}}    & Creme Fraîche\\
+        1                  & Ei\\
+        {\unit[200]{g}}    & Schafskäse\\
+                           & Käse, gerieben\\
+        {\unit[250]{g}}    & Spinat\\
+        1                  & Zwiebel, klein\\
+        1                  & Knoblauchzehe\\
+                           & Milch\\
+                           & Sahne\\
+                           & Sesamkörner\\
+                           & Kümmel\\
+                           & Pfeffer
+    }
+    \preparation{
+        \step Zwiebel und Knoblauch anschwitzen und mit Spinat und Sahne vermengen, mit Salz und Pfeffer würzen.
+        \step Creme Fraîche mit dem Ei verquirlen und pfeffern; Backblech gut buttern.
+        \step Zwei Blätter Teig aufs Blech legen, die Hälfte der Ei-Sauce darauf verteilen, wieder zwei Blätter Teig.
+        \step Danach wiederholend verkrümelten Schafskäse und Spinat, Teig, Sauce, Teig übereinander schichten.
+        \step Die obersten Schichten müssen Teig, geriebener Käse, Teig sein. Zum Schluss Milch darauf streichen.
+        \step Mit Sesam und Kümmel bestreuen und im vorgeheizten Backofen 25-30 Minuten bei {\unit[180]{\celsius}} backen.
+    }
+    \hint{%
+        Alte Variante ist ohne Spinat, mit mehr Eiern, Dill und Petersilie.
+    }
+\end{recipe}
+\end{document}

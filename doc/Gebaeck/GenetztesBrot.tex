@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[2,5]{h}},
+    bakingtime = {\unit[50]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion[Laib]{1}},
+    source = Lili
+]{\gqq{Genetztes} Brot}\index{Genetztes Brot}\index{Brot!Genetztes Brot}
+    \graph{
+        small=GenetztesBrot_1,
+        big=GenetztesBrot_0
+    }
+    \ingredients{
+        {\unit[500]{g}}    & Mehl\\
+        {\unit[300]{g}}    & Wasser\\
+        {\unit[5]{g}}      & Hefe\\
+        {\unit[1]{TL}}     & Salz
+    }
+    \preparation{
+        \step Alle Zutaten bei Teigstufe 2,5 Minuten kneten; das mindestens 2 Stunden gehen lassen.
+        \step Auf Backblech 50 Minuten bei {\unit[200]{\celsius}} backen.
+    }
+    \hint{%
+        Da der Teig sehr \gqq{klebrig} ist, muss man die Hände sehr feucht machen.
+    }
+\end{recipe}
+\end{document}

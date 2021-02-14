@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[2]{Min}},
+    source = Etienne
+]{Whisky-Marinade}\index{Whisky-Marinade}
+    \graph{
+        small=WhiskyMarinade_1,
+        big=WhiskyMarinade_0
+    }
+    \ingredients{
+        {\unit[4]{EL}}        & Öl\\
+        {\unit[1]{EL}}        & Whisky, rauchig\\
+        {\unit[1]{TL}}        & Zitronensaft\\
+        {\unit[2]{Zweige}}    & Rosmarin\\
+                              & Salz\\
+                              & Pfeffer
+    }
+    \preparation{
+        \step Die flüssigen Zutaten gut vermischen bis sie eine homogene Flüssigkeit bilden und dann abschmecken.
+        \step Das Fleisch mit der Marinade und Rosmarin in ein geschossenes Gefäß geben und über Nacht einlegen.
+    }
+    \hint{%
+        Wenn man sie so probiert, schmeckt sie schlimm!\\
+        Alternative: Statt Salz und Zitronensaft eine handvoll Felsenbirnen verwenden.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion[ml]{350}},
+    source = Etienne
+]{Basilikum-Sirup}\index{Basilikum-Sirup}
+    \graph{
+        small=BasilikumSirup_1,
+        big=BasilikumSirup_0
+    }
+    \ingredients{
+        14                  & Basilikumblätter\\
+        4                   & Zitronen\\
+        {\unit[300]{ml}}    & Wasser\\
+        {\unit[120]{g}}     & Zucker
+    }
+    \preparation{
+        \step Die Zitronen pressen und den Saft mit Wasser, Zucker und dem Basilikum etwa 8 Minuten köcheln.
+        \step Abkühlen lassen und den Sirup durch ein Sieb in sterile Flaschen füllen.
+    }
+    \hint{%
+        Auf Eis mit einem Schuss Wasser.\newline
+        Die doppelte Menge passt gut in eine {\unit[0,7]{l}}-Whiskyflasche.
+    }
+\end{recipe}
+\end{document}

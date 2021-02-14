@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion{6}},
+    source = Ursel
+]{Nudelsalat nach Ursel}\index{Nudelsalat nach Ursel}
+    \graph{
+        big=NudelsalatNachUrsel_0
+    }
+    \ingredients{
+        {\unit[200]{g}}                     & Fusili\\
+        {\unit[1]{Becher}}                  & Joghurt\\
+        {\unit[150]{g}}                     & Frischkäse\\
+        {\unit[1]{EL}}                      & Essig\\
+        {\unit[$\nicefrac{1}{2}$]{Dose}}    & Erbsen\\
+        4-6                                 & Cocktailtomaten\\
+        {\unit[300]{g}}                     & Lyoner, geschnitten\\
+        {\unit[2]{EL}}                      & Schnittlauch\\
+                                            & Salz\\
+                                            & Pfeffer\\
+                                            & Aromat
+    }
+    \preparation{
+        \step Das Wasser erhitzen und die Nudeln so lange kochen bis sie weich sind.
+        \step Währenddessen aus Joghurt, Frischkäse, Essig und Schnittlauch eine Sauce mischen und abschmecken.
+        \step Tomaten halbieren und mit den Erbsen, Lyoner und der Sauce in eine große Schale geben.
+        \step Die Nudeln abgießen, zu den restlichen Zutaten geben und vermischen.
+    }
+\end{recipe}
+\end{document}

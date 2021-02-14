@@ -1,0 +1,37 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[35-45]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Lili
+]{Schoko-Bohnen-Kuchen}\index{Schoko-Bohnen-Kuchen}
+    \graph{
+        big=SchokoBohnenKuchen_0
+    }
+    \ingredients{
+        {\unit[1]{kl. Dose}}    & Kidneybohnen\\
+        6                       & Eier\\
+        {\unit[2]{TL}}          & Vanille-Zucker\\
+        {\unit[125]{g}}         & Butter\\
+        {\unit[150]{g}}         & Xylith\\
+        {\unit[4]{EL}}          & Kakao\\
+        {\unit[3-4]{EL}}        & Nüsse gehackt u. geröstet\\
+        {\unit[1]{Prise}}       & Zimt\\
+        {\unit[1]{Prise}}       & Nelke\\
+        {\unit[1]{Prise}}       & Ingwer\\
+        {\unit[2]{gestr. TL}}   & Backpulver
+    }
+    \preparation{
+        \step Kidneybohnen abwaschen und mit einem Ei und {\unit[2]{TL}} Vanille-Zucker vermischen.
+        \step Butter und Xylith 30~Sekunden bei Stufe~4,5 schaumig rühren.
+        \step 5 Eier dazu geben und 20~Sekunden bei Stufe~4,5 vermischen.
+        \step Bohnenmasse dazu geben und 20~Sekunden bei Stufe~4 vermischen.
+        \step Kakao, Nüsse, Zimt, Nelke, Ingwer und Backpulver dazu geben und 20~Sekunden bei Stufe~4 vermischen.
+        \step In eine Backform geben und {\unit[35-45]{Minuten}} bei {\unit[180]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

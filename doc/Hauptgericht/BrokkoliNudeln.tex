@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[15]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Brokkoli-Nudeln}\index{Brokkoli-Nudeln}
+    \graph{
+        big=BrokkoliNudeln_0
+    }
+    \ingredients{
+        {\unit[500]{g}}    & Brokkoli\\
+        {\unit[600]{g}}    & Nudeln\\
+                           & Olivenöl\\
+                           & Parmesan, gerieben\\
+                           & Italienische Gewürze
+    }
+    \preparation{
+        \step Wasser erhitzen und Nudeln kochen. Währenddessen den Brokkoli waschen und etwas zerkleinern.
+        \step Brokkoli im Schnellkochtopf ca. 10 Minuten garen, damit er ganz weich wird.
+        \step Ihn in eine Schüssel geben, würzen und mit einer Gabel zerdrücken.
+        \step Nudeln abgießen, zum Brokkoli geben und mit Olivenöl und Parmesan vermengen.
+    }
+\end{recipe}
+\end{document}

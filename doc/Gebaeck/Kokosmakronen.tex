@@ -1,0 +1,27 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[20-25]{Min}},
+    bakingtemperature = {\unit[130]{\celsius}},
+    source = Lili
+]{Kokosmakronen}\index{Kokosmakronen}
+    \graph{
+        big=Kokosmakronen_0
+    }
+    \ingredients{
+        4                   & Eierklar\\
+        {\unit[200]{g}}     & Zucker\\
+        {\unit[1]{Msp.}}    & Zimt\\
+        {\unit[200]{g}}     & Kokosraspeln
+    }
+    \preparation{
+        \step Eiklar zu steifem Schnee schlagen, dann nach und nach Zucker und Zimt dazu geben.
+        \step Kokosraspeln vorsichtig unter den Eischnee heben; mit 2 Löffeln kleinen Häufchen formen.
+        \step Auf einem Backblech bei {\unit[130]{\celsius}} 20-25 Minuten backen.
+    }
+\end{recipe}
+\end{document}

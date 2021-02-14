@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[150-160]{\celsius}},
+    portion = {\portion[Stück]{12}},
+    source = Lili
+]{Rüblimuffins}\index{Rüblimuffins}
+    \graph{
+        big=Rueblimuffins_0
+    }
+    \ingredients{
+        {\unit[160]{g}}                        & Nüsse\\
+        {\unit[160]{g}}                        & Rüble\\
+        {\unit[50]{g}}                         & Butter\\
+        {\unit[80]{g}}                         & Xucker\\
+        {\unit[1]{TL}}                         & Zimt\\
+        3                                      & Eier\\
+        {\unit[1]{Zitrone}}                    & Zitronenschale\\
+        {\unit[$\nicefrac{1}{2}$]{Zitrone}}    & Zitronensaft\\
+        {\unit[1]{TL}}                         & Johannisbrotkernmehl\\
+        {\unit[1]{TL}}                         & Backpulver
+    }
+    \preparation{
+        \step Nüsse auf Stufe 10 mahlen, umfüllen, Rüble in Stücken auf Stufe 6 zerkleinern und umfüllen.
+        \step Butter, Xucker, Zimt und Eier 30~Sekunden bei Stufe~3-4 vermischen.
+        \step Alle anderen Zutaten dazu geben, kurz auf Stufe~4 vermischen und in Muffinförmchen verteilen.
+        \step Im vorgeheizten Backofen ca. 30 Minuten bei {\unit[150-160]{\celsius}} Umluft backen.
+    }
+\end{recipe}
+\end{document}

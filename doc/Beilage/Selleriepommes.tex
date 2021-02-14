@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[175]{\celsius}},
+    portion = {\portion[Blech]{1}},
+    source = Lili
+]{Selleriepommes}\index{Selleriepommes}
+    \graph{
+        small=Selleriepommes_1,
+        big=Selleriepommes_0
+    }
+    \ingredients{
+        {\unit[300]{g}}    & Sellerie\\
+                           & Olivenöl\\
+                           & Salz\\
+                           & Paprikapulver
+    }
+    \preparation{
+        \step Sellerie wie dünne Pommes schneiden und mit Olivenöl, etwas Salz und Paprikapulver gut vermischen.
+        \step Auf einem Backblech mit Backpapier verteilen und etwa {\unit[30]{Minuten}} bei Umluft {\unit[175]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

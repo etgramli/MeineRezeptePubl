@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    bakingtime = {\unit[3]{h}},
+    portion = {\portion{4}},
+    source = Etienne,
+]{Sauerbraten}\index{Sauerbraten}
+    \graph{
+        big=Sauerbraten_0
+    }
+    \ingredients{
+        {\unit[1]{kg}}      & Rindfleisch\\
+        1                   & Zwiebel\\
+        2                   & Knoblauchzehen\\
+        2                   & Nelken\\
+        2                   & Lorbeerblätter\\
+        10                  & Pfefferkörner\\
+        3                   & Wacholderbeeren\\
+        {\unit[300]{ml}}    & Rotwein\\
+        {\unit[150]{ml}}    & Rotweinessig\\
+                            & \\
+        2                   & Zwiebeln\\
+        {\unit[1]{EL}}      & Tomatenmark\\
+        {\unit[1]{TL}}      & Brühenpulver\\
+    }
+    \preparation{
+        \step Gemüse klein schneiden und mit Fleisch, Gewürzen, Wein und Essig 2-3 Tage im Kühlschrank einlegen.
+        \step Die Marinade abgießen, die Gewürze wegwerfen und die Flüssigkeit behalten.
+        \step Fleisch anbraten und die zwei Zwiebeln würfeln und ebenfalls anbraten, das Tomatenmark kurz anrösten.
+        \step Mit der Marinade ablöschen, Brühenpulver dazu geben und 2,5~Stunden schmoren.
+    }
+\end{recipe}
+\end{document}

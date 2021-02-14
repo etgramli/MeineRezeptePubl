@@ -1,0 +1,42 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    bakingtime = {\unit[15]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion[Blech]{1}},
+    source = Lili
+]{Ketogene Pizza}\index{Ketogene Pizza}\index{Pizza}
+    \graph{
+        small=KetogenePizza_1,
+        big=KetogenePizza_0
+    }
+    \ingredients{
+        Teig:              & \\
+        {\unit[200]{g}}    & Frischkäse, körnig\\
+        {\unit[250]{g}}    & Gouda, gerieben\\
+        3                  & Eier\\
+        {\unit[30]{g}}     & Mandelmehl\\
+                           & Salz\\
+                           & Pfeffer\\
+                           & Oregano\\
+                           & \\
+        Belag:             & \\
+                           & Tomatenmark\\
+                           & Käse, gerieben\\
+                           & Pilze\\
+                           & Sardellen\\
+                           & Kapern\\
+                           & Weiterer Belag (nicht zu flüssig)
+    }
+    \preparation{
+        \step Alle Teig-Zutaten vermengen und auf einem richtig gut eingebutterten Backblech verteilen.
+        \step Etwa 15~Minuten bei {\unit[160 - 180]{\celsius}} vorbacken, bis er goldgelb ist.
+        \step Mit Tomatenmark bestreichen, Käse und Belag darauf verteilen und noch einmal 15~Minuten backen.
+    }
+\end{recipe}
+\end{document}

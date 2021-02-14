@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[4]{Min}},
+    bakingtemperature = {\unit[250]{\celsius}},
+    source = Lili
+]{Flammkuchen}\index{Flammkuchen}
+    \graph{
+        big=Flammkuchen_0
+    }
+    \ingredients{
+        {\unit[400]{g}}    & Pizza- oder Hefeteig\\
+        {\unit[200]{g}}    & Sahne\\
+        {\unit[200]{g}}    & Chreme Fraîche\\
+        1                  & Zwiebel\\
+                           & Salz\\
+                           & Pfeffer
+    }
+    \preparation{
+        \step Ein schwarzes Backblech kopfüber in den Backofen schieben und vorheizen.
+        \step Sahne und Creme Fraîche mischen, salzen und pfeffern. Die Zwiebel in sehr dünne Scheiben schneiden.
+        \step Teig portionieren, sehr dünn auswallen und auf Backpapier legen. Einen Rand einschlagen.
+        \step Den Teig mit der Sauce bedecken, Zwiebeln darauf legen und ca. 4 Minuten backen, bis der Teig bräunt.
+    }
+\end{recipe}
+\end{document}

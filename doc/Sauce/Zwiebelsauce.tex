@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[20]{Min}},
+    portion = {\portion[Portionen]{2}},
+    source = Etienne
+]{Zwiebel-Pfeffer-Sauce}\index{Zwiebel-Pfeffer-Sauce}
+    \graph{
+        small=ZwiebelPfefferSauce_1,
+        big=ZwiebelPfefferSauce_0
+    }
+    \ingredients{
+        3                    & Zwiebeln, groß\\
+        {\unit[2]{EL}}       & Tomatenmark\\
+        {\unit[100]{ml}}     & Whisky\\
+        {\unit[500]{ml}}     & Brühe\\
+        {\unit[2]{EL}}       & Pfefferkörner, grün\\
+        1                    & Lorbeerblatt\\
+                             & Salz\\
+                             & Pfeffer, schwarz
+    }
+    \preparation{
+        \step Die Zwiebeln in (halbe) Ringe schneiden und in Öl glasig dünsten.
+        \step Das Tomatenmark dazu geben und kurz anbraten, es darf aber nicht bräunen.
+        \step Whisky dazu geben und anzünden, damit der Alkohol verbrennt, dann mit der Brühe ablöschen.
+        \step Mit dem Lorbeer und grünem Pfeffer aufkochen und etwa {\unit[20]{Minuten}} reduzieren, bis die Sauce sämig ist.
+        \step Das Lorbeerblatt herausnehmen und mit Salz und Pfeffer abschmecken.
+    }
+\end{recipe}
+\end{document}

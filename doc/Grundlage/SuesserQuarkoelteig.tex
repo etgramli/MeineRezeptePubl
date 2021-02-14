@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    portion = {\portion[Blech]{1}},
+    source = Lili
+]{Süßer Quarkölteig}\index{Suesser Quarkoelteig@Süßer Quarkölteig}\index{Quarkoelteig@Quarkölteig}\index{Teig!Suesser Quarkoelteig@Süßer Quarkölteig}
+    \graph{
+        big=Suesser_Quarkoelteig_0
+    }
+    \ingredients{
+        {\unit[150]{g}}      & Quark\\
+        {\unit[6]{EL}}       & Milch\\
+        {\unit[6]{EL}}       & Öl\\
+        {\unit[75]{g}}       & Zucker\\
+        {\unit[1]{Prise}}    & Salz\\
+        {\unit[300]{g}}      & Mehl\\
+        {\unit[1]{P.}}       & Backpulver\\
+                             & Vanille-Zucker\\
+                             & Zitronenaroma
+    }
+    \preparation{
+        \step Quark, Milch, Zucker, Salz und Zitronenaroma 30~Sekunden bei Stufe~3 vermischen.
+        \step Die restlichen Zutaten zugeben und 2~Minuten bei Getreidestufen vermischen.
+    }
+\end{recipe}
+\end{document}

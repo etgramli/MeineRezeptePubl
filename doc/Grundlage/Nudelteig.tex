@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    source = Lili
+]{Nudelteig}\index{Nudelteig}\index{Teig!Nudelteig}
+    \graph{
+        small=NudelTeig_1,
+        big=NudelTeig_0
+    }
+    \ingredients{
+        2                                 & Eier\\
+        {\unit[1]{EL}}                    & Olivenöl\\
+        {\unit[180]{g}}                   & Mehl\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz
+    }
+    \preparation{
+        \step Eier und Öl kurz auf Stufe 3 rühren; mit den restlichen Zutaten 2 Minuten bei Getreidestufe mischen.
+        \step Teig mit den Händen zur Kugel formen, und eingepackt mindestens 30 Minuten ruhen lassen.
+    }
+    \hint{%
+        Zum Färben etwas Cumin verwenden.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[25-30]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Lasagne}\index{Lasagne}
+    \graph{
+        small=Lasagne_1,
+        big=Lasagne_0
+    }
+    \ingredients{
+        {\unit[1]{Topf}}    & Bolognesesauce\\
+        {\unit[1]{Topf}}    & Bechamelsauce\\
+        {\unit[750]{g}}     & Lasagne-Nudeln\\
+        {\unit[50]{g}}      & Parmesan, gerieben\\
+        etwas               & Butter
+    }
+    \preparation{
+        \step Eine feuerfeste Form mit Butter einfetten und etwas Bechamelsauce darauf verteilen.
+        \step Je eine Schicht Nudeln, Bechamel- und Bolognesesauce darauf verteilen; mit Parmesan bestreuen.
+        \step Schritt 2 solange wiederholen, bis die Zutaten aufgebraucht sind.
+        \step Die oberste Nudelschicht muss mit Sauce und Parmesan bedeckt sein; Butterflocken darüber verteilen.
+        \step 25-30 Minuten bei {\unit[180]{\celsius}} im Ofen backen, kurz abkühlen lassen, mit Kräutern garnieren und servieren.
+    }
+\end{recipe}
+\end{document}

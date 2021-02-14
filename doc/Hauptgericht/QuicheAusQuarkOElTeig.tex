@@ -1,0 +1,47 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[45]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Quiche aus Quark-Öl-Teig}\index{Quiche aus Quark-Oel-Teig@Quiche aus Quark-Öl-Teig}
+    \graph{
+        small=QuicheAusQuarkOElTeig_1,
+        big=QuicheAusQuarkOElTeig_0
+    }
+    \ingredients{
+        Teig:                             & \\
+        {\unit[200]{g}}                   & Mehl\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Backpulver\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        {\unit[100]{g}}                   & Quark\\
+        {\unit[3]{EL}}                    & Öl\\
+        1                                 & Ei\\
+                                          & \\
+        Belag:                            & \\
+                                          & Schafkäse\\
+                                          & Spinat\\
+                                          & Kirschtomaten\\
+                                          & \\
+        Guss:                             & \\
+        {\unit[200]{g}}                   & Sahne\\
+        3                                 & Eier\\
+                                          & Salz\\
+                                          & Pfeffer
+    }
+    \preparation{
+        \step Die Zutaten für den Teig in den Mixtopf geben und 1 Minute bei Teigstufe vermischen.
+        \step Den Teig in einer Form verteilen und den Belag darauf verteilen.
+        \step Die Zutaten für den Guss vermischen und auf dem Rest verteilen.
+        \step Die Quiche 45 Minuten bei {\unit[200]{\celsius}} backen.
+    }
+    \hint{%
+        Statt Sahne geht auch Schmand oder Mascarpone.
+    }
+\end{recipe}
+\end{document}

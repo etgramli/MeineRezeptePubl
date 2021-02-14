@@ -1,0 +1,37 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[50]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion[Stollen]{1}},
+    source = Lili
+]{Stollen}\index{Stollen}
+    \graph{
+        big=Stollen_0
+    }
+    \ingredients{
+        {\unit[125]{g}}                       & Quark\\
+        {\unit[80]{g}}                        & Xylith\\
+        {\unit[80]{g}}                        & Butter\\
+        2                                     & Eier\\
+        {\unit[250]{g}}                       & Mandeln, gemahlen\\
+        {\unit[1]{TL}}                        & Guarkernmehl\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}        & Backpulver\\
+        {\unit[$\nicefrac{1}{2}$]{Frucht}}    & Orangenschale\\
+        {\unit[$\nicefrac{1}{2}$]{Frucht}}    & Zitronenschale\\
+        {\unit[100]{g}}                       & Mandelstifte\\
+        {\unit[100]{g}}                       & Rum-Rosinen\\
+    }
+    \preparation{
+        \step Quark, Xylith, Butter und Eier vermengen; Mandeln, Guarkernmehl und Backpulver dazu geben.
+        \step Zitronen- und Orangenschale, Mandelstifte und Rum-Rosinen vorsichtig unterheben.
+        \step Stollenform fetten und den Backofen auf {\unit[160]{\celsius}} Umluft vorheizen.
+        \step Den Stollen {\unit[20]{Minuten}} mit und {\unit[30]{Minuten}} ohne die Stollenform backen.
+    }
+\end{recipe}
+\end{document}

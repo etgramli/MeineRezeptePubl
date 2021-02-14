@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[1]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Dönersauce}\index{Doenersauce@Dönersauce}
+    \graph{
+        small=Doenersauce_1,
+        big=Doenersauce_0
+    }
+    \ingredients{
+        {\unit[4]{EL}}       & Vegane Mayonnaise\\
+        {\unit[4]{TL}}       & Ayran\\
+        {\unit[2]{EL}}       & Dill\\
+        {\unit[1]{TL}}       & Paprikapulver\\
+        {\unit[1]{Msp.}}     & Knoblauchpulver\\
+        {\unit[1]{Prise}}    & Salz
+    }
+    \preparation{
+        \step Mayonnaise, Ayran, Dill und Paprikapulver vermischen, mit Knoblauchpulver und Salz abschmecken.
+    }
+\end{recipe}
+\end{document}

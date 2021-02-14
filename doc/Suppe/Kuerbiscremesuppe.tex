@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Kürbiscremesuppe}\index{Kuerbiscremesuppe@Kürbiscremesuppe}
+    \graph{
+        big=Kuerbiscremesuppe_0
+    }
+    \ingredients{
+        {\unit[6]{Stangen}}                 & Lauch\\
+        {\unit[60]{g}}                      & Butter\\
+        {\unit[500]{g}}                     & Kürbisfleisch\\
+        {\unit[300]{g}}                     & Kartoffeln, mehlig kochend\\
+        {\unit[250]{ml}}                    & Milch\\
+        {\unit[250]{ml}}                    & Wasser\\
+        {\unit[$\nicefrac{1}{2}$]{Zehe}}    & Ingwer\\
+        {\unit[1]{Becher}}                  & Creme Fraîche\\
+                                            & Salz\\
+                                            & Pfeffer
+    }
+    \preparation{
+        \step Lauch in Ringe schneiden, Kartoffeln und Kürbisfleisch klein schneiden.
+        \step Milch und Wasser dazu füllen, mit Salz und Pfeffer abschmecken und gehackten Ingwer dazu geben.
+        \step Bei mittlerer Hitze 30 Minuten kochen, pürieren und Creme Fraîche unterziehen.
+    }
+\end{recipe}
+\end{document}

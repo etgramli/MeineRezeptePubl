@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    source = Lili
+]{Vegane Mayonnaise / Aioli}\index{Mayonnaise!Vegane Mayonnaise}\index{Aioli}
+    \graph{
+        small=VeganeMayonnaise_1,
+        big=VeganeMayonnaise_0
+    }
+    \ingredients{
+        {\unit[80]{ml}}     & Sojamilch, natur\\
+        {\unit[220]{ml}}    & Distelöl\\
+        {\unit[2-4]{TL}}    & Zitronensaft / Essig\\
+        {\unit[2]{TL}}      & Senf\\
+                            & Salz\\
+                            & Pfeffer\\
+        1                   & Knoblauchzehe, zerquetscht (Aioli)
+    }
+    \preparation{
+        \step Sojamilch und Distelöl auf Zimmertemperatur bringen.
+        \step Sojamilch in schmales, hohes Gefäß füllen, Distelöl darauf gießen.
+        \step Mit einem Stabmixer am Boden ca. $1\nicefrac{1}{2}$ Minuten mixen; dann langsam nach oben ziehen.
+        \step Abschmecken.
+    }
+\end{recipe}
+\end{document}

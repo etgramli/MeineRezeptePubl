@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion = {\portion[Portionen]{2}},
+    source = Etienne
+]{Scharfe Whisky-Sauce}\index{Scharfe Whisky-Sauce}
+    \graph{
+        big=ScharfeWhiskySauce_0
+    }
+    \ingredients{
+        1                    & Zwiebel, groß\\
+        {\unit[1]{EL}}       & Paprikapulver, scharf\\
+        {\unit[100]{ml}}     & Whisky\\
+        {\unit[200]{ml}}     & Sahne\\
+        {\unit[1]{Prise}}    & Chili-Flocken\\
+                             & Salz\\
+                             & Pfeffer\\
+                             & Oregano
+    }
+    \preparation{
+        \step Die Zwiebeln glasig dünsten, dann das Paprikapulver dazu geben und leicht anbraten.
+        \step Mit Whisky ablöschen und flambieren, sodass der Alkohol verbrennt.
+        \step Sahne und Chili-Flocken dazu geben, reduzieren und mit Salz, Pfeffer und Oregano abschmecken.
+    }
+\end{recipe}
+\end{document}

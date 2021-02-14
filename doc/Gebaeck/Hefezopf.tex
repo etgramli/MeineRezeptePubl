@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[25]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    source = Lili
+]{Hefezopf}\index{Hefezopf}
+    \graph{
+        small=Hefezopf_1,
+        big=Hefezopf_0
+    }
+    \ingredients{
+        {\unit[500]{g}}      & Mehl\\
+        {\unit[30]{g}}       & Hefe\\
+        {\unit[250]{ml}}     & Milch, lauwarm\\
+        {\unit[60]{g}}       & Zucker\\
+        {\unit[60]{g}}       & Butter\\
+        1                    & Ei\\
+        {\unit[1]{Prise}}    & Salz\\
+                             & Mandelblättchen
+    }
+    \preparation{
+        \step Aus Mehl, Hefe, etwas Zucker und Milch einen Vorteig rühren und 15 Minuten gehen lassen.
+        \step Restlicher Zucker, geschmolzene Butter, Ei und Salz dazu geben, gut kneten; 15 Minuten gehen lassen.
+        \step Dann aus dem Teig einen Zopf flechten und auf dem Backblech 30 Minuten gehen lassen.
+        \step Zopf mit verquirltem Eigelb bestreichen und mit Mandelblättchen bestreuen.
+        \step Dann bei {\unit[200]{\celsius}} im vorgeheizten 20-25 Minuten  auf 2. Schiene von unten backen.
+    }
+\end{recipe}
+\end{document}

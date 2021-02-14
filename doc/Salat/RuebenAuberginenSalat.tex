@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    portion = {\portion{9}},
+    source = Etienne
+]{Rüben-Auberginen-Salat}\index{Rueben-Auberginen-Salat@Rüben-Auberginen-Salat}
+    \graph{
+        big=RuebenAuberginenSalat_0
+    }
+    \ingredients{
+        3                     & Auberginen\\
+        {\unit[30]{ml}}       & Öl\\
+        {\unit[1]{TL}}        & Kurkuma\\
+        9                     & Rüben\\
+        {\unit[1]{Schote}}    & Paprika, rot\\
+        {\unit[12]{EL}}       & Essig\\
+        {\unit[3]{EL}}        & Petersilie\\
+                              & Salz\\
+                              & Pfeffer
+    }
+    \preparation{
+        \step Auberginen in ca. {\unit[1]{cm}} große Würfel schneiden und in Öl anbraten, Kurkuma dazu geben.
+        \step Rüben raspeln, Paprika fein schneiden und alles in eine Schüssel geben.
+        \step Mit Essig, Petersilie, Salz und Pfeffer abschmecken und mit dem Öl vermischen.
+    }
+\end{recipe}
+\end{document}

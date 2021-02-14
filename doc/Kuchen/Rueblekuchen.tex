@@ -1,0 +1,43 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[1]{h}},
+    bakingtemperature = {\unit[175]{\celsius}},
+    portion = {\portion{12}},
+    source = Lili
+]{Rüblekuchen}\index{Rueblekuchen@Rüblekuchen}
+    \graph{
+        small=Rueblekuchen_1,
+        big=Rueblekuchen_0
+    }
+    \ingredients{
+        6                                 & Eier\\
+        {\unit[160]{g}}                   & Zucker\\
+        {\unit[300]{g}}                   & Möhren, gerieben\\
+        {\unit[300]{g}}                   & Mandeln, gerieben\\
+        {\unit[40]{g}}                    & Stärkemehl\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Zimt\\
+                                          & Zitronensaft (Bio)\\
+                                          & Zitronenschale (Bio)\\
+                                          & Puderzucker\\
+                                          & Marzipan-Möhren
+    }
+    \preparation{
+        \step Das Eiweiß in hohem Gefäß zu steifem Schnee schlagen und mit der Hälfte der Mandeln vermischen.
+        \step Das Eigelb mit Zucker schaumig schlagen, die geriebenen Möhren dazu geben und gut unter mischen.
+        \step Die Hälfte der Mandeln, Stärke, Zimt, Zitronensaft und -schale einrühren.
+        \step Das Eiklar unter die Masse heben und in eine eingefettete Springform geben.
+        \step Im vorgeheizten Backofen eine Stunde bei {\unit[175]{\celsius}} backen, danach auf einem Gitter auskühlen lassen.
+        \step Nach Belieben mit Marzipan-Möhren und Puderzucker dekorieren.
+    }
+    \hint{%
+        Die Möhren kann man in Stücken im Thermomix 1 Sekunden bei Stufe 6 zerkleinern.\\
+        Man kann auch einen Zitronenguss aus Zitronensaft und Puderzucker machen.
+    }
+\end{recipe}
+\end{document}

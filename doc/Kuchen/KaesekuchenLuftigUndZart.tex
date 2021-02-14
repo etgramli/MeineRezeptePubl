@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[40]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    source = Lili
+]{Käsekuchen -luftig und zart-}\index{Kaesekuchen@Käsekuchen}
+    \graph{
+        small=KaesekuchenLuftigUndZart_1,
+        big=KaesekuchenLuftigUndZart_0
+    }
+    \ingredients{
+        6                                 & Eier\\
+        {\unit[150]{g}}                   & Zucker\\
+        {\unit[1]{P.}}                    & Vanille-Zucker\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Citroback\\
+        {\unit[1]{P.}}                    & Vanillepuddingpulver\\
+        {\unit[750]{g}}                   & Quark (\unit[40]{\%})
+    }
+    \preparation{
+        \step Eier trennen; das Eiklar in hohem Gefäß zu steifem Schnee schlagen.
+        \step Das Eigelb mit Zucker schaumig schlagen, dann Aroma, Puddingpulver und Quark dazugeben.
+        \step Den Eischnee unter die Masse heben und in eine gut eingefettete Springform füllen.
+        \step Im vorgeheizten Backofen 10 Minuten bei {\unit[200]{\celsius}} backen, dann bei {\unit[160]{\celsius}} ca. 30 Minuten backen.
+    }
+    \hint{%
+        Superleckerer und fluffiger Käsekuchen!!
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    portion = {\portion[Gläschen]{2}},
+    source = Lili
+]{Mayonnaise}\index{Mayonnaise}
+    \graph{
+        big=Mayonnaise_0
+    }
+    \ingredients{
+        1                                 & Ei, oder\\
+        2                                 & Eigelb\\
+        {\unit[2]{TL}}                    & Zitronensaft\\
+        {\unit[2]{TL}}                    & Senf\\
+        {\unit[$\nicefrac{1}{4}$]{TL}}    & Salz\\
+        {\unit[1]{Prise}}                 & Pfeffer\\
+        {\unit[280]{ml}}                  & Rapsöl
+    }
+    \preparation{
+        \step Ei, Senf, Zitronensaft, Salz und Pfeffer bei {\unit[37]{\celsius}} eine Minute auf Stufe 3,5 anwärmen.
+        \step Den Messbecher beschweren, den Thermommix auf Stufe 3,5 stellen und das Öl zulaufen lassen.
+        \step In saubere Flaschen abfüllen und im Kühlschrank aufbewahren.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[40]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Bratkartoffeln}\index{Bratkartoffeln}
+    \graph{
+        big=Bratkartoffeln_0
+    }
+    \ingredients{
+        4-6    & Kartoffeln, mittelgroß\\
+        4      & Getrocknete Tomaten\\
+               & Salz\\
+               & Pfeffer
+    }
+    \preparation{
+        \step Die Kartoffeln in mundgerechte Stücke schneiden, in Olivenöl anbraten, bis sie anfangen zu bräunen.
+        \step Dann die getrockneten Tomaten halbieren und dazu geben und braten, bis die Kartoffeln goldbraun sind.
+    }
+    \hint{%
+        Man kann die Kartoffeln auch in dem Öl der getrockneten Tomaten anbraten; schmeckt sehr gut.
+    }
+\end{recipe}
+\end{document}

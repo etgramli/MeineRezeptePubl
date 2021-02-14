@@ -1,0 +1,27 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    source = Etienne
+]{Eingelegter Schafskäse}\index{Eingelegter Schafskaese@Eingelegter Schafskäse}
+    \graph{
+        big=EingelegterSchafskaese_0
+    }
+    \ingredients{
+        {\unit[200]{g}}        & Schafskäse\\
+        {\unit[1]{EL}}         & Pfefferkörner\\
+        {\unit[1]{Zweig}}      & Rosmarin\\
+        {\unit[3]{Spitzen}}    & Basilikum\\
+                               & Olivenöl
+    }
+    \preparation{
+        \step Den Rosmarin in Stücke schneiden und mit dem Pfeffer in ein abgekochtes Glas geben.
+        \step Den Schafskäse in Würfel und den Basilikum in Streifen schneiden und auch ins Glas geben.
+        \step Das Glas mit Olivenöl auffüllen und kühl stellen.
+    }
+\end{recipe}
+\end{document}

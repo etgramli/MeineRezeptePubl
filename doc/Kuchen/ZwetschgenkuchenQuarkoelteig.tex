@@ -1,0 +1,44 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Lili
+]{Zwetschgenkuchen (Quarkölteig)}\index{Zwetschgenkuchen}
+    \graph{
+        big=ZwetschgenkuchenQuarkoelteig_0
+    }
+    \ingredients{
+        Boden:                            & \\
+        {\unit[75]{g}}                    & Quark\\
+        {\unit[2]{EL}}                    & Milch\\
+        {\unit[3]{EL}}                    & Öl\\
+        {\unit[30]{g}}                    & Zucker\\
+        {\unit[1]{Prise}}                 & Salz\\
+        {\unit[150]{g}}                   & Mehl\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Backpulver\\
+                                          & Vanille-Zucker\\
+                                          & Zitronenaroma\\
+        {\unit[700]{g}}                   & Zwetschgen\\
+        Streusel:                         & \\
+        {\unit[40]{g}}                    & Zucker\\
+        {\unit[40]{g}}                    & Butter\\
+        {\unit[60]{g}}                    & Mehl\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Zimt
+    }
+    \preparation{
+        \step Die Zutaten für den Boden $1\nicefrac{1}{2}$~Minuten bei Getreidestufe kneten; in gebutterte Springform drücken.
+        \step Die Zwetschgen vierteln und dachziegelartig auf dem Boden verteilen.
+        \step Die Streusel-Zutaten im Mixtopf 10~Sekunden, Stufe~7 vermischen und auf den Zwetschgen verteilen.
+        \step Im vorgeheizten Backofen in der Mitte ca. 30~Minuten bei {\unit[180]{\celsius}} backen.
+    }
+    \hint{%
+        Teig braucht nicht manuell geknetet werden; kann gleich in die Form gedrückt werden.
+    }
+\end{recipe}
+\end{document}

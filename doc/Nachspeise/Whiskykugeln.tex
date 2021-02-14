@@ -1,0 +1,27 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion = {\portion[Stück]{20}},
+    source = Lili
+]{Whiskykugeln}\index{Whiskykugeln}
+    \graph{
+        big=WhiskyKugeln_0
+    }
+    \ingredients{
+        {\unit[50]{g}}     & Butter\\
+        {\unit[50]{g}}     & Puderzucker\\
+        {\unit[150]{g}}    & Schokolade\\
+        {\unit[4]{EL}}     & Whisky, sherryfassgereift\\
+                           & Kokosraspel
+    }
+    \preparation{
+        \step Die Butter schaumig rühren und mit dem Puderzucker vermischen.
+        \step Die Schokolade langsam schmelzen lassen und mit dem Whisky zur Butter geben.
+        \step Eine Stunde im Kühlschrank abkühlen lassen, dann Kugeln formen und in Kokosraspel wälzen.
+    }
+\end{recipe}
+\end{document}

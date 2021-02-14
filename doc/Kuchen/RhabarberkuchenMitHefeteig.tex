@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Lili
+]{Rhabarberkuchen mit Hefeteig}\index{Rhabarberkuchen}
+    \graph{
+        small=RabarberkuchenHefeteig_1,
+        big=RabarberkuchenHefeteig_0
+    }
+    \ingredients{
+        Hefeteig:                             & \\
+        {\unit[70]{ml}}                       & Milch\\
+        {\unit[2]{EL}}                        & Zucker\\
+        {\unit[1]{Prise}}                     & Salz\\
+        {\unit[1]{EL}}                        & Butter\\
+        {\unit[$\nicefrac{1}{4}$]{Würfel}}    & Hefe\\
+        {\unit[150]{g}}                       & Mehl\\
+                                              & \\
+        Belag:                                & \\
+        {\unit[3-4]{St.}}                     & Rhabarber\\
+        etwas                                 & Zucker\\
+                                              & Nüsse, gemahlen\\
+        {\unit[1]{B.}}                        & Schmand\\
+        2                                     & Eier\\
+        {\unit[1]{P.}}                        & Vanille-Zucker\\
+        {\unit[2]{EL}}                        & Zucker\\
+                                              & Zimt
+    }
+    \preparation{
+        \step Hefeteig nach Gehen in Springform, nochmals gehen lassen, mit gemahlenen Nüssen bestreuen.
+        \step Rhabarber schneiden und auf den Teig geben; darüber die Masse aus Schmand, Eiern etc.
+        \step Im vorgeheizten Ofen bei {\unit[180]{\celsius}} ca. 30 Minuten in der Mitte backen.
+    }
+\end{recipe}
+\end{document}

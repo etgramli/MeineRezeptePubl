@@ -1,0 +1,44 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion{3}},
+    source = Lili
+]{Kartoffelgulasch}\index{Kartoffelgulasch}\index{Gulasch!Kartoffelgulasch}
+    \graph{
+        small=Kartoffelgulasch_1,
+        big=Kartoffelgulasch_0
+    }
+    \ingredients{
+        6                                 & Kartoffeln, mittel\\
+        {\unit[50]{g}}                    & Schinken\\
+        1                                 & Zwiebel\\
+        {\unit[1]{TL}}                    & Paprikapulver\\
+        {\unit[1]{EL}}                    & Tomatenmark\\
+        {\unit[$\nicefrac{1}{2}$]{EL}}    & Essig\\
+        {\unit[1]{TL}}                    & Thymian\\
+        {\unit[500]{ml}}                  & Brühe\\
+        2                                 & Wienerle\\
+        {\unit[100]{g}}                   & Sahne / Schmand\\
+                                          & Öl\\
+                                          & Pfeffer\\
+        opt. 2                            & Rüben\\
+        opt. 1                            & Paprika, rot
+    }
+    \preparation{
+        \step Zwiebeln und Schinken fein hacken, in Öl andünsten und vom Herd nehmen.
+        \step Paprika einrühren, Tomatenmark, Essig, Thymian dazu geben und kurz braten, dabei immer rühren.
+        \step Kartoffeln schälen, grob würfeln, dazu geben und mit Brühe ablöschen.
+        \step Topf zudecken und 25 Minuten schmoren lassen; Wienerle hinein schneiden, Sahne einrühren.
+    }
+    \hint{%
+        Schmeckt sehr fein mit Rüble!\newline
+        Geht im Schnellkochtopf auch!
+    }
+\end{recipe}
+\end{document}

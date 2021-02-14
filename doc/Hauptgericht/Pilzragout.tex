@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion{4}},
+    source = Etienne
+]{Pilzragout}\index{Pilzragout}
+    \graph{
+        big=Pilzragout_0
+    }
+    \ingredients{
+        {\unit[200]{g}}     & Champignons\\
+        1                   & Zwiebel\\
+        {\unit[80]{g}}      & Rote Linsen\\
+        {\unit[2]{EL}}      & Tomatenmark\\
+        1                   & Lorbeerblatt\\
+        {\unit[20]{g}}      & Sellerie\\
+        {\unit[400]{ml}}    & Brühe\\
+        1                   & Rübe\\
+                            & Pfeffer\\
+                            & Salz\\
+                            & Kräuter
+    }
+    \preparation{
+        \step Die Pilze putzen, in grobe Würfel schneiden, in Olivenöl anbraten und zur Seite stellen.
+        \step Zwiebel in kleine Würfel schneiden und mit den roten Linsen in Olivenöl andünsten.
+        \step Tomatenmark dazu geben und kurz rösten; mit Brühe ablöschen und mit dem Lorbeer 20~Minuten köcheln.
+        \step Rübe in Scheiben schneiden, mit Pilzen und Sellerie dazu geben und nochmal 10 Minuten köcheln.
+    }
+    \hint{%
+        Dazu passen Semmelknödel sehr gut.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[70-80]{Min}},
+    bakingtemperature = {\unit[150]{\celsius}},
+    portion = {\portion[Blech]{1}},
+    source = Lili
+]{Keto-Knäckebrot}\index{Knaeckebrot@Knäckebrot}\index{Brot!Knaeckebrot@Knäckebrot}
+    \graph{
+        big=KetoKnaeckebrot_0
+    }
+    \ingredients{
+        {\unit[50]{g}}                    & Son"-nen"-blu"-men"-kerne\\
+        {\unit[50]{g}}                    & Kürbiskerne\\
+        {\unit[40]{g}}                    & Leinsamen, gemahlen\\
+        {\unit[20]{g}}                    & Flohsamenschalen\\
+        {\unit[50]{g}}                    & (Schwarz-) Kümmel, Mohn oder Sesam\\
+        {\unit[10]{g}}                    & Kleie\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Meersalz\\
+        {\unit[30]{g}}                    & Olivenöl\\
+        {\unit[300]{ml}}                  & Wasser\\
+        opt.                              & Parmesan\\
+        opt.                              & Röstzwiebeln\\
+        opt.                              & Kurkuma\\
+        opt.                              & Pfeffer, schwarz
+    }
+    \preparation{
+        \step Alle Zutaten vermischen und auf ein gut gebuttertes Backblech gleichmäßig streichen.
+        \step Im vorgeheizten Backofen {\unit[35-40]{Min}} bei {\unit[150]{\celsius}} vor-backen.
+        \step Danach in gewünschte Größe zerschneiden und nochmal {\unit[35-40]{Min}} backen.
+    }
+    \hint{%
+        Ein Blech entspricht ca. {\unit[280]{g}} Knäckebrot; {\unit[100]{g}} Knäckebrot entsprechen {\unit[6]{g}} Kohlenhydraten.
+    }
+\end{recipe}
+\end{document}

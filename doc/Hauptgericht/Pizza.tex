@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[8]{Min}},
+    bakingtemperature = {\unit[250]{\celsius}},
+    portion = {\portion{2}},
+    source = Lili
+]{Pizza}\index{Pizza}
+    \graph{
+        small=Pizza_1,
+        big=Pizza_0
+    }
+    \ingredients{
+        {\unit[400]{g}}    & Pizza- / Hefeteig\\
+        {\unit[250]{g}}    & Passierte Tomaten\\
+        {\unit[125]{g}}    & Mozzarella\\
+                           & Belag nach Wahl\\
+                           & Salz\\
+                           & Pfeffer\\
+                           & Oregano
+    }
+    \preparation{
+        \step Ein schwarzes Backblech kopfüber in den Backofen schieben und vorheizen.
+        \step Teig portionieren und etwas dünner auswallen, als man die Pizza will; auf Backpapier legen.
+        \step Etwas passierte Tomaten auf dem Teig verteilen, mit Salz und Pfeffer würzen, Mozzarella darauf legen.
+        \step Mit den gewählten Zutaten belegen und ca. 8 Minuten backen, bis der Teig leicht bräunt.
+        \step Dann mit Oregano bestreuen, schneiden und abkühlen lassen.
+    }
+\end{recipe}
+\end{document}

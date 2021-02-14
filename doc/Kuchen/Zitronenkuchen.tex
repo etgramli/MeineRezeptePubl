@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[50]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    source = Lili
+]{Zitronenkuchen (Lamm \& Hase)}\index{Zitronenkuchen (Lamm \& Hase)}
+    \graph{
+        small=ZitronenkuchenLammUndHase_1,
+        big=ZitronenkuchenLammUndHase_0
+    }
+    \ingredients{
+        2-3                 & Eier\\
+        {\unit[125]{g}}     & Butter, weich\\
+        {\unit[125]{g}}     & Zucker\\
+        {\unit[1]{TL}}      & Zitronenzucker\\
+        {\unit[200]{g}}     & Mehl\\
+        {\unit[2]{TL}}      & Backpulver\\
+        {\unit[1-4]{EL}}    & Milch
+    }
+    \preparation{
+        \step Den Ofen vorheizen, die Kastenformen mehlen und buttern.
+        \step Butter, Zucker und Eier schaumig rühren. Zitronenöl, Mehl und Backpulver nach und nach unterrühren.
+        \step Milch nach Bedarf dazu geben; Teig muss schwer reißend sein.
+        \step Im Backofen 40-50 Minuten bei {\unit[175-200]{\celsius}} backen.
+    }
+    \hint{%
+        Dieser Teig ist auch Grundlage für Apfelkuchen, der dann in der Springform gebacken wird.\newline
+        Reicht auch für 1 Hase + Lämmchen! {\unit[175]{\celsius}} 40 Minuten
+    }
+\end{recipe}
+\end{document}

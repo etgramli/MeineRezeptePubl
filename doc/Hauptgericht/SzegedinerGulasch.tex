@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[20]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Szegediner Gulasch}\index{Szegediner Gulasch}\index{Gulasch!Szegediner Gulasch}
+    \graph{
+        big=SzegedinerGulasch_0
+    }
+    \ingredients{
+        {\unit[$\nicefrac{1}{2}$]{kg}}    & Rindergulasch\\
+        3-4                               & Zwiebeln\\
+        2                                 & Knoblauchzehen\\
+        {\unit[2]{EL}}                    & Paprikapulver, süß\\
+        {\unit[1]{EL}}                    & Paprikapulver, scharf\\
+        {\unit[$\nicefrac{1}{2}$]{l}}     & Brühe\\
+        {\unit[400]{g}}                   & Sauerkraut\\
+        2                                 & Loorbeerblätter\\
+        {\unit[1]{TL}}                    & Kümmel, gemahlen\\
+        {\unit[200]{g}}                   & Schmand
+    }
+    \preparation{
+        \step Fleisch in heißem Öl anbraten, umfüllen; Zwiebeln und Knoblauch in Bratfett andünsten.
+        \step Paprika dazu geben, mit Brühe ablöschen, ausgedrücktes Sauerkraut und Fleisch dazu geben.
+        \step Loorbeerblätter und Kümmel zufügen und alles im Schnellkochtopf 20 Minuten kochen.
+    }
+    \hint{%
+        Dazu passt Kartoffelbrei
+    }
+\end{recipe}
+\end{document}

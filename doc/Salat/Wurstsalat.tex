@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Wurstsalat}\index{Wurstsalat}
+    \graph{
+        small=Wurstsalat_1,
+        big=Wurstsalat_0
+    }
+    \ingredients{
+        1                   & Zwiebel, klein\\
+        {\unit[4]{EL}}      & Essig\\
+        {\unit[2]{EL}}      & Wasser\\
+        {\unit[3]{EL}}      & Distelöl\\
+        {\unit[200]{g}}     & Lyoner, geschnitten\\
+        {\unit[3]{Sch.}}    & Gruyère\\
+        2                   & Gewürzgurken\\
+        1                   & Tomate, groß\\
+        {\unit[2]{EL}}      & Schnittlauch\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Die Zwiebel in sehr feine Würfel schneiden, mit Salz bestreuen und ein paar Minuten ziehen lassen.
+        \step Essig und Wasser dazugeben, und so abschmecken, dass die Sauce sehr würzig ist.
+        \step Gurken in Scheibchen, Käse in Streifen und die Tomate in Schnitze schneiden.
+        \step Alle Zutaten zur Sauce geben, vermischen und dann das Öl unterheben.
+    }
+    \hint{%
+        Dazu passen gut Bratkartoffeln und frisches Weißbrot, am besten solange es noch warm ist.\newline
+        Variation: Mit Tomaten, gerösteten Walnüssen und frischem Rucola.
+    }
+\end{recipe}
+\end{document}

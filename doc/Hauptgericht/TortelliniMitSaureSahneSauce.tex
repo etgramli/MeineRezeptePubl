@@ -1,0 +1,26 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime={\unit[10]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Tortellini mit Saure-Sahne-Sauce}\index{Tortellini mit Saure-Sahne-Sauce}
+    \graph{
+        big=TortelliniSahneSauce_0
+    }
+    \ingredients{
+        {\unit[400]{g}}       & Tortellini\\
+        {\unit[3-4]{EL}}      & Wasser\\
+        {\unit[1]{TL}}        & Brühe\\
+        {\unit[1]{Becher}}    & Saure Sahne
+    }
+    \preparation{
+        \step Tortellini kochen, aus dem Koch-Wasser Brühe machen und Saure Sahne unterrühren.
+        \step Die fertigen Tortellini mit der Sauce vermischen und servieren.
+    }
+\end{recipe}
+\end{document}

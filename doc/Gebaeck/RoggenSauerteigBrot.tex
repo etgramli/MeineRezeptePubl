@@ -1,0 +1,37 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[45]{Min}},
+    bakingtime = {\unit[50]{Min}},
+    bakingtemperature = {\unit[220]{\celsius}},
+    portion = {\portion[Laib]{1}},
+    source = Lili
+]{Roggen-Sauerteig-Brot}\index{Roggen-Sauerteig-Brot}\index{Brot!Roggen-Sauerteig-Brot}
+    \graph{
+        big=RoggenSauerteigBrot_0
+    }
+    \ingredients{
+        {\unit[180]{g}}                   & Roggenkörner\\
+        {\unit[200]{g}}                   & Weizenmehl 405\\
+        {\unit[1]{TL}}                    & Salz\\
+        {\unit[3]{TL}}                    & Sauerteigpulver\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Brotgewürz\\
+        {\unit[15]{g}}                    & Hefe\\
+        {\unit[130]{g}}                   & Malzbier oder Bier\\
+        {\unit[130]{g}}                   & Wasser, lauwarm\\
+                                          &
+    }
+    \preparation{
+        \step Die Roggenkörner in dem Mixtopf 10 Sekunden bei Stufe 10 malen.
+        \step Die Restlichen Zutaten dazu geben und circa 4 Minuten bei Teigstufe vermischen.
+        \step Einen Römertopf oder Kasserolle (mit Deckel) einfetten und den Boden mit Haferflocken bestreuen.
+        \step Den Teig formen, in das Gefäß legen und einschneiden.
+        \step Mit Mehl bestreuen und $\nicefrac{1}{2}$ Stunde mit Deckel gehen lassen.
+        \step Dann den Teig mit geschlossenem Deckel im kalten Ofen {\unit[50]{Min}} bei {\unit[220]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

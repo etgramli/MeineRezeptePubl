@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Gurkensalat}\index{Gurkensalat}
+    \graph{
+        big=Gurkensalat_0
+    }
+    \ingredients{
+        1                 & Gurke\\
+        {\unit[1]{EL}}    & Essig\\
+        {\unit[1]{EL}}    & Wasser\\
+        {\unit[2]{EL}}    & Öl\\
+        {\unit[1]{TL}}    & Dillspitzen\\
+        {\unit[1]{TL}}    & Salz\\
+                          & Pfeffer
+    }
+    \preparation{
+        \step Essig und Wasser mischen, mit Salz und Pfeffer abschmecken und die Dillspitzen dazu geben.
+        \step Die Gurke in die Sauce raspeln und den Salat mit Öl fertigstellen.
+    }
+\end{recipe}
+\end{document}

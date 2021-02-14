@@ -1,0 +1,27 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[12]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Spaghetti Cacio e Pepe}\index{Spaghetti Cacio e Pepe}
+    \graph{
+        big=SpaghettiCacioePepe_0
+    }
+    \ingredients{
+        {\unit[250]{g}}    & Spaghetti\\
+        {\unit[75]{g}}     & Parmesan\\
+        {\unit[2]{EL}}     & Olivenöl\\
+                           & Pfeffer, schwarz
+    }
+    \preparation{
+        \step Spaghetti kochen und währenddessen den Parmesan hobeln.
+        \step Spaghetti abgießen und mit dem Parmesan vermischen, etwas vom Kochwasser dazu geben.
+        \step Pfeffern, Olivenöl dazu geben, nochmal vermischen und servieren.
+    }
+\end{recipe}
+\end{document}

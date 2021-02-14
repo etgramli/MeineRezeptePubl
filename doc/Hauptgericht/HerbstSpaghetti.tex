@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Herbst-Spaghetti}\index{Herbst-Spaghetti}
+    \graph{
+        big=HerbstSpaghetti_0
+    }
+    \ingredients{
+        {\unit[250]{g}}                  & Spaghetti\\
+        {\unit[$\nicefrac{1}{2}$]{g}}    & Zwiebel\\
+        {\unit[250]{g}}                  & Champignons\\
+        {\unit[50]{g}}                   & Walnüsse\\
+        {\unit[1]{B.}}                   & Sahne\\
+                                         & Salz\\
+                                         & Pfeffer, schwarz \& weiß\\
+                                         & Rucola
+    }
+    \preparation{
+        \step Spaghetti kochen und währenddessen die Zwiebel in feine Würfel schneiden und andünsten.
+        \step Die Champignons putzen, sechsteln und mit den Zwiebeln und Walnüssen leicht anrösten.
+        \step Mit Salz und Pfeffer abschmecken, die Sauce mit den Nudeln vermischen und mit Rucola garnieren.
+    }
+\end{recipe}
+\end{document}

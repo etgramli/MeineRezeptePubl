@@ -1,0 +1,46 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[45]{Min}},
+    bakingtime = {\unit[25]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion{4}},
+    source = Etienne
+]{Rosenkohl-Schlemmer-Gratin}\index{Rosenkohl-Schlemmer-Gratin}
+    \graph{
+        small=RosenkohlSchlemmerGratin_1,
+        big=RosenkohlSchlemmerGratin_0
+    }
+    \ingredients{
+        Gratin:              & \\
+        {\unit[1]{kg}}       & Rosenkohl\\
+        6-8                  & Kartoffeln, festkoch.\\
+        {\unit[150]{g}}      & Bergkäse\\
+        {\unit[400]{ml}}     & Gemüsebrühe\\
+                             & \\
+        Sauce:               & \\
+        {\unit[150]{ml}}     & Garflüssigkeit\\
+        {\unit[100]{ml}}     & Weißwein, trocken\\
+        {\unit[200]{ml}}     & Sahne\\
+        {\unit[2]{EL}}       & Mehl\\
+        {\unit[30]{g}}       & Butter\\
+        {\unit[1]{Prise}}    & Muskat\\
+                             & Salz\\
+                             & Pfeffer
+    }
+    \preparation{
+        \step Den Bergkäse in den Thermomix geben und 6~Sekunden auf Stufe~10 zerkleinern.
+        \step Gemüsebrühe in den Topf geben und Garkorb mit {\unit[$\nicefrac{1}{2}$]{cm}}-dicken Kartoffeln-Scheiben einhängen.
+        \step Dampfgaraufsatz mit dem geputztem Rosenkohl aufsetzen, 30-40~Minuten bei Stufe~1 auf Varoma garen.
+        \step Kartoffeln und Rosenkohl in eine gefettete Auflaufform geben, vorsichtig vermischen. Brühe umfüllen.
+        \step Die Butter 1~Minute bei {\unit[100]{\celsius}} andünsten, Mehl dazugeben und weitere 2~Minuten andünsten.
+        \step 5~Minuten bei {\unit[100]{\celsius}}, Stufe~2 garen, nacheinander die Garflüssigkeit, Wein und Sahne dazu geben.
+        \step Danach alles mit den Gewürzen abschmecken und 10~Sekunden auf Stufe~6 cremig rühren.
+        \step Sauce über das Gemüse geben, mit Käse bestreuen und im Ofen bei {\unit[200]{\celsius}} 25~Minuten lang gratinieren.
+    }
+\end{recipe}
+\end{document}

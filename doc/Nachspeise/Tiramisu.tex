@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion{8}},
+    source = Lili
+]{Tiramisù}\index{Tiramisù}
+    \graph{
+        big=Tiramisu_0
+    }
+    \ingredients{
+        {\unit[500]{g}}     & Mascarpone\\
+        4                   & Eier\\
+        {\unit[4]{EL}}      & Zucker\\
+        40                  & Löffelbiskuits\\
+        {\unit[250]{ml}}    & Kaffee, stark\\
+                            & Amaretto\\
+                            & echtes Kakaopulver
+    }
+    \preparation{
+        \step Eiklar in hohem Gefäß mit einer Prise Salz zu steifem Schnee schlagen.
+        \step Eigelb in flacher Schale mit Zucker schaumig rühren, Mascarpone, dann Eiklar vorsichtig untermischen.
+        \step Eine Schicht Löffelbiskuit in eine verschließbare Form legen und mit Kaffee und Amaretto tränken.
+        \step Die Hälfte der Masse, dann eine getränkte Schicht Löffelbiskuit und den Rest der Masse drauf verteilen.
+        \step Zum Schluss Kakaopulver kurz vor dem Servieren darauf verteilen.
+    }
+    \hint{%
+        Kakaopulver am Besten kurz vor dem Servieren auf das Tiramisu geben.
+    }
+\end{recipe}
+\end{document}

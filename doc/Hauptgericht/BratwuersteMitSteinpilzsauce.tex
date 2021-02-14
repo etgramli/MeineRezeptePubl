@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Bratwürste mit Steinpilzsauce}\index{Bratwuerste mit Steinpilzsauce@Bratwürste mit Steinpilzsauce}
+    \graph{
+        small=BratwuersteSteinpilzsauce_1,
+        big=BratwuersteSteinpilzsauce_0
+    }
+    \ingredients{
+        2                    & Kalbsbratwürste\\
+        {\unit[150]{g}}      & Steinpilze, gefroren\\
+        1                    & Zwiebel, klein\\
+        {\unit[200]{ml}}     & Sahne\\
+        {\unit[1]{Prise}}    & Muskat\\
+        {\unit[1]{Prise}}    & Petersilie\\
+                             & Salz\\
+                             & Pfeffer, schwarz\\
+                             & Pfeffer, weiß
+    }
+    \preparation{
+        \step Zwiebel in Würfel schneiden und mit den Pilzen in Öl andünsten. Währenddessen die Bratwürste grillen.
+        \step Wenn die Zwiebel leicht bräunt, mit der Sahne ablöschen und kurz einkochen lassen.
+        \step Sobald die Würste fertig sind, Sauce mit den Gewürzen abschmecken und mit den Würsten servieren.
+    }
+    \hint{%
+        Dazu passen Bratkartoffeln und Pommes sehr gut.
+    }
+\end{recipe}
+\end{document}

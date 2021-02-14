@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime={\unit[30]{Min}},
+    portion = {\portion[ml]{700}},
+    source = Etienne
+]{Kirschlikör}\index{Kirschlikoer@Kirschlikör}
+    \graph{
+        big=Kirschlikoer_0
+    }
+    \ingredients{
+        {\unit[300]{g}}                  & Kirschen\\
+        {\unit[$\nicefrac{1}{2}$]{l}}    & Kirschwasser (\unit[40]{\%})\\
+        {\unit[1]{TL}}                   & Zimt\\
+        2                                & Nelken\\
+        $\nicefrac{1}{2}$                & Bio-Orange (Schale)
+    }
+    \preparation{
+        \step Kirschen waschen, entkernen und in eine Flasche mit weitem Hals füllen. Steine aufheben und trocknen.
+        \step Kirschwasser und Gewürze dazu geben und drei Wochen an einem kühlen und dunklen Ort ziehen lassen.
+        \step Likör durch einen Kaffeefilter abseihen und in saubere Flaschen abfüllen.
+        \step Wenn der Hals breit genug ist kann man noch ein paar Kirschen dazu geben.
+    }
+    \hint{%
+        Kann man gut vor Weihnachten als Geschenk machen.
+    }
+\end{recipe}
+\end{document}

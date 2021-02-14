@@ -1,0 +1,39 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[25]{Min}},
+    bakingtemperature = {\unit[75]{\celsius}},
+    portion = {\portion{3}},
+    source = Lili
+]{Kässpätzle}\index{Kaesspaetzle@Kässpätzle}
+    \graph{
+        small=Kaesspaetzle_1,
+        big=Kaesspaetzle_0
+    }
+    \ingredients{
+        {\unit[200]{g}}    & Mehl\\
+        2                  & Eier\\
+        etwas              & Wasser, kalt\\
+        {\unit[100]{g}}    & Gouda, gerieben\\
+        3                  & Zwiebeln\\
+                           & \\
+                           &
+    }
+    \preparation{
+        \step Aus dem Mehl, Eiern und Wasser einen zähflüssigen Teig rühren und ca. 15 Minuten stehen lassen.
+        \step Zwiebeln klein würfeln und in Öl bei mittlerer Hitze rösten.
+        \step Den Teig portionsweise mit der Spätzlepresse in kochendes Salzwasser drücken.
+        \step Wenn die Spätzle oben schwimmen mit einer Schaumkelle in eine Schüssel geben, Käse darauf verteilen.
+        \step Schritte 3 und 4 wiederholen bis der ganze Teig verarbeitet wurde; währenddessen im Ofen warm stellen.
+        \step Zum Schluss die Zwiebeln darauf geben.
+    }
+    \hint{%
+        Die (Glas-)Schüssel von Anfang an bei {\unit[75]{\celsius}} in den Ofen stellen. \newline
+        Für Spinatspätzle kann man das halbe Gewicht wie Mehl an abgetropftem Spinat benutzen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,44 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[220]{\celsius}},
+    source = Oma Tilda
+]{Käsekuchen vom Blech}\index{Kaesekuchen@Käsekuchen}
+    \graph{
+        small=KaesekuchenVomBlech_1,
+        big=KaesekuchenVomBlech_0
+    }
+    \ingredients{
+        Mürbteig:                         & \\
+        1                                 & Ei\\
+        {\unit[300]{g}}                   & Mehl\\
+        {\unit[150]{g}}                   & Butter\\
+        {\unit[80]{g}}                    & Zucker\\
+        {\unit[1]{Prise}}                 & Salz\\
+        Belag:                            & \\
+        1                                 & Bio-Zitrone\\
+        {\unit[750]{g}}                   & Magerquark\\
+        {\unit[100]{g}}                   & Butter\\
+        {\unit[200]{g}}                   & Zucker\\
+        4                                 & Eier\\
+        {\unit[80]{g}}                    & Speisestärke\\
+        {\unit[2]{Dosen}}                 & Mandarinen oder Aprikosen\\
+        Streusel:                         & \\
+        {\unit[300]{g}}                   & Mehl\\
+        {\unit[190]{g}}                   & Butter\\
+        {\unit[190]{g}}                   & Zucker\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Zimt
+    }
+    \preparation{
+        \step Mürbteig zubereiten, auf dem Backblech ausrollen und mit Gabel einstechen.
+        \step Im vorgeheizten Backofen 10 Minuten bei {\unit[225]{\celsius}} backen, abkühlen lassen.
+        \step Belag auf den Mürbteig streichen, Streusel darauf verteilen.
+        \step Im vorgeheizten Backofen bei {\unit[220]{\celsius}} 20-30 Minuten backen.
+    }
+\end{recipe}
+\end{document}

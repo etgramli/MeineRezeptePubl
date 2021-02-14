@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    bakingtime = {\unit[90]{Min}},
+    portion = {\portion{2}},
+    source = Oma Tilda
+]{Rinder-Rouladen}\index{Rinder-Rouladen}
+    \graph{
+        small=Rinderrouladen_1,
+        big=Rinderrouladen_0
+    }
+    \ingredients{
+        4                       & Rinderrouladen\\
+        {\unit[4]{Scheiben}}    & Speck / Bacon\\
+        2                       & Zwiebeln\\
+        2                       & Essiggurken\\
+        {\unit[4]{TL}}          & Senf\\
+        etwas                   & Mehl\\
+        {\unit[250]{ml}}        & Wasser\\
+        {\unit[250]{ml}}        & Rotwein\\
+        {\unit[1]{TL}}          & Speisestärke\\
+        {\unit[100]{g}}         & Saure Sahne\\
+                                & Salz\\
+                                & Pfeffer
+    }
+    \preparation{
+        \step Rouladen auf einer Seite salzen und pfeffern und die andere Seite mit Senf bestreichen.
+        \step Speck darauf legen und mit Zwiebelringen (etwa $\nicefrac{1}{2}$~Zwiebel) und Gurkenscheiben belegen.
+        \step Rouladen aufrollen, mit Zahnstochern befestigen und mit Mehl bestäuben.
+        \step Zwiebel würfeln und in einem Schnellkochtopf anschwitzen, Rouladen dazu geben und anbraten.
+        \step Mit Wasser und Wein ablöschen und mindestens 90~Minuten kochen.
+        \step Die Rouladen rausnehmen und die Sauce abschmecken.
+        \step Die Sahne mit Speisestärke vermischen, in die Sauce rühren und nochmals aufkochen.
+    }
+\end{recipe}
+\end{document}

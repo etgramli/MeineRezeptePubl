@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion[l]{1}},
+    source = Etienne
+]{Quittenlikör}\index{Quittenlikoer@Quittenlikör}
+    \graph{
+        big=Quittenlikoer_0
+    }
+    \ingredients{
+        {\unit[1]{kg}}                    & Quitten\\
+        {\unit[$1\nicefrac{1}{4}$]{l}}    & Wodka (\unit[40]{\%})\\
+        2                                 & Zimtstangen\\
+        1                                 & Nelke\\
+        oder                              & \\
+        {\unit[2]{TL}}                    & Vanille\\
+        $\nicefrac{1}{2}$                 & Bio-Zitrone (Schale)
+    }
+    \preparation{
+        \step Die Quitten waschen, in grobe Würfel schneiden und in einen Topf füllen.
+        \step Entweder Zimt und Nelke, oder Vanille und Zitronenschale dazu geben.
+        \step Wodka darauf geben, abdecken und drei Wochen an einem kühlen und dunklen Ort ziehen lassen.
+        \step Die Zitronenschale nach einer Woche herausnehmen, damit der Quittengeschmack nicht untergeht.
+        \step Likör durch einen Kaffeefilter abseihen und in saubere Flaschen abfüllen.
+    }
+    \hint{%
+        Man kann auch noch etwas Orangenschale dazu tun.
+    }
+\end{recipe}
+\end{document}

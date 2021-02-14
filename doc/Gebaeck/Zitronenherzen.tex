@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[10]{Min}},
+    bakingtemperature = {\unit[175]{\celsius}},
+    portion = {\portion[Blech]{1}},
+    source = Lili
+]{Zitronenherzen (Eigelbverwend.)}\index{Zitronenherzen (Eigelbverwend.)}
+    \graph{
+        big=Zitronenherzen_0
+    }
+    \ingredients{
+        2                                 & Eigelb\\
+        {\unit[1]{P.}}                    & Vanille-Zucker\\
+        {\unit[70]{g}}                    & Zucker\\
+        {\unit[3]{Tr.}}                   & Backöl Zitrone\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Zitronenaroma\\
+        {\unit[140]{g}}                   & Mandeln, gemahlen\\
+        {\unit[1]{Msp.}}                  & Backpulver\\
+                                          & \\
+        Guss:                             & \\
+        {\unit[2]{EL}}                    & Puderzucker\\
+        {\unit[2]{EL}}                    & Zitronensaft
+    }
+    \preparation{
+        \step Eigelb und Zucker cremig rühren, Zitronenaroma dazu geben.
+        \step So viel von den geriebenen Nüssen zu dem Teig geben, bis er kaum noch klebt.
+        \step Ca. {\unit[$\nicefrac{1}{2}$]{cm}} dick ausrollen, Herzen ausstechen und im vorgeheizten Ofen bei {\unit[175]{\celsius}} ca. 10 Minuten backen.
+        \step Puderzucker mit Zitronensaft glatt rühren und auf die heißen Plätzchen pinseln.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[20]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Käsefondue}\index{Kaesefondue@Käsefondue}
+    \graph{
+        big=Kaesefondue_0
+    }
+    \ingredients{
+        {\unit[200]{g}}     & Gouda\\
+        {\unit[200]{ml}}    & Buttermilch\\
+        {\unit[150]{g}}     & Frischkäse\\
+        {\unit[2-3]{TL}}    & Speisestärke\\
+                            & Pfeffer\\
+                            & Muskat, gerieben
+    }
+    \preparation{
+        \step Käse in kleine Würfel schneiden und in der Buttermilch ziehen lassen.
+        \step Im Fondue-Topf unter ständigem Rühren leicht köcheln lassen; Frischkäse zugeben.
+        \step Stärke mit etwas kaltem Wasser anrühren, zugeben und nochmals kurz aufkochen lassen.
+        \step Fondue würzen und auf einen Rechaud stellen.
+    }
+    \hint{%
+        Man kann auch Kräuterfrischkäse nehmen\newline
+        Dazu: Baguette und Möhren
+    }
+\end{recipe}
+\end{document}

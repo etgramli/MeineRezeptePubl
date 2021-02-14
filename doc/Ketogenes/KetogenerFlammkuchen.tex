@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    bakingtime = {\unit[15]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion[Blech]{1}},
+    source = Lili
+]{Ketogener Flammkuchen}\index{Ketogener Flammkuchen}\index{Flammkuchen}
+    \graph{
+        big=KetogenerFlammkuchen_0
+    }
+    \ingredients{
+        Teig:                             & \\
+        {\unit[200]{g}}                   & Frischkäse, körnig\\
+        {\unit[200]{g}}                   & Gouda, gerieben\\
+        3                                 & Eier\\
+        {\unit[30]{g}}                    & Mandelmehl\\
+        Belag:                            & \\
+        {\unit[1]{B.}}                    & Creme Fraîche\\
+        {\unit[$\nicefrac{1}{2}$]{B.}}    & Sahne\\
+        1                                 & Zwiebel\\
+                                          & Speck\\
+                                          & Salz\\
+                                          & Pfeffer
+    }
+    \preparation{
+        \step Alle Teig-Zutaten vermengen und auf einem richtig gut eingebutterten Backblech verteilen.
+        \step Etwa 15~Minuten bei {\unit[160 - 180]{\celsius}} vorbacken, bis er goldgelb ist.
+        \step Creme Fraîche und Sahen vermischen, würzen und auf dem Teig verteilen.
+        \step Die Zwiebel in halbe Ringe und den Speck in Scheiben schneiden, auf dem Teig verteilen und backen.
+    }
+    \hint{%
+        Mit 3 Zwiebeln, Speck und Kümmel kann man auch Zwiebelkuchen machen.
+    }
+\end{recipe}
+\end{document}

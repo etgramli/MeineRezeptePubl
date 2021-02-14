@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[25-30]{Min}},
+    portion = {\portion{4}},
+    source = Oma Tilda
+]{Bundaschkenja}\index{Bundaschkenja}
+    \graph{
+        small=Bundaschkenja_1,
+        big=Bundaschkenja_0
+    }
+    \ingredients{
+        2                    & Eier\\
+        {\unit[1]{Schuss}}   & Milch oder Sahne\\
+                             & Salz\\
+                             & Pfeffer\\
+                             & Brot (alt)\\
+                             & Olivenöl
+    }
+    \preparation{
+        \step Eier und Milch verquirlen und mit Salz und Pfeffer würzen.
+        \step Brot in dünne Scheiben schneiden und in der Eier-Milch tränken.
+        \step In der Pfanne mit heißem Öl goldgelb braten.
+    }
+    \hint{%
+        Gut um Brotreste zu verwerten.
+    }
+\end{recipe}
+\end{document}

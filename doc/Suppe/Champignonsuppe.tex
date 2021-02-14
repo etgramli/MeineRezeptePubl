@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion{4}},
+    source = Etienne
+]{Champignonsuppe}\index{Champignonsuppe}
+    \graph{
+        big=Champignonsuppe_0
+    }
+    \ingredients{
+        {\unit[250]{g}}     & Champignons\\
+        {\unit[500]{ml}}    & Brühe\\
+        {\unit[200]{ml}}    & Sahne\\
+                            & Muskat\\
+                            & Pfeffer, schwarz\\
+                            & Pfeffer, weiß\\
+                            & Petersilie
+    }
+    \preparation{
+        \step Champignons in Scheiben schneiden, in einem Topf in etwas Öl anbraten und zur Seite stellen.
+        \step Brühe im noch heißen Topf aufkochen lassen, kurz köcheln lassen und Sahne untermischen.
+        \step Mit Muskat und viel Pfeffer abschmecken, mit den Champignons und Petersilie garnieren und servieren.
+    }
+\end{recipe}
+\end{document}

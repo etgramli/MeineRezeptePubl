@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[25]{Min}},
+    bakingtemperature = {\unit[100]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Rote-Linsen-Suppe}\index{Rote-Linsen-Suppe}
+    \graph{
+        big=RoteLinsenSuppe_0
+    }
+    \ingredients{
+        1                   & Zwiebel\\
+        1                   & Knoblauchzehe\\
+        {\unit[3]{cm}}      & Ingwer\\
+        1-2                 & Rüben\\
+        1                   & Paprika\\
+        {\unit[175]{g}}     & Rote Linsen\\
+        {\unit[700]{ml}}    & Gemüsebrühe\\
+        etwas               & Zitronensaft
+    }
+    \preparation{
+        \step Zwiebel, Knoblauch und Ingwer schälen, 8 Sekunden auf Stufe 5 zerkleinern und 2 Minuten andünsten.
+        \step Die geschnittenen Rüben, Paprika, Linsen und Brühe dazugeben.
+        \step 25 Minuten bei {\unit[100]{\celsius}} und Stufe 1 kochen, etwas Zitronensaft dazugeben, verrühren.
+    }
+\end{recipe}
+\end{document}

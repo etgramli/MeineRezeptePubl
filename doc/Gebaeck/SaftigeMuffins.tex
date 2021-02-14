@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[20-25]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion[Stück]{12}},
+    source = Lili
+]{Saftige Muffins}\index{Saftige Muffins}
+    \graph{
+        small=SaftigeMuffins_1,
+        big=SaftigeMuffins_0
+    }
+    \ingredients{
+        {\unit[120]{g}}     & Butter\\
+        {\unit[110]{g}}     & Zucker\\
+        {\unit[1]{P.}}      & Vanille-Zucker\\
+        {\unit[80]{g}}      & Naturjoghurt\\
+        {\unit[120]{g}}     & Mehl\\
+        {\unit[1]{TL}}      & Backpulver\\
+                            & Zitronenaroma\\
+        2                   & Eier\\
+        {\unit[1]{Dose}}    & Mandarinen
+    }
+    \preparation{
+        \step Butter und Zucker mischen, mit Eiern und Joghurt glatt rühren; Mehl und Backpulver unterrühren.
+        \step Abgetropfte Mandarinen vorsichtig unterheben und in Formen geben.
+        \step Im vorgeheizten Backofen bei {\unit[180]{\celsius}} 20-25 Minuten backen.
+    }
+\end{recipe}
+\end{document}

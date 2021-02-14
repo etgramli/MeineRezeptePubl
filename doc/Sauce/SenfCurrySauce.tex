@@ -1,0 +1,26 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[1]{Min}},
+    source = Etienne
+]{Senf-Curry-Sauce}\index{Senf-Curry-Sauce}
+    \graph{
+        big=SenfCurrySauce_0
+    }
+    \ingredients{
+        {\unit[3]{EL}}    & Senf, mittelscharf\\
+        {\unit[1]{TL}}    & Curry\\
+        {\unit[1]{EL}}    & Hela Curry-Ketchup
+    }
+    \preparation{
+        \step Den Senf, Curry und Ketchup gut vermischen, sodass keine Klümpchen mehr vorhanden sind.
+    }
+    \hint{%
+        Man kann auch etwas scharfen Senf nehmen.
+    }
+\end{recipe}
+\end{document}

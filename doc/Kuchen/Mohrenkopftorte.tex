@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion = {\portion{12}},
+    source = Lili
+]{Mohrenkopftorte}\index{Mohrenkopftorte}
+    \graph{
+        small=Mohrenkopftorte_1,
+        big=Mohrenkopftorte_0
+    }
+    \ingredients{
+        12                 & Mohrenköpfe\\
+        {\unit[250]{g}}    & Speisequark\\
+        {\unit[1]{EL}}     & Zitronensaft\\
+        {\unit[2]{B.}}     & Schlagsahne\\
+        1                  & Biskuitboden
+    }
+    \preparation{
+        \step Die 12 Mohrenköpfe ohne die Waffeln zerdrücken und mit dem Quark und Zitronensaft verrühren.
+        \step Die Sahne schlagen und unter die Masse rühren.  Das alles auf den Biskuitboden streichen.
+        \step Zum Schluss mit den Waffeln garnieren.
+    }
+    \hint{%
+        Sie ist sehr leicht und erfrischend.\\
+        Lieber mehr Quark nehmen; eine Sahne reicht auch.
+    }
+\end{recipe}
+\end{document}

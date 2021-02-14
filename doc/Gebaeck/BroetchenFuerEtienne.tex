@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[35]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion[Stück]{8}},
+    source = Lili
+]{Brötchen für Etienne}\index{Broetchen fuer Etienne@Brötchen für Etienne}\index{Brot!Broetchen fuer Etienne@Brötchen für Etienne}
+    \graph{
+        big=BroetchenFuerEtienne_0
+    }
+    \ingredients{
+        {\unit[120]{g}}                   & Sonnenblumenmehl\\
+        {\unit[1]{EL}}                    & Sojamehl\\
+        {\unit[1]{EL}}                    & Kartoffelmehl\\
+        {\unit[1]{TL}}                    & Johannisbrotkern"-mehl\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        {\unit[2]{EL}}                    & Flohsamenschalen\\
+        {\unit[1]{P.}}                    & Backpulver\\
+        {\unit[200]{ml}}                  & Wasser, lauwarm\\
+        {\unit[1]{EL}}                    & Sonnenblumenöl
+    }
+    \preparation{
+        \step Alle Zutaten zu einem Teig vermischen und mit nassen Händen zu 8 Brötchen formen.
+        \step Im vorgeheizten Backofen bei Umluft 35 Minuten bei {\unit[160]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion[Gläser]{2}},
+    source = Etienne
+]{Walnuss-Tomaten-Pesto}\index{Walnuss-Tomaten-Pesto}\index{Pesto!Walnuss-Tomaten-Pesto}
+    \graph{
+        small=WalnussTomatenPesto_1,
+        big=WalnussTomatenPesto_0
+    }
+    \ingredients{
+        {\unit[100]{g}}    & Walnusskerne\\
+        {\unit[50]{g}}     & Parmesan\\
+        {\unit[200]{g}}    & Getrocknete Tomaten, in Öl eingelegt\\
+        1                  & Knoblauchzehe\\
+        {\unit[1]{EL}}     & Balsamico-Essig\\
+        {\unit[150]{g}}    & Olivenöl\\
+                           & Salz\\
+                           & Pfeffer
+    }
+    \preparation{
+        \step Die Walnusskerne anrösten und mit dem Parmesan fein hacken.
+        \step Getrocknete Tomaten und die Knoblauchzehe in feine Scheiben schneiden; zu den Walnüssen geben.
+        \step Balsamico-Essig dazu geben, vermischen und mit Salz und Pfeffer abschmecken; das Öl dazu geben.
+        \step Auf Nudeln oder Brot servieren; oder in abgekochte Gläschen abfüllen und mit Olivenöl bedecken.
+    }
+    \hint{%
+        Mit etwas Nudelwasser wird es geschmeidiger.
+    }
+\end{recipe}
+\end{document}

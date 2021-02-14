@@ -1,0 +1,42 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion[Blech]{1}},
+    source = Oma Tilda
+]{Donauwelle (Tilda)}\index{Donauwelle}
+    \graph{
+        small=DonauwelleTilda_1,
+        big=DonauwelleTilda_0
+    }
+    \ingredients{
+        {\unit[250]{g}}                    & Butter\\
+        {\unit[250]{g}}                    & Zucker\\
+        5                                  & Eier\\
+        {\unit[2]{P.}}                     & Vanille-Zucker\\
+        {\unit[380]{g}}                    & Mehl\\
+        etwas                              & Milch\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}     & Backpulver\\
+        {\unit[$1\nicefrac{1}{2}$]{EL}}    & Kakao\\
+        {\unit[2]{Gl.}}                    & Sauerkirschen\\
+        {\unit[1]{P.}}                     & Vanille-Pudding\\
+        {\unit[40]{g}}                     & Zucker\\
+        {\unit[600]{ml}}                   & Milch\\
+        {\unit[250]{g}}                    & Voll"-milch"-scho"-ko"-la"-de\\
+        etwas                              & Butter
+    }
+    \preparation{
+        \step Zucker, Butter, Eier und Vanille-Zucker schaumig rühren.
+        \step Mehl und Backpulver nach und nach unterrühren, bei Bedarf Milch dazugeben.
+        \step Die eine Hälfte des Teigs auf ein gefettetes Blech schmieren.
+        \step Die andere Hälfte mit Kakao mischen und auf den hellen Teig geben.
+        \step Die abgetropften Sauerkirschen dazu und bei {\unit[200]{\celsius}} ca. 30 Minuten backen, abkühlen lassen.
+        \step Abgekühlten Pudding darauf verteilen und dann mit geschmolzener Schokolade glasieren.
+    }
+\end{recipe}
+\end{document}

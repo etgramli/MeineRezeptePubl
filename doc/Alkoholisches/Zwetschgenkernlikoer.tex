@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion[ml]{700}},
+    source = Etienne
+]{Zwetschgenkernlikör}\index{Zwetschgenkernlikoer@Zwetschgenkernlikör}
+    \graph{
+        big=Zwetschgenkernlikoer_0
+    }
+    \ingredients{
+        {\unit[$\nicefrac{1}{2}$]{kg}}    & Zwetschgen, nur die Kerne\\
+        {\unit[700]{ml}}                  & Wodka (\unit[40]{\%})\\
+        {\unit[50]{g}}                    & Zucker
+    }
+    \preparation{
+        \step Zwetschgenkerne trocknen und mit dem Wodka in eine 1-Liter-Flasche füllen. 3-4 Monate ziehen lassen.
+        \step Den Likör auf \unit[25]{\%} bis \unit[30]{\%} verdünnen und mit dem Zucker abschmecken.
+        \step In saubere Flaschen umfüllen und kühl aufbewahren.
+    }
+    \hint{%
+        Schmeckt so ähnlich wie Amaretto.\\
+        Diesen Likör macht man am Besten gleichzeitig mit einem Zwetschgenkuchen oder -likör.
+    }
+\end{recipe}
+\end{document}

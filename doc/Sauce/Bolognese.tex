@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Bolognesesauce}\index{Lasagne!Bolognesesauce}\index{Bolognesesauce}
+    \graph{
+        big=Bolognesesauce_0
+    }
+    \ingredients{
+        1                     & Zwiebel\\
+        1                     & Knoblauchzehe\\
+        {\unit[2-3]{EL}}      & Öl\\
+        {\unit[150]{g}}       & Hackfleisch\\
+        {\unit[1]{Dose}}      & Tomaten, gehackt\\
+        {\unit[1]{Schuss}}    & Rotwein\\
+                              & Salz\\
+                              & Pfeffer\\
+                              & Thymian\\
+                              & Basilikum\\
+                              & Oregano
+    }
+    \preparation{
+        \step Zwiebel und Knoblauch klein schneiden und in Öl andünsten; Hackfleisch dazugeben und anbräunen.
+        \step Mit dem Rotwein ablöschen und bei kleiner Flamme etwa {\unit[20]{Minuten}} köcheln.
+        \step Mit Salz, Pfeffer und den Kräutern abschmecken und vom Herd nehmen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    bakingtime = {\unit[15]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Gegrillte Auberginen}\index{Gegrillte Auberginen}
+    \graph{
+        small=GegrillteAuberginen_1,
+        big=GegrillteAuberginen_0
+    }
+    \ingredients{
+        1                      & Aubergine\\
+                               & Olivenöl\\
+        {\unit[4]{Blätter}}    & Basilikum\\
+        etwas                  & Parmesan\\
+                               & Salz\\
+                               & \\
+                               &
+    }
+    \preparation{
+        \step Die Aubergine waschen und in ca. {\unit[1]{cm}} Scheiben schneiden.
+        \step Die Scheiben auf ein Backblech legen und von beiden Seiten mit Olivenöl bestreichen.
+        \step Bei Grillstufe im Ofen oder Mikrowelle auf höchster Schiene auf der ersten Seite ca. 8 Minuten grillen.
+        \step Scheiben umdrehen und weitere 7 Minuten grillen, bis beide Seiten gold- bis dunkelbraun sind.
+        \step Danach salzen, Parmesan darauf reiben und Basilikumblätter darüber schneiden; noch warm servieren.
+    }
+\end{recipe}
+\end{document}

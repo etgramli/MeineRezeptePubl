@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion[Lasagne]{1}},
+    source = Lili
+]{Bechamelsauce}\index{Lasagne!Bechamelsauce}\index{Bechamelsauce}
+    \graph{
+        big=Bechamelsauce_0
+    }
+    \ingredients{
+        {\unit[50]{g}}      & Butter\\
+        {\unit[50]{g}}      & Mehl\\
+        {\unit[500]{ml}}    & Milch und Sahne\\
+        {\unit[750]{ml}}    & Milch (alternativ)\\
+                            & Salz\\
+                            & Pfeffer\\
+                            & Muskat
+    }
+    \preparation{
+        \step Die Butter zergehen lassen. Dann die restlichen Zutaten dazu geben.
+        \step Unter ständigem Rühren bei kleiner Flamme kochen lassen.
+        \step So lange rühren, bis man eine nicht zu dickflüssige Sauce erhält.
+    }
+    \hint{%
+        Immer gut rühren!\\
+        Nur dezent würzen.
+    }
+\end{recipe}
+\end{document}

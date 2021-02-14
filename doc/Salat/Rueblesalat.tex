@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Rüblesalat}\index{Rueblesalat@Rüblesalat}
+    \graph{
+        big=Ruebensalat_0
+    }
+    \ingredients{
+        5                 & Rüben, groß\\
+        {\unit[2]{EL}}    & Mayonnaise\\
+        {\unit[2]{EL}}    & Schmand\\
+        {\unit[4]{EL}}    & Zitronensaft\\
+        {\unit[3]{EL}}    & Petersilie\\
+        {\unit[4]{EL}}    & Öl\\
+        {\unit[2]{TL}}    & Kurkuma/Curry\\
+                          & Salz
+    }
+    \preparation{
+        \step Rüben schälen, in eine Schale raspeln und zur Seite stellen.
+        \step Mayonnaise, Schmand, Zitronensaft und Petersilie vermischen und unter die Rüben geben.
+        \step Öl auf mittlerer Hitze erhitzen und den Kurkuma oder Curry darin rösten.
+        \step Das Öl über den Rüben verteilen und noch warm servieren.
+    }
+\end{recipe}
+\end{document}

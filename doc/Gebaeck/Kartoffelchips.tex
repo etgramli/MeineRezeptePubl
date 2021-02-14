@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[50]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion[Bleche]{2}},
+    source = Etienne
+]{Kartoffelchips}\index{Kartoffelchips}
+    \graph{
+        small=Kartoffelchips_1,
+        big=Kartoffelchips_0
+    }
+    \ingredients{
+        4                     & Kartoffeln, groß\\
+        {\unit[4-6]{EL}}      & Olivenöl\\
+        {\unit[2]{TL}}        & Paprikapulver\\
+        {\unit[2]{Prisen}}    & Salz
+    }
+    \preparation{
+        \step Kartoffeln gut waschen, nach Belieben schälen und mit einem Hobel in gleichmäßige Scheiben schneiden.
+        \step Die Scheiben 20-30 Minuten wässern; inzwischen das Öl mit dem Paprikapulver vermischen.
+        \step Die Kartoffelscheiben gut abtrocknen und mit Öl bestreichen, sie müssen nicht komplett bedeckt sein.
+        \step Im vorgeheizten Backofen ca. {\unit[30]{Min}} bei {\unit[180]{\celsius}} backen, bis die gewünschte Bräune erreicht ist; den Ofen regelmäßig öffnen, damit die Feuchtigkeit entweicht.
+        \step Die Chips auf Küchenkrepp legen und etwas salzen.
+    }
+    \hint{%
+        Lecker sind auch Minz-Chips mit 10 Minz-Blättern statt Paprikapulver.
+    }
+\end{recipe}
+\end{document}

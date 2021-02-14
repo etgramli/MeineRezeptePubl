@@ -1,0 +1,44 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[90]{Min}},
+    bakingtime = {\unit[40]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Hirse-Oliven-Auflauf}\index{Hirse-Oliven-Auflauf}
+    \graph{
+        small=HirseOlivenAuflauf_1,
+        big=HirseOlivenAuflauf_0
+    }
+    \ingredients{
+        {\unit[200]{g}}        & Hirse\\
+        {\unit[700]{ml}}       & Brühe\\
+        1                      & Knoblauchzehe\\
+        {\unit[2]{Stangen}}    & Lauch\\
+        1                      & Paprika, rot\\
+        {\unit[2]{EL}}         & Olivenöl\\
+        20                     & Oliven\\
+        3                      & Eier\\
+        {\unit[200]{ml}}       & Sahne und Milch\\
+        {\unit[50]{g}}         & Käse, gerieben\\
+                               & Muskatnuss\\
+                               & Pfeffer\\
+                               & Salz\\
+                               & Oregano\\
+                               & Thymian
+    }
+    \preparation{
+        \step Hirse in Gemüsebrühe 6~Minuten kochen lassen und 10~Minuten lang garen; Backofen vorheizen.
+        \step Paprika und Lauch putzen und in {\unit[1]{cm}} breite Ringe respektive Streifen schneiden.
+        \step Knoblauch schälen und würfeln; mit Lauch und Paprika in Olivenöl anbraten; Kräuter hinzufügen.
+        \step Oliven halbieren und mit dem Gemüse und Hirse mischen und in eine eingefettete Auflaufform geben.
+        \step Milch, Sahne und Gewürze verrühren, auf der Hirse verteilen und mit dem Käse bestreuen.
+        \step 35-40~Minuten backen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[100]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{3}},
+    source = Lili
+]{Kartoffel-Reispfanne mit Speck}\index{Kartoffel-Reispfanne mit Speck}
+    \graph{
+        small=KartoffelReisPfanneSpeck_1,
+        big=KartoffelReisPfanneSpeck_0
+    }
+    \ingredients{
+        1                                      & Zwiebel\\
+        {\unit[$1\nicefrac{1}{2}$]{Tassen}}    & Reis\\
+        3                                      & Kartoffeln, groß\\
+        {\unit[3]{Tassen}}                     & Wasser\\
+        {\unit[4]{Streifen}}                   & Bauchspeck\\
+        {\unit[3]{TL}}                         & Brühenpulver\\
+                                               & Salz\\
+                                               & Aromat\\
+                                               &
+    }
+    \preparation{
+        \step Die Zwiebel in Ringe schneiden und auf den Boden einer Auflaufform legen.
+        \step Reis darüber verteilen und das Wasser mit der Brühe dazu gießen, bis er gerade bedeckt ist.
+        \step Kartoffeln schälen, in Scheiben dünne schneiden und auf den Reis schichten. Dabei jede Schicht würzen.
+        \step Den Bauchspeck bis zur Schwarte einschneiden und darauf legen.
+        \step Alufolie über die Auflaufform spannen und 75 Minuten im Backofen backen.
+        \step Die Alufolie entfernen und für die restliche Zeit backen, bis der Speck bräunt.
+    }
+    \hint{%
+        Wenn der Speck knusprig werden soll den Grill einschalten, sobald die Alufolie weg ist.
+    }
+\end{recipe}
+\end{document}

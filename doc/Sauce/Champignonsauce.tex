@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Champignonsauce}\index{Champignonsauce}
+    \graph{
+        small=Champignonsauce_1,
+        big=Champignonsauce_0
+    }
+    \ingredients{
+        {\unit[250]{g}}     & Champignons\\
+        1                   & Zwiebel\\
+        {\unit[200]{ml}}    & Sahne\\
+        {\unit[1]{EL}}      & Petersilie\\
+                            & Pfeffer\\
+                            & Salz
+    }
+    \preparation{
+        \step Die Zwiebel in kleine Würfel schneiden und kurz andünsten.
+        \step Die Champignons in dünne Scheiben schneiden, dazu geben und dünsten bis sie bräunen.
+        \step Die Sahne dazu leeren und mit Salz und Pfeffer abschmecken; zum Schluss die Petersilie dazu geben.
+    }
+    \hint{%
+        Die Sauce passt sehr gut zu Rösti oder Nudeln.
+    }
+\end{recipe}
+\end{document}

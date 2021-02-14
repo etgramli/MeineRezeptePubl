@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[12]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion[Bleche]{2}},
+    source = Oma Rita
+]{Lebkuchen nach Rita}\index{Lebkuchen nach Rita}
+    \graph{
+        big=LebkuchenRita_0
+    }
+    \ingredients{
+        {\unit[350]{g}}                   & Mehl\\
+        {\unit[250]{g}}                   & Zucker\\
+        2                                 & Eier\\
+        {\unit[$\nicefrac{1}{4}$]{TL}}    & Natron\\
+        {\unit[1]{P.}}                    & Lebkuchengewürz\\
+        {\unit[65]{g}}                    & Honig\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Zitroenaroma\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Orangenaroma\\
+        {\unit[50]{g}}                    & Puderzucker\\
+        {\unit[1]{EL}}                    & Wasser, heiß
+    }
+    \preparation{
+        \step Trockene Zutaten erst vermischen, dann Eier und Honig dazu geben.
+        \step So lange kneten bis geschmeidiger Teig entsteht, {\unit[3-4]{mm}} dick ausrollen und Herzen ausstechen.
+        \step Mit Abstand auf ein Backblech legen; bei {\unit[180]{\celsius}} 10-12~Minuten backen.
+        \step Puderzucker mit Wasser glatt rühren und auf die heißen Plätzchen pinseln.
+    }
+\end{recipe}
+\end{document}

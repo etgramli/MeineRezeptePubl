@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion = {\portion[Portionen]{4}},
+    source = Lili
+]{Kaffeeeis}\index{Kaffeeeis}
+    \graph{
+        small=Kaffeeeis_1,
+        big=Kaffeeeis_0
+    }
+    \ingredients{
+        {\unit[4]{TL}}     & Kaffee, löslich\\
+        {\unit[7]{EL}}     & Erythrit \\
+        {\unit[1]{B.}}     & Sahne\\
+        {\unit[1]{TL}}     & Johannisbrotkernmehl\\
+        {\unit[50]{ml}}    & Sojamilch\\
+        2                  & Eigelb
+    }
+    \preparation{
+        \step Den Kaffee in etwas heißem Wasser auflösen, Erythrit dazu geben.
+        \step Mit den restlichen Zutaten vermischen und in der Eismaschine zubereiten.
+    }
+\end{recipe}
+\end{document}

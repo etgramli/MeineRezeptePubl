@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[25]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Tortilla mit Paprika}\index{Tortilla mit Paprika}
+    \graph{
+        big=TortillaMitPaprika_0
+    }
+    \ingredients{
+        4                     & Eier\\
+        2                     & Paprikaschoten, rot\\
+        1                     & Zwiebel\\
+        {\unit[1]{Schuss}}    & Sprudel\\
+                              & Salz\\
+                              & Pfeffer
+    }
+    \preparation{
+        \step Paprika waschen und in Streifen schneiden, Zwiebeln würfeln; beides in heißem Öl weich braten.
+        \step Eier und Sprudel in einer Schüssel verquirlen und würzen; über die Paprika gießen und stocken lassen.
+    }
+\end{recipe}
+\end{document}

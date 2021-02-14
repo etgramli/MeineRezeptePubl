@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[35]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Lili
+]{Schneewittchenkuchen}\index{Schneewittchenkuchen}
+    \graph{
+        small=Schneewittchenkuchen_1,
+        big=Schneewittchenkuchen_0
+    }
+    \ingredients{
+        3                                  & Eigelb\\
+        {\unit[100]{g}}                    & Butter\\
+        {\unit[150]{g}}                    & Zucker\\
+        {\unit[1]{P.}}                     & Vanille-Zucker\\
+        {\unit[200]{g}}                    & Mehl\\
+        {\unit[$2\nicefrac{1}{2}$]{TL}}    & Backpulver\\
+        {\unit[2]{EL}}                     & Milch\\
+        {\unit[1]{EL}}                     & Kakao\\
+        {\unit[1]{Glas}}                   & Sauerkirschen\\
+        {\unit[250]{g}}                    & Quark\\
+        {\unit[1]{P.}}                     & Vanille-Zucker\\
+        {\unit[$\nicefrac{1}{4}$]{l}}      & Sahne, süß\\
+        {\unit[2]{P.}}                     & Sahnesteif\\
+        {\unit[2]{EL}}                     & Puderzucker\\
+        {\unit[1]{P.}}                     & Tortenguss\\
+        {\unit[$\nicefrac{1}{4}$]{l}}      & Kirschsaft
+    }
+    \preparation{
+        \step Teig für Boden wie Marmorkuchen zubereiten, in Springform verteilen, Kirschen darauf legen.
+        \step Im vorgeheizten Backofen 35 Minuten bei {\unit[180]{\celsius}} backen und abkühlen lassen.
+        \step Sahne steif schlagen, mit Quark und Vanille-Zucker vermischen und auf dem Boden verstreichen.
+        \step Tortenguss zubereiten und noch heiß auf den Kuchen geben; 2 Stunden kühl stellen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[80]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion[Gläser]{6}},
+    source = Lili
+]{Quittengelee}\index{Quittengelee}
+    \graph{
+        small=Quittengelee_1,
+        big=Quittengelee_0
+    }
+    \ingredients{
+        {\unit[$2\nicefrac{1}{2}$]{kg}}    & Quitten\\
+        {\unit[300]{ml}}                   & Wasser\\
+        {\unit[500]{g}}                    & Gelierzucker
+    }
+    \preparation{
+        \step Quitten in Schnitze schneiden, Wasser dazu tun und eine halbe Stunde in einem Schnellkochtopf kochen.
+        \step Über Nacht abkühlen lassen. Quitten durch ein Sieb drücken und den Saft mit Gelierzucker aufkochen.
+        \step In Gläser abfüllen und auf dem Kopf stehend abkühlen lassen.
+    }
+\end{recipe}
+\end{document}

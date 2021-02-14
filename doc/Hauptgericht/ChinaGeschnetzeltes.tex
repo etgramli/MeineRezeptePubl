@@ -1,0 +1,43 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[15]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{China-Geschnetzeltes}\index{China-Geschnetzeltes}
+    \graph{
+        small=ChinaGeschnetzeltes_1,
+        big=ChinaGeschnetzeltes_0
+    }
+    \ingredients{
+        2                                 & Zwiebeln\\
+        2                                 & Knoblauchzehen\\
+        2-3                               & Gemüsepaprika\\
+        1-2                               & Rüble\\
+        1                                 & Kohlrabi\\
+        3-4                               & Hähnchenbrustfilet\\
+        {\unit[200]{g}}                   & Grüne Bohnen\\
+                                          & Distelöl\\
+                                          & Sesamöl\\
+                                          & Sojasauce\\
+        etwas                             & Wasser\\
+        {\unit[1]{TL}}                    & Curry-Pulver\\
+        {\unit[1]{Msp.}}                  & Ingwer-Pulver\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Sambal Olek
+    }
+    \preparation{
+        \step Öl in der Pfanne erhitzen, geschnetzeltes Gemüse dazu geben und bei Stufe 2 schmoren lassen.
+        \step Immer wieder umrühren. Wenn das Gemüse etwas weich wird, ein bisschen Wasser dazu geben.
+        \step Fleisch in Würfel schneiden und mit Soja-Sauce beträufeln und ein paar Minuten stehen lassen.
+        \step Dann zum Gemüse geben und mitbraten; mit Soja-Sauce und den Gewürzen abschmecken.
+    }
+    \hint{%
+        Basmati-Reis schmeckt sehr gut dazu.
+    }
+\end{recipe}
+\end{document}

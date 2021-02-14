@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[10]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Ratatouille}\index{Ratatouille}
+    \graph{
+        small=Ratatouille_1,
+        big=Ratatouille_0
+    }
+    \ingredients{
+        {\unit[400]{g}}     & Hackfleisch\\
+        2                   & Zwiebeln, klein\\
+        1                   & Knoblauchzehe\\
+        2                   & Auberginen, klein\\
+        {\unit[1]{Dose}}    & Gehackte Tomaten\\
+        etwas               & Wasser\\
+                            & Oregano\\
+                            & Thymian\\
+                            & Basilikum\\
+                            & Rosmarin\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Hackfleisch in Olivenöl anbraten, klein gewürfelte Zwiebel und Knoblauch und Gemüse dazu geben.
+        \step Tomaten und etwas Wasser dazu und mit den Kräutern würzen.
+        \step Im Schnellkochtopf ca. 10 Minuten kochen, dann mit frischen Kräutern, Salz und Pfeffer abschmecken.
+    }
+    \hint{%
+        Abwandlung: statt Hackfleisch klein gewürfeltes Putenfleisch verwenden.
+    }
+\end{recipe}
+\end{document}

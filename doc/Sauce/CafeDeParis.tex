@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[50]{Min}},
+    portion = {\portion{4}},
+    source = Etienne
+]{Café de Paris}\index{Cafe de Paris@Café de Paris}
+    \graph{
+        small=CafeDeParis_1,
+        big=CafeDeParis_0
+    }
+    \ingredients{
+        3                    & Schalotten\\
+        {\unit[1]{Zweig}}    & Thymian, frisch\\
+        {\unit[1]{Zweig}}    & Rosmarin, frisch\\
+        {\unit[1]{EL}}       & Tomatenmark\\
+        {\unit[100]{ml}}     & Weinbrand / Whisky, trocken\\
+        {\unit[50]{ml}}      & Sherry, süß / Port\\
+        {\unit[500]{ml}}     & Sahne\\
+                             & Brühe\\
+                             & Salz\\
+                             & Pfeffer
+    }
+    \preparation{
+        \step Zwiebeln fein hacken, in Butter dünsten, Rosmarin und Thymian dazu und ebenfalls kurz anschwitzen.
+        \step Tomatenmark dazu geben, rösten und mit dem Weinbrand und Sherry ablöschen.
+        \step Die Sauce reduzieren, bis fast keine Flüssigkeit mehr vorhanden ist.
+        \step Die Hitze reduzieren, mit Sahne ablöschen und etwa 25 Minuten köcheln lassen.
+        \step Abkühlen lassen und mit dem Pürierstab mixen; falls sie zu dickflüssig ist, kann man mit Brühe verdünnen.
+        \step Mit Salz und Pfeffer abschmecken und noch warm servieren.
+    }
+    \hint{%
+        Sie passt sehr gut zu gebratenem oder gegrilltem Fleisch und Kartoffeln.\\
+        Abgekühlt wird sie sehr steif.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[40]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{2}},
+    source={Oma Tilda}
+]{Satarasch}\index{Satarasch}
+    \graph{
+        big=Satarasch_0
+    }
+    \ingredients{
+        {\unit[350]{g}}    & Paprika\\
+        2                  & Zwiebeln, groß\\
+        2                  & Tomaten, groß\\
+        1                  & Knoblauchzehe\\
+                           & Salz\\
+                           & Pfeffer\\
+                           & Kräuter
+    }
+    \preparation{
+        \step Paprika entkernen, mit Zwiebeln in Würfel schneiden und mit dem gepresstem Knoblauch andünsten.
+        \step Tomaten dazu geben und einkochen. Abschmecken und als Beilage oder mit Brot oder Reis servieren.
+    }
+    \hint{%
+        Dazu passen Brot und Reis.
+    }
+\end{recipe}
+\end{document}

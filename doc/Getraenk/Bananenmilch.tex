@@ -1,0 +1,25 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Bananenmilch}\index{Bananenmilch}
+    \graph{
+        big=Bananenmilch_0
+    }
+    \ingredients{
+        1                                & Banane, braun\\
+        {\unit[$\nicefrac{1}{2}$]{l}}    & Milch\\
+        {\unit[1]{TL}}                   & Kakao
+    }
+    \preparation{
+        \step Die Banane schälen und in groben Stücken in einen Messbecher legen; Kakao und die Milch dazu geben.
+        \step Mit einem Mixstab so lange verquirlen, bis keine Stücke mehr vorhanden sind.
+    }
+\end{recipe}
+\end{document}

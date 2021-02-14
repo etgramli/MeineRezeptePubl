@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[25-30]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Lili
+]{Linzer Torte}\index{Linzer Torte}
+    \graph{
+        big=LinzerTorte_0
+    }
+    \ingredients{
+        {\unit[170]{g}}                   & Haselnüsse\\
+        {\unit[150]{g}}                   & Mehl\\
+        {\unit[60]{g}}                    & Zucker\\
+        1                                 & Ei\\
+        {\unit[1]{EL}}                    & Vanillezucker\\
+        {\unit[1]{TL}}                    & Zimt\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Nelken\\
+        {\unit[1]{TL}}                    & Backpulver\\
+        {\unit[100]{g}}                   & Butter, kalt\\
+        {\unit[300]{g}}                   & Himbeermarmelade
+    }
+    \preparation{
+        \step Haselnüsse rösten (höchstens {\unit[150]{\celsius}}), bis sie duften, abkühlen lassen und dann mahlen.
+        \step Mehl, Zucker, Ei, Gewürze, Butter und Nüsse zu einem glatten Teig kneten; bei Bedarf kalt stellen.
+        \step $\nicefrac{2}{3}$ des Teigs in einer Springform ausrollen. Den Rest in gleichmäßige Streifen schneiden.
+        \step Konfitüre auf dem Boden verstreichen, die Streifen gitterförmig darauf verteilen.
+        \step Den Kuchen 25 bis 30 Minuten bei {\unit[180]{\celsius}} backen.
+    }
+    \hint{%
+        Mit einer Frischhaltefolie kann man den Teig einfach, ohne kleben auf dem Boden verteilen.
+    }
+\end{recipe}
+\end{document}

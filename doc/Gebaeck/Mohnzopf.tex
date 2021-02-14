@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[35]{Min}},
+    bakingtemperature = {\unit[170]{\celsius}},
+    source = Lili
+]{Mohnzopf}\index{Mohnzopf}
+    \graph{
+        big=Mohnzopf_0,
+    }
+    \ingredients{
+        Teig:                             & \\
+        {\unit[375]{g}}                   & Mehl\\
+        {\unit[20]{g}}                    & Hefe\\
+        {\unit[125]{ml}}                  & Milch, lauwarm\\
+        {\unit[1]{P.}}                    & Vanille-Zucker\\
+        {\unit[50]{g}}                    & Zucker\\
+        {\unit[50]{g}}                    & Butter, warm\\
+        1                                 & Ei\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        etwas                             & Zitronenschale\\
+        {\unit[1]{P.}}                    & Mohnback\\
+                                          & \\
+        Guss:                             & \\
+                                          & Hagelzucker\\
+                                          & Sahne
+    }
+    \preparation{
+        \step Alle Teigzutaten 15 Minuten lang im Brotbackautomaten kneten lassen und 1 Stunde gehen lassen.
+        \step Teig auf einem Backblech zum Rechteck ausrollen; längs halbieren.
+        \step Mohnback auf dem Teig verteilen, längs aufrollen und beide miteinander verdrehen.
+        \step Auf dem Bakblech 40 Minuten lang gehen lassen; mit Sahne bestreichen und Hagelzucker darauf streuen.
+        \step Dann bei {\unit[170]{\celsius}} im vorgeheizten ca. 35 Minuten backen.
+    }
+\end{recipe}
+\end{document}

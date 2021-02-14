@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion[Glas]{1}},
+    source = Etienne
+]{Eingemachte Chilis}\index{Eingemachte Chilis}
+    \graph{
+        big=EingemachteChili_0
+    }
+    \ingredients{
+        4                   & Chilischoten\\
+        2                   & Knoblauchzehen\\
+        {\unit[500]{ml}}    & Wasser\\
+        {\unit[150]{ml}}    & Essig\\
+        {\unit[35]{g}}      & Zucker\\
+        {\unit[20]{g}}      & Salz
+    }
+    \preparation{
+        \step Wasser, Essig, Salz und Zucker in einem Topf zum Kochen bringen.
+        \step Die Chilischoten putzen, halbieren und die Kerne entfernen; die Knoblauchzehen schälen.
+        \step Die Schoten klein schneiden und mit dem Knoblauch in ein Glas füllen.
+        \step Das Wasser-Gemisch dazu in da Glas füllen, zumachen und nochmals abkochen.
+    }
+\end{recipe}
+\end{document}

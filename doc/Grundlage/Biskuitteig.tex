@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[30-35]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion[Böden]{2-3}},
+    source = Oma Rita
+]{Biskuitteig}\index{Biskuitteig}\index{Teig!Biskuitteig}
+    \graph{
+        big=Biskuitboden_0
+    }
+    \ingredients{
+        5                  & Eier\\
+        {\unit[170]{g}}    & Mehl\\
+        {\unit[1]{TL}}     & Backpulver\\
+        {\unit[250]{g}}    & Zucker
+    }
+    \preparation{
+        \step Eier und Zucker ein paar Minuten verrühren; Mehl und Backpulver kurz unterrühren.
+        \step Teig in eine eingefettete Springform füllen, im vorgeheizten Backofen 40~Minuten bei {\unit[160]{\celsius}} backen.
+    }
+    \hint{%
+        Biskuitboden erst am anderen Tag durchschneiden.
+    }
+\end{recipe}
+\end{document}

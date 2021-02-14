@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[25]{Min}},
+    bakingtemperature = {\unit[175]{\celsius}},
+    portion = {\portion[Stück]{20}},
+    source = Lili
+]{Elisenlebkuchen}\index{Elisenlebkuchen}
+    \graph{
+        small=Elisenlebkuchen_1,
+        big=Elisenlebkuchen_0
+    }
+    \ingredients{
+        3                                 & Eier\\
+        {\unit[100]{g}}                   & Zucker\\
+        {\unit[1]{Prise}}                 & Salz\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Nelken, gemahlen\\
+        {\unit[1]{TL}}                    & Zimt, gemahlen\\
+        {\unit[2]{Tr.}}                   & Bittermandelöl\\
+        {\unit[125]{g}}                   & Mandeln, gemahlen\\
+        {\unit[125]{g}}                   & Mandeln, gehackt\\
+        {\unit[125]{g}}                   & Zitronat\\
+        {\unit[125]{g}}                   & Orangeat\\
+                                          & Oblaten
+    }
+    \preparation{
+        \step Eier, Zucker, Salz schaumig rühren; die restlichen Zutaten dazu geben und gut vermengen.
+        \step Teig fingerdick auf Oblaten streichen und bei {\unit[175]{\celsius}} ca. 20-25 Minuten backen.
+    }
+    \hint{%
+        Wunderbares Rezept\newline
+        Keto-Version: ohne Zitronat und Orangeat und nur 2 Eier nehmen!
+    }
+\end{recipe}
+\end{document}

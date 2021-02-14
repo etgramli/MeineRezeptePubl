@@ -1,0 +1,26 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime={\unit[1]{h}},
+    source={Oma Tilda}
+]{Kremele / Grieben}\index{Grieben}\index{Kremele}
+    \graph{
+        small=Kremele_1,
+        big=Kremele_0
+    }
+    \ingredients{
+        {\unit[1]{kg}}    & Speck, fett, grün\\
+                          & Wasser
+    }
+    \preparation{
+        \step Speck säubern und in 3x3 cm große Würfel zerteilen; in einen hohen Topf geben und mit Wasser bedecken.
+        \step So lange kochen bis das Wasser verdampft ist, währenddessen immer wieder umrühren.
+        \step Später läuft Fett raus, dann bräunen lassen, bis sie die gewünschte Bräunung erreicht haben. Dann in einem Metallsieb über einem Topf abtropfen lassen.
+        \step Wenn sie abgekühlt sind: Schmalz in Einmachgläser und die Grieben gesalzen in Gläser abfüllen.
+    }
+\end{recipe}
+\end{document}

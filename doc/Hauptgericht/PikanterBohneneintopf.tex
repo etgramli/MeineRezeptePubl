@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[8]{Min}},
+    bakingtime = {\unit[8]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Pikanter Bohneneintopf}\index{Pikanter Bohneneintopf}
+    \graph{
+        big=PikanterBohneneintopf_0
+    }
+    \ingredients{
+        1                   & Knoblauchzehe\\
+        {\unit[1]{EL}}      & Öl\\
+        {\unit[1]{EL}}      & Mehl\\
+        {\unit[1]{Dose}}    & Bohnen\\
+        etwas               & Wasser\\
+        {\unit[1]{TL}}      & Paprikapulver, süß\\
+                            & Salz\\
+                            & Pfeffer\\
+        opt.                & Pfefferbeißer / Bierknacker
+    }
+    \preparation{
+        \step Die Knoblauchzehe durch eine Presse drücken und mit dem Mehl in Öl andünsten.
+        \step Sobald das Mehl duftet das Paprikapulver dazugeben und gleich mit etwas Wasser ablöschen.
+        \step Die Bohnen dazugeben und aufkochen; dann evt. die Würstchen dazugeben.
+    }
+\end{recipe}
+\end{document}

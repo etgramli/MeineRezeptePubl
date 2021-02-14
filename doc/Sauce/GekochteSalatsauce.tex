@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion[l]{1}},
+    source = Lili
+]{Gekochte Salatsauce}\index{Gekochte Salatsauce}
+    \graph{
+        small=GekochteSalatsauce_1,
+        big=GekochteSalatsauce_0
+    }
+    \ingredients{
+        {\unit[1]{Tasse}}     & Wasser\\
+        {\unit[1]{EL}}        & Salz\\
+        {\unit[1]{TL}}        & Zucker\\
+        1                     & Zwiebel\\
+        2                     & Knoblauchzehen\\
+        {\unit[1]{Tasse}}     & Essig\\
+        {\unit[1]{EL}}        & Senf\\
+        1                     & Ei\\
+        {\unit[1]{EL}}        & Kräuter\\
+        {\unit[1]{Prise}}     & Pfeffer\\
+        {\unit[3]{Tassen}}    & Distelöl
+    }
+    \preparation{
+        \step Wasser, Salz, Zucker, Zwiebel und Knoblauchzehen 10-15 Minuten köcheln, auskühlen lassen.
+        \step Essig, Senf, Ei, Kräuter und Pfeffer dazu geben und vermixen.
+        \step Öl langsam dazu laufen lassen und so lange pürieren bis die Sauce ganz hell ist.
+        \step In eine saubere Flasche abfüllen und im Kühlschrank aufbewahren.
+    }
+    \hint{%
+        Statt Ei geht auch: {\unit[50]{g}} Sojamilch.\newline
+        Eine Tasse entspricht {\unit[150]{g}} Wasser, Öl, ...
+    }
+\end{recipe}
+\end{document}

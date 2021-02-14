@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[15]{Min}},
+    bakingtemperature = {\unit[150]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Ketogene Lasagneblätter}\index{Lasagne!Ketogene Lasagneblätter}
+    \graph{
+        small=KetogeneLasagneBlaetter_1,
+        big=KetogeneLasagneBlaetter_0
+    }
+    \ingredients{
+        4                   & Eier\\
+        {\unit[125]{g}}     & Frischkäse\\
+        {\unit[5]{EL}}      & Flohsamenschalen\\
+        {\unit[1]{TL}}      & Oregano
+    }
+    \preparation{
+        \step Eier schaumig schlagen und die restlichen Zutaten gut unterrühren.
+        \step Den Teig gleichmäßig auf ein Backblech mit Backpapier verstreichen.
+        \step Im vorgeheizten Backofen 13-15~Minuten bei {\unit[150]{\celsius}} backen.
+        \step Abkühlen lassen und mit einem Pizzaschneider in passende Platten schneiden.
+    }
+\end{recipe}
+\end{document}

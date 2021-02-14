@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[10-15]{Min}},
+    portion = {\portion{6}},
+    source = Lili
+]{Grießklößchen}\index{Griesskloesschen@Grießklößchen}
+    \graph{
+        big=Grieskloesschen_0
+    }
+    \ingredients{
+        {\unit[150]{g}}                   & Milch\\
+        {\unit[40]{g}}                    & Butter\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        {\unit[2]{Prisen}}                & Muskat\\
+        {\unit[80]{g}}                    & Grieß\\
+        1                                 & Ei\\
+                                          & Petersilie\\
+                                          & Pfeffer
+    }
+    \preparation{
+        \step Milch, Butter, Salz und Muskat 3~Minuten bei Stufe~1 auf {\unit[90]{\celsius}} erhitzen.
+        \step Grieß dazugeben erst 10~Sekunden auf Stufe~4 vermischen.
+        \step $2\nicefrac{1}{2}$~Minuten auf Stufe~3 bei {\unit[100]{\celsius}} garen und dann erkalten lassen.
+        \step Ei und Petersilie 10~Sekunden bei Stufe~3 unterrühren.
+        \step Klößchen formen und in siedender Brühe 10-15~Minuten ziehen lassen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[8]{Min}},
+    bakingtemperature = {\unit[220]{\celsius}},
+    source = Lili
+]{Biskuitroulade}\index{Biskuitroulade}
+    \graph{
+        big=Biskuitroulade_0
+    }
+    \ingredients{
+            6                   & Eigelbe\\
+            4                   & Eiklar\\
+            {\unit[90]{g}}      & Mehl\\
+            {\unit[90]{g}}      & Zucker\\
+            {\unit[1]{Msp.}}    & Salz\\
+            etwas               & Zitronenschale\\
+            {\unit[400]{ml}}    & Sahne\\
+                                & Obst\\
+                                &
+    }
+    \preparation{
+        \step Eiweiß zu Schnee schlagen, dabei den Zucker einrieseln lassen.
+        \step Eigelb mit {\unit[1]{EL}} Zucker, Salz und geriebene Zitronenschale  ein paar Minuten verrühren.
+        \step Eischnee vorsichtig unter Eigelbcreme unterheben; das Mehl darauf sieben und unterheben.
+        \step Teig auf ein Backblech mit Backpapier geben und glattstreichen.
+        \step Bei {\unit[220]{\celsius}} im vorgeheizten Backofen 7-8 Minuten backen.
+        \step Währenddessen Obst zerkleinern und zuckern, Sahne schlagen und vermischen.
+        \step Die Roulade auf ein feuchtes Tuch stürzen, das Backpapier sofort abziehen, mit Obstsahne bestreichen und aufrollen.
+    }
+    \hint{%
+        Biskuitboden erst am anderen Tag durchschneiden!
+    }
+\end{recipe}
+\end{document}

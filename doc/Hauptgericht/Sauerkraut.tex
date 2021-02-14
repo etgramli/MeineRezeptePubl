@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion{4}},
+    source = Oma Tilda
+]{Sauerkraut / Linsen}\index{Sauerkraut}\index{Linsen}
+    \graph{
+        big=Sauerkraut_0
+    }
+    \ingredients{
+        {\unit[500]{g}}       & Sauerkraut, oder\\
+        {\unit[1]{Dose}}      & Linsen\\
+        {\unit[1]{Schuss}}    & Öl\\
+        {\unit[2]{EL}}        & Mehl\\
+        1                     & Knoblauchzehe\\
+        {\unit[1]{TL}}        & Paprikapulver\\
+        {\unit[250]{ml}}      & Brühe\\
+        opt.                  & Bauchspeck, geräuchert
+    }
+    \preparation{
+        \step Öl im Topf mit Mehl anschwitzen. Den Knoblauch zerquetschen, dazu geben und dünsten.
+        \step Paprikapulver dazu geben, kurz anrösten und mit Brühe ablöschen.
+        \step Sauerkraut oder Linsen abtropfen, zu den anderen Zutaten geben und vermischen.
+        \step Mindestens eine halbe Stunde, optional mit Bauchspeck, köcheln.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,47 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[200]{\celsius}},
+    portion = {\portion{3}},
+    source = Lili
+]{Vollkornbuchteln mit Käsefüllung}\index{Vollkornbuchteln mit Kaesefüllung@Vollkornbuchteln mit Käsefüllung}
+    \graph{
+        big=VollkornBuchteln_0
+    }
+    \ingredients{
+        Teig:                             & \\
+        {\unit[300]{g}}                   & Vollkornmehl\\
+        {\unit[1]{TL}}                    & Salz\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Majoran\\
+        1                                 & Ei\\
+        {\unit[2]{EL}}                    & Öl\\
+        {\unit[$\nicefrac{1}{8}$]{l}}     & Buttermilch\\
+        etwas                             & Butter\\
+                                          & Hefe\\
+        Füllung:                          & \\
+        {\unit[80]{g}}                    & Gouda\\
+        {\unit[80]{g}}                    & Appenzeller\\% / Gruyère\\
+        {\unit[80]{g}}                    & Kräuterfrischkäse\\
+        {\unit[100]{g}}                   & Schlagsahne\\
+        1                                 & Zwiebel\\
+                                          & Schinken\\
+                                          & Kresse
+    }
+    \preparation{
+        \step Aus den Mehl und Gewürzen, Öl, Ei und Buttermilch und Hefe einen glatten Hefeteig kneten.
+        \step Zudecken und an einen warmen Ort stellen; gehen lassen bis er doppelt so groß ist.
+        \step Käse reiben und mit dem Frischkäse vermischen, Schinken und Zwiebeln würfeln und unter mischen.
+        \step Den Teig nochmals durchkneten, in 6 Stücke teilen, in Fladen formen, füllen und zu Brötchen formen.
+        \step Mit der Naht nach unten auf eine eingebutterte, ofenfeste Form legen.
+        \step Sahne zugeben und 30~Minuten bei {\unit[200]{\celsius}} im vorgeheizten Ofen backen.
+    }
+    \hint{%
+        Dazu passen Kräuter- oder Tomatensauce und grüner Salat.
+    }
+\end{recipe}
+\end{document}

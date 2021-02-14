@@ -1,0 +1,27 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[2]{Min}},
+    portion = {\portion[Glas]{1}},
+    source = Etienne
+]{Pommesgewürz}\index{Pommesgewuerz@Pommesgewürz}
+    \graph{
+        big=Pommesgewuerz_0
+    }
+    \ingredients{
+        {\unit[8]{EL}}    & Salz\\
+        {\unit[2]{EL}}    & Paprikapulver, scharf\\
+        {\unit[2]{TL}}    & Kurkuma
+    }
+    \preparation{
+        \step Zutaten vermischen und in ein Gläschen mit Streu-Verschluss füllen. Trocken lagern.
+    }
+    \hint{%
+        Kann man auch gut für Chips verwenden.
+    }
+\end{recipe}
+\end{document}

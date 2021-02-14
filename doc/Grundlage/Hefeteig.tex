@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    source = Lili
+]{Hefeteig (Schnell)}\index{Hefeteig (Schnell)}\index{Teig!Hefeteig (Schnell)}
+    \graph{
+        big=Hefeteig_0
+    }
+    \ingredients{
+        {\unit[300]{g}}                       & Mehl\\
+        {\unit[175]{ml}}                      & Wasser, kalt\\
+        {\unit[2]{EL}}                        & Olivenöl\\
+        {\unit[1]{TL}}                        & Salz\\
+        {\unit[$\nicefrac{1}{2}$]{Würfel}}    & Hefe
+    }
+    \preparation{
+        \step Zutaten verkneten, und 20 Minuten an einem warmen Ort ruhen lassen.
+    }
+    \hint{%
+        Teig ist prima für Pizza oder Zwiebelkuchen!
+    }
+\end{recipe}
+\end{document}

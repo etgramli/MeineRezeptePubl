@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion[Glas]{1}},
+    source = Etienne
+]{Eingelegte Kirschen}\index{Eingelegte Kirschen}
+    \graph{
+        small=EingelegteKirschen_1,
+        big=EingelegteKirschen_0
+    }
+    \ingredients{
+        {\unit[80]{g}}                    & Kirschen\\
+        {\unit[100]{ml}}                  & Kirschsaft\\
+        {\unit[1]{EL}}                    & Zucker\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Zimt\\
+        1                                 & Sternanis\\
+        4                                 & Nelken\\
+        {\unit[100]{ml}}                  & Whisky, sherryfassgereift
+    }
+    \preparation{
+        \step Die Kirschen im Saft, Gewürzen und Zucker abkochen und kurz abkühlen lassen.
+        \step Kirschen abtropfen lassen, in ein steriles Einmachglas füllen, mit Whisky bedecken und im Dunkeln lagern.
+    }
+    \hint{%
+        Sehr intensiv, nächstes mal mehr Kirschen nehmen.\newline
+        Passt sehr gut heiß auf Eis.
+    }
+\end{recipe}
+\end{document}

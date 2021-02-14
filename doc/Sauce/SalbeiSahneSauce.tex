@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion[Portionen]{2}},
+    source = Etienne
+]{Salbei-Sahne-Sauce}\index{Salbei-Sahne-Sauce}
+    \graph{
+        big=SalbeiSahneSauce_0
+    }
+    \ingredients{
+        6                   & Salbeiblätter\\
+        {\unit[2]{EL}}      & Butter\\
+        {\unit[250]{ml}}    & Sahne\\
+        etwas               & Parmesan\\
+                            & Salz\\
+                            & Pfeffer\\
+                            & Muskat
+    }
+    \preparation{
+        \step Die Salbeiblätter in Streifen schneiden, in der Butter kurz anschwitzen und die Sahne dazu geben.
+        \step Die Sauce etwas einkochen und mit Parmesan, Salz, großzügig Pfeffer und Muskat abschmecken.
+    }
+    \hint{%
+        Passt gut zu Fisch!
+    }
+\end{recipe}
+\end{document}

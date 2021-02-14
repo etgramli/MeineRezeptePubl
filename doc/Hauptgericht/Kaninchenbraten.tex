@@ -1,0 +1,37 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{h}},
+    bakingtime = {\unit[2]{h}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{6}},
+    source = Oma Rita
+]{Kaninchenbraten}\index{Kaninchenbraten}
+    \graph{
+        big=Kaninchenbraten_0
+    }
+    \ingredients{
+        1                    & Kaninchen (Teile)\\
+        1                    & Zwiebel\\
+        1                    & Knoblauchzehe\\
+        {\unit[1]{EL}}       & Rosmarin\\
+        {\unit[1]{EL}}       & Thymian\\
+        {\unit[1]{TL}}       & Pfeffer, schwarz, grob\\
+        {\unit[2]{EL}}       & Öl\\
+        {\unit[1]{EL}}       & Weinbrand (Cognac)\\
+        $\nicefrac{1}{2}$    & Zitrone (nur Saft)\\
+        {\unit[200]{ml}}     & Brühe
+    }
+    \preparation{
+        \step Die Kaninchenteile in Knoblauch, Rosmarin, Thymian, Pfeffer, Öl, Weinbrand und Zitronensaft würzen.
+        \step Die Teile einlegen und an einem kühlen Ort über Nacht lagern.
+        \step Die Kaninchenteile salzen und pfeffern, in heißem Öl abraten und raus nehmen.
+        \step Die Zwiebel im selben Öl dünsten und mit Brühe ablöschen.
+        \step Kaninchen und Bratensauce in eine Schale tun und mit Deckel im Backofen bei {\unit[180]{\celsius}} schmoren.
+    }
+\end{recipe}
+\end{document}

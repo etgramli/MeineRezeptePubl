@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[90]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion[Leiber]{2}},
+    source = Lili
+]{Leinsamenbrot mit Sojamehl}\index{Leinsamenbrot mit Sojamehl}\index{Brot!Leinsamenbrot mit Sojamehl}
+    \graph{
+        big=LeinsamenbrotMitSojamehl_0
+    }
+    \ingredients{
+        {\unit[200]{g}}     & Leinsamen\\
+        {\unit[300]{g}}     & Kürbiskerne\\
+        {\unit[200]{g}}     & Sojamehl\\
+        {\unit[100]{g}}     & Mandelmehl\\
+        {\unit[60]{g}}      & Flohsamenschalen\\
+        {\unit[40]{g}}      & Leinsamen, ganz\\
+        {\unit[60]{g}}      & Walnüsse\\
+        {\unit[4]{TL}}      & Mohn\\
+        {\unit[2]{TL}}      & Xanthan\\
+        {\unit[2]{TL}}      & Salz\\
+        {\unit[4]{TL}}      & Backpulver\\
+        {\unit[80]{g}}      & Öl\\
+        {\unit[800]{ml}}    & Wasser
+    }
+    \preparation{
+        \step Leinsamen und Kürbiskerne 8 Sekunden bei Stufe 8 schroten.
+        \step Die anderen Zutaten dazu geben und vermischen, den Teig 10 Minuten ruhen lassen.
+        \step Im vorgeheizten Backofen {\unit[90]{Minuten}} bei {\unit[160]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

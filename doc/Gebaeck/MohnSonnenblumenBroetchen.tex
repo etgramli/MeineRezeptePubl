@@ -1,0 +1,39 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[35]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion[Stück]{4}},
+    source = Lili
+]{Mohn-Sonnenblumen-Brötchen}\index{Mohn-Sonnenblumen-Broetchen@Mohn-Sonnenblumen-Brötchen}\index{Brot!Mohn-Sonnenblumen-Broetchen@Mohn-Sonnenblumen-Brötchen}
+    \graph{
+        big=MohnSonnenblumenBroetchen_0
+    }
+    \ingredients{
+        2                                 & Eier\\
+        {\unit[250]{g}}                   & Quark (\unit[40]{\%})\\
+        {\unit[90]{g}}                    & Mandeln, gemahlen\\
+        {\unit[50]{g}}                    & Sonnenblumenkerne\\
+        {\unit[30]{g}}                    & Mohn / Leinsamen\\
+        {\unit[20]{g}}                    & Flohsamenschalen\\
+        {\unit[10]{g}}                    & Kokosmehl\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Backpulver
+    }
+    \preparation{
+        \step Eier und Quark mit dem Salz zu einer cremigen Masse verquirlen.
+        \step Trockene Zutaten in einer Schüssel mischen und mit der Masse zu gleichmäßigem Teig verquirlen.
+        \step Teig 10 Minuten gehen lassen und danach nochmal gut durchrühren.
+        \step Vier runde Brötchen formen und auf ein mit Backpapier ausgelegtes Backblech legen.
+        \step Im vorgeheizten Backofen {\unit[35]{Minuten}} bei {\unit[160]{\celsius}} backen.
+    }
+    \hint{%
+        Wenn die Masse zu pappig ist, kann man Weizen- oder Haferkleie dazu geben.
+    }
+\end{recipe}
+\end{document}

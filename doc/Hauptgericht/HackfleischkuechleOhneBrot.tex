@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion{3}},
+    source = Etienne
+]{Hackfleischküchle ohne Brot}\index{Hackfleischkuechle@Hackfleischküchle}
+    \graph{
+        big=HackfleischkuechleFuerEtienne_0
+    }
+    \ingredients{
+        {\unit[500]{g}}     & Hackfleisch\\
+        1                   & Zwiebel, klein\\
+        {\unit[30]{g}}      & Chips, gesalzen\\
+        {\unit[3]{EL}}      & Wasser\\
+        {\unit[1]{TL}}      & Paprikapulver, scharf\\
+        {\unit[1]{Msp.}}    & Rosmarin\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Die Chips einige Minuten in Wasser einweichen, währenddessen die Zwiebel in feine Würfel schneiden.
+        \step Chips abtropfen und mit den anderen Zutaten vermischen.
+        \step Etwa neun Küchlein formen und in heißem Fett knusprig braten.
+    }
+\end{recipe}
+\end{document}

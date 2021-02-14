@@ -1,0 +1,30 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[6,5]{h}},
+    bakingtime = {\unit[6]{h}},
+    bakingtemperature = {\unit[50]{\celsius}},
+    portion = {\portion{6}},
+    source = Lili
+]{Joghurt}\index{Joghurt}
+    \graph{
+        small=Joghurt_1,
+        big=Joghurt_0
+    }
+    \ingredients{
+        {\unit[$\nicefrac{1}{2}$]{l}}    & Milch ($3,8\%$)\\
+        {\unit[75]{g}}                   & Naturjoghurt\\
+                                         & \\
+    }
+    \preparation{
+        \step Milch kurz aufkochen, dann auf {\unit[37]{\celsius}} abkühlen lassen und umfüllen.
+        \step Den Naturjoghurt dazu mischen und 20 Minuten bei Stufe 2 und {\unit[37]{\celsius}} erwärmen.
+        \step In sterilisierte Gläser füllen, verschließen und im Ofen bei höchstens {\unit[50]{\celsius}} ca. 6 Stunden stehen lassen.
+        \step Dann das Gemisch in den Kühlschrank stellen.
+    }
+\end{recipe}
+\end{document}

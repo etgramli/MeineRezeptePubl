@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[7]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Rote-Beete-Salat}\index{Rote-Beete-Salat}
+    \graph{
+        big=RoteBeeteSalat_0
+    }
+    \ingredients{
+        {\unit[3]{Knollen}}    & Rote Beete\\
+        {\unit[3]{EL}}         & Essig\\
+        {\unit[3]{EL}}         & Öl\\
+        {\unit[1]{EL}}         & Kümmel\\
+                               & Salz\\
+                               & Pfeffer
+    }
+    \preparation{
+        \step Die rote Beete in Scheiben hobeln und den Essig dazu geben.
+        \step Den Kümmel mahlen, mit den Gewürzen abschmecken und die Sauce mit Öl fertigstellen.
+    }
+\end{recipe}
+\end{document}

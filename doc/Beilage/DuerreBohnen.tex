@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[30]{Min}},
+    portion = {\portion{4}},
+    source = Oma Rita
+]{Dürre Bohnen}\index{Duerre Bohnen@Dürre Bohnen}
+    \graph{
+        small=DuerreBohnen_1,
+        big=DuerreBohnen_0
+    }
+    \ingredients{
+        {\unit[100]{g}}   & Dürre Bohnen\\
+        1                 & Zwiebel, klein\\
+        {\unit[2]{EL}}    & Butter\\
+                          & Mehl\\
+                          & Brühenpulver\\
+                          & Salz\\
+                          & Pfeffer
+    }
+    \preparation{
+        \step Die Dürren Bohnen über Nacht einweichen und im Schnellkochtopf 20 Minuten kochen.
+        \step Zwiebel schälen und fein würfeln; in Butter dünsten und dann mit Mehl bei geringer Hitze anschwitzen.
+        \step Mit etwas Kochwasser der Bohnen ablöschen und würzen.
+        \step Die Bohnen nochmals etwa 10 Minuten köcheln lassen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,255 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{recipe_book}[2015/02/04 Recipe Book Package]
+
+%% Paketoptionen:
+% [mobile] - skalierte Bilder
+% [<none>] - Bilder mit voller Auflösung
+
+
+\RequirePackage{ifxetex,ifluatex}
+\newif\ifunicode                        % Detect unicode capable TeX engine
+\ifxetex\unicodetrue\fi
+\ifluatex\unicodetrue\fi
+
+\ifunicode
+    \RequirePackage{fontspec}
+    \setmainfont{Latin Modern Roman}
+    \ifxetex
+    \RequirePackage{xunicode}           % Replacement for textcomp
+    \fi
+    \RequirePackage{newunicodechar}
+    \newcommand{\DeclareUnicodeCharacter}[2]{%
+        \begingroup\lccode`|=\string"#1\relax
+        \lowercase{\endgroup\newunicodechar{|}}{#2}%
+    }
+\else
+%% PDF options
+    \pdfpagewidth=\paperwidth           % Force width of document pages
+    \pdfpageheight=\paperheight         % Force height of document pages
+    \pdfminorversion=4                  % Set pdf version number for PDF/A
+    \pdfobjcompresslevel=0              % Prohibit LZW compression
+    \pdfinclusioncopyfonts=1            % Include fonts
+    \pdfgentounicode=1                  % Unicode mapping
+    \RequirePackage[utf8]{inputenc}     % To use Umlauts and other characters in files directly
+    \RequirePackage[T1]{fontenc}        % Use Type 1 fonts
+    \RequirePackage{lmodern}            % Include modern latin fonts
+    \input{glyphtounicode.tex}          % Unicode mapping
+    \input{glyphtounicode-cmr.tex}
+    %% cmr (Computer Modern Roman) hat Probleme mit dem ß und der Ligatur für das doppelte f
+    %% Avoid ugly double-f Ligature in cmr font used in "Kartoffel"
+    \RequirePackage{microtype}          % Used to disable litagures for 'f's
+    \DisableLigatures[f]{encoding = *, family = cmr}
+\providecommand{\main}{./}
+\immediate\pdfobj stream attr{/N 3} file{\main DELL_U2515H.icm}
+\pdfcatalog{%
+/OutputIntents [ <<
+/Type /OutputIntent
+/S/GTS_PDFA1
+/DestOutputProfile \the\pdflastobj\space 0 R
+/OutputConditionIdentifier (sRGB IEC61966-2.1)
+/Info(Dell Monitor color profile used to edit the picutres)
+>> ]
+}
+\fi
+
+\DeclareUnicodeCharacter{1F525}{\Oven}  % Using fire symbol here because unicode does not offer good oven symbol
+\DeclareUnicodeCharacter{1F525}{\Fanoven}
+\DeclareUnicodeCharacter{1F525}{\Topbottomheat}
+\DeclareUnicodeCharacter{1F525}{\Topheat}
+\DeclareUnicodeCharacter{1F525}{\Bottomheat}
+\DeclareUnicodeCharacter{1F525}{\Gasstove}
+\DeclareUnicodeCharacter{1F37D}{\Plate}
+\DeclareUnicodeCharacter{1F37D}{\Dish}
+\DeclareUnicodeCharacter{1F321}{\Thermo}
+\DeclareUnicodeCharacter{1F373}{\Gloves}
+
+
+\renewcommand{\thesubsection}{}         % Do not print numbers of subsections
+
+\RequirePackage[ngerman]{babel}         % German syllybification
+
+%% Encoding, font, language
+\RequirePackage{textcomp}               % Get rid of the warning that \perthousand and \micro are not defined
+\RequirePackage{gensymb}
+\RequirePackage{nicefrac}               % Beautiful fractions with a slash instead of a horizontal line
+\RequirePackage[official]{eurosym}      % The official Euro symbol
+
+\RequirePackage{graphicx}               % Set the path for the images according to the passed option
+\DeclareOption{mobile}{
+    \graphicspath{{mobile/pics/}{../../mobile/pics/}}
+}
+\DeclareOption{print}{
+    \graphicspath{{pics/}{../../pics/}}
+}
+\ExecuteOptions{print}
+\ProcessOptions\relax                   % terminates the option processing.
+
+\RequirePackage[toc]{multitoc}          % Split the table of content in two columns
+\renewcommand*{\multicolumntoc}{2}
+\setlength{\columnseprule}{0.5pt}
+\setcounter{secnumdepth}{1}             % Show sections(0) and subsections(1)
+
+\RequirePackage{makeidx}                % Create Index
+\makeindex
+
+\RequirePackage{xcolor}
+\definecolor{mygreen}{rgb}{0,.5,0}
+\DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
+
+\RequirePackage[nowarnings]{xcookybooky}
+\setRecipeColors{
+    recipename=mygreen,
+    ing=blue,
+    inghead=blue
+}
+
+\setRecipeLengths{
+    preparationwidth,
+    ingredientswidth,
+    pictureheight,
+    smallpicturewidth = 0.3\textwidth ,
+    bigpicturewidth = 0.6\textwidth
+}
+
+%% Change of Translation
+\setHeadlines{
+    hinthead={Bemerkungen}
+}
+\ifunicode
+    \setRecipenameFont{cmr}{m}{n}
+\else
+    \setRecipenameFont{cmr}{T1}{m}{n}
+\fi
+
+%%% BEGIN: Temporary fix for xcookybooky, arose from lettrine change
+% ToDo: Remove if package fixed
+\renewcommand{\step}
+{%
+ \stepcounter{step}%shouldn't be in the argument of lettrine
+    \lettrine
+    [%
+        lines=2,
+        lhang=0,                        % space into margin, value between 0 and 1
+        loversize=0.15,                 % enlarges the height of the capital
+        slope=0em,
+        findent=1em,                    % gap between capital and intended text
+        nindent=0em                     % shifts all intended lines, begining with the second line
+    ]{\thestep}{}%
+}
+%%% END: Fix of xcookybooky
+
+\RequirePackage{hyperxmp}               % XMP data in hypersetup
+\RequirePackage[bookmarks,              % Creates bookmarks
+                bookmarksnumbered=true, % Numbers in PDF bookmarks
+                bookmarksopen=true,     % Don't show bookmaks when opened
+                hyperindex=true,        % Numbers in index are links
+                pdfpagelabels=true,     % Set PDF page labels
+                pdfa]{hyperref}         % hyperref - must be the last package
+
+
+%% Fix for xcookybooky:
+%% Index would not have correct header and footer,
+%% so add it to the plain page style
+\fancypagestyle{plain}{
+    \renewcommand{\headrulewidth}{0.5pt}
+    \fancyhf{}
+    
+    \if@twoside
+            \fancyfoot[LE,RO]{\textbf{\thepage}}
+            \fancyhead[LE,RO]{\rightmark}
+    \else
+            \fancyfoot[R]{\textbf{\thepage}}
+            \fancyhead[R]{\rightmark}
+    \fi
+}
+
+\renewcommand*{\recipesection}[2][]{\subsection[#1]{#2}}
+\renewcommand{\subsectionmark}[1]{}
+
+\hypersetup{
+    pdfauthor           = {Etienne Gramlich},
+    pdftitle            = {Meine Rezepte},
+    pdfsubject          = {Rezepte},
+    pdfkeywords         = {Rezept,Kochen,Aubergine,Lecker},
+    pdflang             = {de},         % Set language of document to German
+    pdfmetalang         = {de},         % Set language of metadata (title, subject, ...) to German
+    pdfstartview        = {FitH},       % Fit the document to screen horizontally (page width)
+    pdfview             = {FitH},       % Fit the document to screen horizontally (page width)
+    pdfpagemode         = {UseNone},    % Options; UseNone, UseOutlines
+    bookmarksopen       = {true},       % Opens bookmarks by default
+    pdfpagetransition   = {Glitter},
+    pdftoolbar          = false,        % Hide Toolbar
+    pdfdisplaydoctitle  = true,         % Display TOC
+    plainpages          = false,        % Helps with links to pages prior to 1
+    unicode             = true,         % Allow Unicode characters in bookmarks
+    colorlinks          = {true},       % Use color for links
+    linkcolor           = {black},      % Links in black (text color)
+    urlcolor            = {black},      % URLs in black (text color)
+    citecolor           = {black},      % Citations in black (text color)
+    filecolor           = {black},      % File links in black (text color)
+}
+
+
+\RequirePackage{xifthen}                % Test if argument is empty
+\RequirePackage{tabulary}               % Cool tables
+\RequirePackage{titlesec}               % for placing titles centered
+\titleformat{\section}[block]{\huge\bfseries\filcenter}{}{1em}{}
+
+%% Own commands
+\newcommand{\gqq}[1]{\glqq #1\grqq{}}   % German Anführungszeichen
+
+\RequirePackage{calc}                   % Used to settowidth and calculate ratio
+% Include a picture and scale it to certain height and then crop it to certain width
+\newlength{\oH}                         % Original Height
+\newlength{\oW}                         % Original With
+\newlength{\rH}                         % Desired Height to given Width
+\newlength{\rW}                         % Desired Width to given Height
+\newlength{\cH}                         % Total amount of Height to crop
+\newlength{\cW}                         % Total amount of Width to crop
+\newcommand\PrintImage[3]{% Arguments: height, width, image
+  \settototalheight{\oH}{\includegraphics{#3}}%
+  \settowidth{\oW}{\includegraphics{#3}}%
+  \setlength{\rH}{\oH * \ratio{#2}{\oW}}%
+  \ifthenelse{\lengthtest{\rH < #1}}{%
+    \setlength{\rW}{\oW * \ratio{#1}{\oH}}%
+    \setlength{\cW}{(\rW-#2)*\ratio{\oH}{#1}}%
+    \includegraphics[height=#1,clip,trim=0.5\cW{} 0 0.5\cW{} 0]{#3}%
+  }{%
+    \setlength{\cH}{(\rH-#1)*\ratio{\oW}{#2}}%
+    \includegraphics[width=#2,clip,trim=0 0.5\cH{} 0 0.5\cH{}]{#3}%
+  }%
+}
+
+
+\newcommand{\sectionimgs}[9]{           % Include up to 9 pictures for section page
+    \vspace*{.5cm}%
+    \begin{center}
+        \begin{tabulary}{\linewidth}{LcR}
+            \sectionimgsline{#1}{#2}{#3}
+            \\
+            \sectionimgsline{#4}{#5}{#6}
+            \\
+            \sectionimgsline{#7}{#8}{#9}
+        \end{tabulary}
+    \end{center}
+}
+
+\newlength{\sectionImageHeight}
+\newlength{\sectionImageWidth}
+\setlength{\sectionImageHeight}{3.9cm}
+\setlength{\sectionImageWidth}{4.75cm}
+
+\newcommand{\sectionimgsline}[3]{%
+\ifthenelse{\isempty{#1}}{}{%
+\PrintImage{\sectionImageHeight}{\sectionImageWidth}{#1}
+}&
+\ifthenelse{\isempty{#2}}{}{%
+\PrintImage{\sectionImageHeight}{\sectionImageWidth}{#2}
+}&
+\ifthenelse{\isempty{#3}}{}{%
+\PrintImage{\sectionImageHeight}{\sectionImageWidth}{#3}
+}\\
+}
+
+
+\endinput

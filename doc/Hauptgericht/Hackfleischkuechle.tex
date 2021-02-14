@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Hackfleischküchle}\index{Hackfleischkuechle@Hackfleischküchle}
+    \graph{
+        big=Hackfleischkuechle_0
+    }
+    \ingredients{
+        {\unit[250]{g}}         & Hackfleisch\\
+        {\unit[2]{Scheiben}}    & Brot, altbacken\\
+        1                       & Zwiebel\\
+        1                       & Knoblauchzehen\\
+        1                       & Ei\\
+                                & Salz\\
+                                & Pfeffer\\
+                                & Aromat\\
+                                & Semmelbrösel
+    }
+    \preparation{
+        \step Brot einweichen und ausdrücken; Zwiebel und Knoblauch klein hacken.
+        \step Hackfleisch, Brot, Zwiebel, Knoblauch und Gewürzen von Hand einen homogenen Teig kneten.
+        \step Küchlein formen und panieren; in heißem Fett knusprig braten!
+    }
+\end{recipe}
+\end{document}

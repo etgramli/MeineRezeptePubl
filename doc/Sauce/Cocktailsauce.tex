@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[2]{Min}},
+    source = Etienne
+]{Cocktailsauce}\index{Cocktailsauce}
+    \graph{
+        big=Cocktailsauce_0
+    }
+    \ingredients{
+        {\unit[4]{EL}}        & Mayonnaise\\
+        {\unit[1-2]{EL}}      & Essig oder Zitronensaft\\
+        {\unit[1]{TL}}        & Senf\\
+        {\unit[1]{TL}}        & Paprikapulver\\
+        {\unit[1]{EL}}        & Öl\\
+        {\unit[2]{Prisen}}    & Salz\\
+        {\unit[2]{Msp.}}      & Zucker\\
+        {\unit[1]{Msp.}}      & Dillspitzen
+    }
+    \preparation{
+        \step Mayonnaise, Essig, Senf, und Paprikapulver vermischen bis keine Klümpchen mehr vorhanden sind.
+        \step Mit Salz, Zucker und Dill abschmecken und mit dem Öl vermischen.
+    }
+\end{recipe}
+\end{document}

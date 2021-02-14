@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime={\unit[15]{Min}},
+    portion = {\portion[l]{$\nicefrac{1}{2}$}},
+    source = Etienne
+]{Felsenbirnenlikör}\index{Felsenbirnenlikoer@Felsenbirnenlikör}
+    \graph{
+        big=Felsenbirnenlikoer_0
+    }
+    \ingredients{
+        {\unit[350]{g}}                       & Felsenbirnen\\
+        {\unit[50]{g}}                        & Johannisbeeren\\
+        {\unit[$\nicefrac{1}{2}$]{l}}         & Wodka (\unit[40]{\%})\\
+        {\unit[$\nicefrac{1}{2}$]{Schote}}    & Vanille
+    }
+    \preparation{
+        \step Felsenbirnen und Johannisbeeren waschen, abtrocknen und einige Felsenbirnen einfrieren.
+        \step Die Früchte leicht eindrücken, Vanilleschote einritzen und alles in eine {\unit[1]{l}}-Flasche füllen.
+        \step Mit dem Wodka auffüllen und 6~bis~8~Wochen an einem kühlen und dunklen Ort ziehen lassen.
+        \step Den Likör durch einen Kaffeefilter abseihen und mit den gefrorenen Felsenbirnen in eine saubere Flasche füllen. Weiterhin an einem dunklen Platz aufbewahren.
+    }
+    \hint{%
+        Kann man statt mit Johannisbeeren auch mit Rhabarber machen.
+    }
+\end{recipe}
+\end{document}

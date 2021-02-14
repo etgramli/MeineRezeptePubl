@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime={\unit[30]{Min}},
+    portion={\portion{4}},
+    source=Oma Tilda
+]{Saure Kartoffeln}\index{Saure Kartoffeln}
+    \graph{
+        big=SaureKartoffeln_0
+    }
+    \ingredients{
+        {\unit[500]{g}}     & Kartoffeln\\
+                            & Brühe\\
+        1                   & Lorbeerblatt\\
+                            & Mehl\\
+        1                   & Knoblauchzehe\\
+        {\unit[1]{TL}}      & Paprikapulver\\
+        {\unit[1]{Glas}}    & Wasser\\
+        {\unit[2]{EL}}      & Essig\\
+                            & Öl\\
+                            & Salz
+    }
+    \preparation{
+        \step Die Kartoffeln in Scheiben schneiden und in einem Topf mit Wasser bedecken.
+        \step Brühe und Lorbeer dazu geben und 30 Minuten köcheln lassen, bis die Kartoffeln weich sind.
+        \step In der Zwischenzeit das Mehl in dem Öl leicht anschwitzen.
+        \step Die Knoblauchzehe hinein pressen, das Paprikapulver dazu geben und auch leicht anschwitzen.
+        \step Wenn das Mehl anfängt leicht zu riechen, mit einem Glas Wasser ablöschen.
+        \step Mit dem Essig und etwas Salz abschmecken; dann die Sauce mit den Kartoffeln mischen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Lachscreme}\index{Lachscreme}
+    \graph{
+        big=Lachscreme_0
+    }
+    \ingredients{
+        {\unit[200]{g}}     & Lachs, geräuchert\\
+        {\unit[200]{g}}     & Frischkäse, fettarm\\
+        {\unit[60]{g}}      & Schmand\\
+        {\unit[1-2]{TL}}    & Meerrettich / Wasabi\\
+        {\unit[1]{TL}}      & Zitronensaft\\
+        {\unit[1]{TL}}      & Dill\\
+                            & Salz
+    }
+    \preparation{
+        \step Frischkäse, Meerrettich oder Wasabi, Zitronensaft, Dill und Salz vermischen, bis die Masse glatt ist.
+        \step Den Fisch in kleine Würfel schneiden und mit dem Rest vermischen.
+    }
+    \hint{%
+        Die Creme ist sehr gehaltvoll, mit dem Schmand wird sie dünner.\\
+        Sie passt gut zu Brot und Kartoffeln.
+    }
+\end{recipe}
+\end{document}

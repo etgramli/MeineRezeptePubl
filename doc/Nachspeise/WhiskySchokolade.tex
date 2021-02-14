@@ -1,0 +1,35 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion = {\portion[Tafel]{1}},
+    source = Lili
+]{Whisky-Schokolade}\index{Whisky-Schokolade}
+    \graph{
+        small=WhiskySchokolade_1,
+        big=WhiskySchokolade_0
+    }
+    \ingredients{
+        {\unit[60]{g}}      & Kakaobutter\\
+        {\unit[2-3]{TL}}    & Kakaopulver\\
+        {\unit[30]{g}}      & Rosinen\\
+        {\unit[20]{ml}}     & Whisky, sherry"-fass"-gereift\\
+        {\unit[1]{Msp.}}    & Zimt\\
+        {\unit[1]{Msp.}}    & Nelke\\
+        {\unit[1]{Msp.}}    & Vanille\\
+        etwas               & Zucker
+    }
+    \preparation{
+        \step Rosinen über Nacht in einem sherryfassgereiften Whisky einlegen.
+        \step Kakaobutter im Wasserbad schmelzen, das Kakaopulver darin auflösen und mit Gewürzen abschmecken.
+        \step Rosinen in einer Form auslegen und die Schokolade darauf verteilen.
+        \step Form schließen und im Kühlschrank kalt stellen bis die Schokolade hart ist.
+    }
+    \hint{%
+        Beim Abkühlen setzt sich die Kakaobutter etwas ab und bildet eine weiße Schicht.
+    }
+\end{recipe}
+\end{document}

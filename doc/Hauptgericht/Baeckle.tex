@@ -1,0 +1,43 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    bakingtime = {\unit[3]{h}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    portion = {\portion{2}},
+    source = Lili
+]{Bäckle}\index{Baeckle@Bäckle}
+    \graph{
+        small=Baeckle_1,
+        big=Baeckle_0
+    }
+    \ingredients{
+        4                   & Bäckle vom Kalb\\
+        1-2                 & Zwiebeln\\
+        1                   & Knoblauchzehe\\
+        1                   & Paprika\\
+        2                   & Rüble\\
+        handvoll            & Sellerie\\
+        {\unit[2]{EL}}      & Tomatenmark\\
+        {\unit[300]{ml}}    & Rotwein, trocken\\
+        {\unit[300]{ml}}    & Brühe\\
+        1                   & Lorbeerblatt\\
+                            & Creme Fraîche\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Die Bäckle scharf in Öl anbraten, rausnehmen und zur Seite stellen.
+        \step Das Gemüse in Würfel schneiden und in derselben Pfanne andünsten, bis es leicht bräunt.
+        \step Tomatenmark dazu geben, kurz anrösten und mit Wein und Brühe ablöschen.
+        \step Die Bäckle zum Gemüse in die Sauce; sie sollten fast mit Flüssigkeit bedeckt sein.
+        \step Lorbeer dazu geben und etwa {\unit[3]{Stunden}} bei {\unit[160]{\celsius}} schmoren, aber nicht kochen.
+        \step Bäckle vorsichtig herausnehmen, die Sauce pürieren und Creme Fraîche dazu rühren.
+        \step Mit Salz und Pfeffer abschmecken und mit den Bäckle servieren.
+    }
+\end{recipe}
+\end{document}

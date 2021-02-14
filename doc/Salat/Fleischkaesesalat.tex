@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Fleischkäsesalat}\index{Fleischkaesesalat@Fleischkäsesalat}
+    \graph{
+        big=Fleischkaesesalat_0
+    }
+    \ingredients{
+        {\unit[2]{Scheiben}}                  & Fleischkäse\\
+        {\unit[1]{Rübe}}                      & Chicorée\\
+        {\unit[$\nicefrac{1}{2}$]{Schote}}    & Paprika, rot\\
+        1                                     & Tomate\\
+        {\unit[1]{EL}}                        & Ketchup\\
+        {\unit[2]{EL}}                        & Petersilie\\
+        {\unit[2]{EL}}                        & Essig\\
+        {\unit[2]{EL}}                        & Öl\\
+        {\unit[1]{handvoll}}                  & Salbei\\
+                                              & Salz\\
+                                              & Pfeffer
+    }
+    \preparation{
+        \step Fleischkäse in {\unit[1]{cm}}-große Würfel schneiden und unter Wenden anbraten, sodass sie leicht gebräunt sind.
+        \step Währenddessen Paprika, Chicorée und Tomate in Streifen bzw. Schnitze schneiden und vermischen.
+        \step Ketchup, Petersilie und Essig dazu geben, mit Salz und Pfeffer abschmecken und mit dem Öl mischen.
+        \step Den Fleischkäse zu dem Rest geben und in der noch heißen Pfanne den Salbei anrösten.
+        \step Salat portionieren, mit dem Salbei garnieren und servieren, solange der Fleischkäse noch warm ist.
+    }
+\end{recipe}
+\end{document}

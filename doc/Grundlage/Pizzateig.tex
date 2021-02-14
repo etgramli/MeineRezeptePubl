@@ -1,0 +1,26 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    portion = {\portion[Pizzen]{4}},
+    source = Lili
+]{Pizzateig}\index{Pizzateig}\index{Teig!Pizzateig}
+    \graph{
+        big=Pizzateig_0
+    }
+    \ingredients{
+        {\unit[300]{g}}     & Mehl\\
+        {\unit[200]{ml}}    & Wasser, kalt\\
+        {\unit[2]{EL}}      & Olivenöl\\
+        {\unit[1]{TL}}      & Salz\\
+        {\unit[5-10]{g}}    & Hefe
+    }
+    \preparation{
+        \step Zutaten verkneten, und über Nacht im Kühlen gehen lassen.
+    }
+\end{recipe}
+\end{document}

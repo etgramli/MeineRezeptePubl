@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Steak mit Wacholder-Sauce}\index{Steak mit Wacholder-Sauce}
+    \graph{
+        big=SteakMitWacholderSauce_0
+    }
+    \ingredients{
+        2                     & Rindersteaks\\
+        4                     & Champignons, groß\\
+        1                     & Zwiebel, klein\\
+        {\unit[150]{ml}}      & Rotwein\\
+        {\unit[50]{ml}}       & Wasser\\
+        2                     & Wacholderbeeren\\
+        {\unit[1]{Prise}}     & Rosmarin\\
+                              & Salz\\
+                              & Pfeffer
+    }
+    \preparation{
+        \step Champignons in dicke Scheiben und Zwiebeln in grobe Würfel schneiden und in Öl dünsten.
+        \step Wenn sie bräunen, Champignons und Zwiebeln zur Seite schieben und Steaks braten.
+        \step Die Steaks in Alufolie zur Seite stellen, und Wacholderbeeren mörsern und kurz anbraten.
+        \step Champignons und Zwiebeln mit Rotwein und Wasser ablöschen, würzen und kurz köcheln lassen.
+        \step Die Steaks mit der Sauce servieren.
+    }
+\end{recipe}
+\end{document}

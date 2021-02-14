@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    portion = {\portion[Riegel]{12}},
+    source = Etienne
+]{Bounty}\index{Bounty}
+    \graph{
+        small=Bounty_1,
+        big=Bounty_0
+    }
+    \ingredients{
+        {\unit[3]{EL}}     & Kokosöl\\
+        {\unit[1]{TL}}     & Vanille-Zucker\\
+        {\unit[10]{EL}}    & Kokosraspel\\
+        {\unit[175]{g}}    & Zartbitterschokolade
+    }
+    \preparation{
+        \step Kokosöl schmelzen, Vanille-Zucker darin auflösen und mit den Kokosraspel vermischen.
+        \step Die Kokosmasse nicht ganz halb voll in längliche Formen geben und kalt stellen.
+        \step Schokolade im Wasserbad schmelzen, die Kokosriegel mit der Schokolade bedecken und wieder kalt stellen.
+    }
+\end{recipe}
+\end{document}

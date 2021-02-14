@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[45]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Etienne
+]{Whisky-Schokoladen-Kuchen}\index{Whisky-Schokoladen-Kuchen}
+    \graph{
+        small=WhiskySchokoladenKuchen_1,
+        big=WhiskySchokoladenKuchen_0
+    }
+    \ingredients{
+        5                   & Eier\\
+        {\unit[150]{g}}     & Zucker\\
+        {\unit[250]{g}}     & Butter\\
+        {\unit[2]{P.}}      & Vanille-Zucker\\
+        {\unit[1]{TL}}      & Zimt\\
+        {\unit[1]{TL}}      & Kakao\\
+        {\unit[250]{g}}     & Mehl\\
+        {\unit[120]{g}}     & Rosinen\\
+        {\unit[160]{ml}}    & Whisky, sherryfassgereift\\
+        {\unit[1]{P.}}      & Backpulver\\
+        {\unit[250]{g}}     & Schokolade
+    }
+    \preparation{
+        \step Die Rosinen im Whisky einlegen, bis sie vollgesogen sind.
+        \step Butter, Zucker, Vanille-Zucker und Eier schaumig rühren.
+        \step Die restlichen Zutaten, bis auf die Schokolade, unterrühren und in eine gut gefettete Springform füllen.
+        \step Bei {\unit[180]{\celsius}} im vorgeheizten Backofen ca. 45 Minuten backen.
+        \step Schokolade mit etwas Butter bei ca. {\unit[50]{\celsius}} schmelzen und den leicht abgekühlten Kuchen glasieren.
+    }
+    \hint{%
+        Der Whisky sollte nicht zu würzig sein: Glenfarclas 12y passt gut, Bunnahabhain 12y eher nicht.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[7]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Krautsalat}\index{Krautsalat}
+    \graph{
+        big=Krautsalat_0
+    }
+    \ingredients{
+        {\unit[300]{g}}                   & Weißkraut\\
+        {\unit[1]{EL}}                    & Essig\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        {\unit[$\nicefrac{1}{4}$]{TL}}    & Pfeffer\\
+        {\unit[1]{TL}}                    & Kümmel\\
+        {\unit[2]{EL}}                    & Öl
+    }
+    \preparation{
+        \step Weißkraut in dünne Streifen hobeln, mit Salz bestreuen und mehr als eine halbe Stunde ziehen lassen.
+        \step Danach das Kraut gut ausquetschen und den Salat anmachen.
+    }
+\end{recipe}
+\end{document}

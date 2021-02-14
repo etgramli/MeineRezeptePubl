@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[45]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Lili
+]{Weltuntergangskuchen}\index{Weltuntergangskuchen}\index{Rotweinkuchen}
+    \graph{
+        big=Rotweinkuchen_0
+    }
+    \ingredients{
+        5                      & Eier\\
+        {\unit[150-180]{g}}    & Zucker\\
+        {\unit[250]{g}}        & Butter\\
+        {\unit[2]{P.}}         & Vanille-Zucker\\
+        {\unit[2]{TL}}         & Zimt und Kakao\\
+        {\unit[100]{ml}}       & Rotwein\\
+        {\unit[250-280]{g}}    & Mehl\\
+        {\unit[1]{Glas}}       & Kirschen\\
+        {\unit[1]{P.}}         & Backpulver\\
+        {\unit[200]{g}}        & Schokolade
+    }
+    \preparation{
+        \step Butter, Zucker, Vanille-Zucker und Eier schaumig rühren.
+        \step Zimt, Kakao, Rotwein, Mehl und Backpulver dazu rühren.
+        \step Die Springform gut fetten und den Teig mit den Kirschen hinein füllen.
+        \step Bei {\unit[180]{\celsius}} im vorgeheizten Backofen ca. 45 Minuten backen.
+        \step Schokolade mit etwas Butter bei ca. {\unit[50]{\celsius}} schmelzen und den leicht abgekühlten Kuchen glasieren.
+    }
+    \hint{%
+        2012: Angeblich Weltuntergang, den Kuchen mehrfach gebacken -> Weltuntergangskuchen\newline
+        Wir tun noch Kirschen dazu. Sauerkirschen. Abgetropfte Sauerkirschen.\newline
+        Wird in einer Silikonform sehr kompakt!
+    }
+\end{recipe}
+\end{document}

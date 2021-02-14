@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[1]{h}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    source = Etienne
+]{Schoko-Nuss-Kuchen}\index{Schoko-Nuss-Kuchen}
+    \graph{
+        big=SchokoNussKuchen_0
+    }
+    \ingredients{
+        {\unit[250]{g}}                   & Mehl\\
+        {\unit[250]{g}}                   & Haselnüsse\\
+        {\unit[150]{g}}                   & Zucker\\
+        {\unit[1]{EL}}                    & Vanillezucker\\
+        {\unit[1]{P.}}                    & Backpulver\\
+        {\unit[2]{EL}}                    & Kakaopulver\\
+        {\unit[$\nicefrac{1}{4}$]{TL}}    & Zimt\\
+        {\unit[80-100]{ml}}               & Kaffee / Espresso\\
+        {\unit[200]{g}}                   & Sojasahne\\
+        1                                 & Karotte\\
+        {\unit[150]{g}}                   & Bitterschokolade
+    }
+    \preparation{
+        \step Die Karotte schälen, raspeln und mit den trockenen Zutaten verrühren.
+        \step Dann Kaffee und Sojasahne nach und nach beim Mixen dazu geben.
+        \step Alles in eine Springform geben und ca. eine Stunde bei {\unit[180]{\celsius}} im Ofen backen.
+        \step Die Schokolade schmelzen und auf dem Kuchen verteilen; vor dem Essen abkühlen lassen.
+    }
+    \hint{%
+        Mein erster veganer Kuchen (außer dass ich die Form mit Butter eingefettet habe).
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    bakingtime = {\unit[15]{Min}},
+    portion = {\portion{3}},
+    source = Oma Rita
+]{Spinat nach Oma Rita}\index{Spinat nach Oma Rita}
+    \graph{
+        big=Spinat_0
+    }
+    \ingredients{
+        {\unit[350]{g}}       & Spinat\\
+        1                     & Knoblauchzehe\\
+        {\unit[1]{EL}}        & Butter\\
+        {\unit[1]{Schuss}}    & Sahne\\
+                              & Salz\\
+                              & Pfeffer\\
+                              & Muskat
+    }
+    \preparation{
+        \step Die Knoblauchzehe grob in Scheiben schneiden und in Butter anschwitzen.
+        \step Den Spinat und einen Schuss Sahne zugeben und einige Minuten köcheln lassen.
+        \step Mit Salz, Pfeffer und Muskat abschmecken und noch warm servieren.
+    }
+\end{recipe}
+\end{document}

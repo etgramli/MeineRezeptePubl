@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion[Portionen]{6}},
+    source = Lili
+]{Panna cotta}\index{Panna cotta}
+    \graph{
+        small=Pannacotta_1,
+        big=Pannacotta_0
+    }
+    \ingredients{
+        {\unit[6]{Blätter}}    & Gelatine, weiß\\
+        {\unit[2]{Schoten}}    & Vanille\\
+        {\unit[100]{g}}        & Zucker\\
+        {\unit[1]{l}}          & Sahne\\
+                               & \\
+    }
+    \preparation{
+        \step Die Gelatine in kaltem Wasser einweichen und zur Seite stellen.
+        \step Vanille, Zucker und Schlagsahne aufkochen, vom Herd nehmen und ziehen lassen.
+        \step Gelatine ausdrücken, in der heißen Sahne auflösen und 10 Minuten abkühlen lassen.
+        \step In Gläser verteilen und im Kühlschrank mindestens 3 Stunden abkühlen lassen.
+    }
+    \hint{%
+        Mit Früchten oder Beeren servieren.
+    }
+\end{recipe}
+\end{document}

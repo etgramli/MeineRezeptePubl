@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[40]{Min}},
+    portion = {\portion{4}},
+    source = Oma Tilda
+]{Gefüllte Paprika}\index{Gefuellte Paprika@Gefüllte Paprika}
+    \graph{
+        big=GefuelltePaprikaHack_0
+    }
+    \ingredients{
+        4                      & Paprika, rot / gelb\\
+        {\unit[300]{g}}        & Hackfleisch\\
+        etwas                  & Brot, alt\\
+        {\unit[1]{Portion}}    & Reis, gekocht\\
+        {\unit[250]{ml}}       & Brühe\\
+        {\unit[1]{Becher}}     & Saure Sahne\\
+        1                      & Zwiebel\\
+        1                      & Knoblauchzehe\\
+        1                      & Ei\\
+                               & Salz\\
+                               & Pfeffer\\
+                               & Thymian
+    }
+    \preparation{
+        \step Brot einweichen und ausdrücken; Zwiebel und Knoblauch klein hacken.
+        \step Aus Hackfleisch, Reis, Brot, Zwiebel, Knoblauch und Gewürzen einen homogenen Fleischteig zubereiten.
+        \step Deckel der Paprika abschneiden, die Kerne entfernen und füllen. Den Deckel wieder aufsetzen.
+        \step Brühe zum kochen bringen, Sahne einrühren, Paprika reinsetzen und 40 Minuten kochen.
+    }
+    \hint{%
+        Reste vom Hackfleischteig werden zu Hackfleischküchlein.
+    }
+\end{recipe}
+\end{document}

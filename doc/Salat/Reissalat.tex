@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    portion = {\portion{6}},
+    source = Etienne
+]{Reissalat}\index{Reissalat}
+    \graph{
+        big=Reissalat_0
+    }
+    \ingredients{
+        {\unit[250]{g}}         & Reis\\
+        8                       & Tomaten, getrocknet\\
+        3                       & Pepperoni\\
+        12                      & Oliven\\
+        {\unit[4]{EL}}          & Pesto\\
+        {\unit[1]{handvoll}}    & Rucola\\
+                                & Olivenöl
+    }
+    \preparation{
+        \step Den Reis kochen, währenddessen die Tomaten, Pepperoni und Oliven schneiden.
+        \step Reis mit den restlichen Zutaten vermischen und servieren.
+    }
+\end{recipe}
+\end{document}

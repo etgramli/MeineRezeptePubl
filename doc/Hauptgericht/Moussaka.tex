@@ -1,0 +1,45 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[30]{Min}},
+    bakingtime = {\unit[45]{Min}},
+    bakingtemperature = {\unit[220]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Moussaka}\index{Moussaka}
+    \graph{
+        small=Moussaka_1,
+        big=Moussaka_0
+    }
+    \ingredients{
+        {\unit[500]{g}}        & Rinderhackfleisch\\
+        3                      & Auberginen\\
+        1                      & Zwiebeln\\
+        1                      & Knoblauchzehe\\
+        3-4                    & Pellkartoffeln\\
+        {\unit[1]{Dose}}       & Fleischtomaten\\
+        {\unit[300-400]{g}}    & Schafskäse\\
+        3                      & Eier\\
+        {\unit[200]{g}}        & Creme Fraîche\\
+        {\unit[2]{EL}}         & Tomatenmark\\
+                               & Salz, Pfeffer\\
+                               & Oregano\\
+                               & Thymian\\
+                               & Petersilie
+    }
+    \preparation{
+        \step Auberginen waschen, in 1 cm dicke Längs-Scheiben schneiden und 12 runde quer-Scheiben schneiden.
+        \step Zwiebel und Knoblauch klein schneiden und in Öl glasig dünsten; Hackfleisch dazu und durch braten.
+        \step Tomatenwürfel dazu geben und so lange köcheln lassen bis Flüssigkeit etwas verdampft ist.
+        \step Auberginen leicht in Olivenöl anbraten und abkühlen lassen.
+        \step Hackfleischsauce mit Gewürzen abschmecken, Schafkäse dazu geben; Eier mit Creme Fraîche verquirlen.
+        \step Folgendermaßen in eine Auflaufform schichten: Auberginen, $\nicefrac{1}{2}$ Hackfleischsauce, Pellkartoffelscheiben.
+        \step Auberginen, $\nicefrac{1}{2}$ Hackfleischsauce, Eiersoße und die restlichen Auberginen.
+        \step Im vorgeheizten Backofen bei {\unit[220]{\celsius}} 45 Minuten backen; 10 Minuten stehen lassen.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion{2}},
+    source = Oma Tilda
+]{Leber}\index{Leber}
+    \graph{
+        big=Leber_0
+    }
+    \ingredients{
+        {\unit[300]{g}}    & Leber\\
+        3                  & Zwiebeln\\
+        {\unit[4]{EL}}     & Butter\\
+                           & Mehl\\
+                           & Salz\\
+                           & Pfeffer
+    }
+    \preparation{
+        \step Die Zwiebeln in halbe Ringe schneiden, dünsten und zur Seite stellen.
+        \step Leber von der Haut befreien, in grobe Stücke schneiden, gut salzen und pfeffern und mit Mehl bestreuen.
+        \step Die Leber bei mittlerer Hitze kurz braten und mit den Zwiebelringen vermischen.
+    }
+\end{recipe}
+\end{document}

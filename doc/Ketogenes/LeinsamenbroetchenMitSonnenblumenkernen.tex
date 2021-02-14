@@ -1,0 +1,37 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[35]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion[Stück]{9}},
+    source = Lili
+]{Leinsamenbrötchen (Sonnenblumenkerne)}\index{Leinsamenbrötchen mit Sonnenblumenkernen}\index{Brot!Leinsamenbrötchen mit Sonnenblumenkernen}
+    \graph{
+        big=LeinsamenbroetchenMitSonnenblumenkernen_0
+    }
+    \ingredients{
+        {\unit[250]{g}}     & Quark\\
+        {\unit[150]{ml}}    & Wasser\\
+        {\unit[100]{g}}     & Leinsamenmehl\\
+        {\unit[100]{g}}     & Sonnenblumenkerne\\
+        {\unit[40]{g}}      & Leinsamen (geschrotet)\\
+        {\unit[30]{g}}      & Flohsamenschalen\\
+        3                   & Eier\\
+        {\unit[2]{TL}}      & Backpulver\\
+        {\unit[1]{TL}}      & Salz\\
+        {\unit[1]{TL}}      & Johannisbrotkernmehl
+    }
+    \preparation{
+        \step Alle Zutaten vermischen und den Teig 10~Minuten ruhen lassen.
+        \step Im vorgeheizten Backofen {\unit[35]{Minuten}} bei {\unit[180]{\celsius}} Umluft backen und im Ofen abkühlen lassen.
+    }
+    \hint{%
+        Aus {\unit[600]{ml}} Wasser und {\unit[4]{EL}} Natron kann man Lauge für Laugenbrötchen machen. Dazu muss man sie kurz aufkochen.
+    }
+\end{recipe}
+\end{document}

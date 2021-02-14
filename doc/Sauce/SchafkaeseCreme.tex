@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    portion = {\portion{10}},
+    source = Etienne
+]{Schafkäse-Creme}\index{Schafkaese-Creme@Schafkäse-Creme}
+    \graph{
+        small=SchafskaeseCreme_1,
+        big=SchafskaeseCreme_0
+    }
+    \ingredients{
+        {\unit[200]{g}}                   & Schafkäse\\
+        {\unit[300]{g}}                   & Naturjoghurt\\
+        10                                & Oliven, schwarz\\
+        1                                 & Knoblauchzehe\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Rosmarin\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Oregano
+    }
+    \preparation{
+        \step Schafkäse zerkleinern und mit dem Naturjoghurt vermischen.
+        \step Die Oliven entsteinen, in Ringe schneiden und mit den Gewürzen unterheben.
+        \step Den Knoblauch schälen, in die Masse pressen und vermischen.
+    }
+    \hint{%
+        Sehr salzig.\\
+        Passt zu Gegrilltem oder als Brotaufstrich.
+    }
+\end{recipe}
+\end{document}

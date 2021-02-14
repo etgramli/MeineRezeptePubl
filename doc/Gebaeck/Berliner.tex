@@ -1,0 +1,42 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[6]{Min}},
+    portion = {\portion[Stück]{10}},
+    source = Lili
+]{Berliner}\index{Berliner}
+    \graph{
+        small=Berliner_1,
+        big=Berliner_0
+    }
+    \ingredients{
+        2                                   & Eier\\
+        {\unit[100]{ml}}                    & Milch\\
+        {\unit[100]{g}}                     & Butter\\
+        {\unit[500]{g}}                     & Mehl\\
+        {\unit[1]{P.}}                      & Trockenhefe\\
+        {\unit[40]{g}}                      & Zucker\\
+        {\unit[2]{EL}}                      & Vanille-Zucker\\
+        {\unit[1]{Prise}}                   & Salz\\
+        {\unit[$\nicefrac{1}{4}$]{TL}}      & Zitronenaroma\\
+        {\unit[$\nicefrac{1}{2}$]{Glas}}    & Marmelade\\
+        etwas                               & Zitronensaft\\
+                                            & Puderzucker
+    }
+    \preparation{
+        \step Die trockenen Zutaten mischen; Eier, geschmolzene Butter und kalte Milch dazu geben.
+        \step In der Brotmaschine 10~Minuten kneten lassen und eine Stunde gehen lassen.
+        \step Mit Mehl dick ausrollen und mit einem Glas ausstechen und nochmals 40~Minuten gehen lassen.
+        \step Im vorgeheizten Öl bei Stufe 3 von 9 pro Seite 2-3~Minuten ausbacken.
+        \step Mit Puderzucker bedecken, etwas abkühlen lassen und füllen.
+    }
+    \hint{%
+        Etwas weniger Milch!
+    }
+\end{recipe}
+\end{document}

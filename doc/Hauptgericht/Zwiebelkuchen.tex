@@ -1,0 +1,41 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[220]{\celsius}},
+    source = Lili
+]{Zwiebelkuchen}\index{Zwiebelkuchen}
+    \graph{
+        small=Zwiebelkuchen_1,
+        big=Zwiebelkuchen_0
+    }
+    \ingredients{
+        {\unit[300]{g}}     & Mehl\\
+        {\unit[150]{ml}}    & Milch, lauwarm\\
+        {\unit[1]{TL}}      & Salz\\
+        {\unit[80]{g}}      & Butter, warm\\
+        {\unit[20]{g}}      & Hefe\\
+        {\unit[600]{g}}     & Zwiebeln\\
+        {\unit[100]{g}}     & Schinken\\
+        2                   & Eier\\
+        {\unit[250]{ml}}    & Milch-Sahne-Mix\\
+        {\unit[100]{g}}     & Saure Sahne \\
+                            & Käse, gerieben\\
+                            & Paprikapulver\\
+                            & Kümmel \\
+                            & Salz, Pfeffer
+    }
+    \preparation{
+        \step Aus Mehl, Milch, Salz, Butter, Hefe einen Hefeteig zubereiten und mindestens 30 Minuten gehen lassen.
+        \step Zwiebeln und Schinken würfeln, in etwas Butter dünsten, bis Zwiebeln halb-weich sind.
+        \step Eier verquirlen, Milch-Sahne-Gemisch, Sahne und Käse dazu geben.
+        \step Zwiebeln und Schinken unterrühren und dann salzen und pfeffern.
+        \step Teig auf ein Backblech ausrollen, nochmals etwas gehen lassen, Zwiebelmasse darauf.
+        \step Im vorgeheizten Backofen 30 Minuten bei {\unit[220]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

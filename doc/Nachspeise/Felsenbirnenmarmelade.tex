@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[60]{Min}},
+    bakingtime = {\unit[20]{Min}},
+    portion = {\portion[Gläser]{2}},
+    source = Etienne
+]{Felsenbirnenmarmelade}\index{Felsenbirnenmarmelade}
+    \graph{
+        small=Felsenbirnenmarmelade_1,
+        big=Felsenbirnenmarmelade_0
+    }
+    \ingredients{
+        {\unit[550]{g}}     & Felsenbirnen\\
+        {\unit[50]{g}}      & Rhabarber\\
+        etwas               & Wasser\\
+        {\unit[1]{Msp.}}    & Vanille, gemahlen\\
+        {\unit[200]{g}}     & Gelierzucker (3:1)
+    }
+    \preparation{
+        \step Felsenbirnen und Rhabarber waschen, in etw. Wasser weich kochen und durch einen groben Sieb passieren.
+        \step Vanille und {\unit[4]{EL}} vom Trester dazu geben, mit dem Gelierzucker mischen und unter Rühren aufkochen.
+        \step In Gläser abfüllen und auf dem Kopf stehend abkühlen lassen.
+    }
+    \hint{%
+        Mit dem Trester bekommt die Marmelade den Marzipan-Geschmack der Kerne.
+    }
+\end{recipe}
+\end{document}

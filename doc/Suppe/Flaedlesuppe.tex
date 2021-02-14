@@ -1,0 +1,29 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[5]{Min}},
+    portion = {\portion{3}},
+    source = Etienne
+]{Flädlesuppe}\index{Flaedlesuppe@Flädlesuppe}
+    \graph{
+        big=Flaedlesuppe_0
+    }
+    \ingredients{
+        {\unit[1]{l}}        & Brühe\\
+        4                    & Pfannkuchen\\
+        {\unit[1]{Prise}}    & Muskat\\
+                             & Pfeffer\\
+                             & Schnittlauch
+    }
+    \preparation{
+        \step Brühe in einem großen Topf aufkochen, währenddessen die Pfannkuchen in Streifen schneiden.
+        \step Pfannkuchen in der Brühe ein paar Minuten ziehen lassen und mit Muskat und Pfeffer abschmecken.
+        \step Mit etwas Schnittlauch garnieren und servieren.
+    }
+\end{recipe}
+\end{document}

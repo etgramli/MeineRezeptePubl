@@ -1,0 +1,28 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[5]{Min}},
+    portion = {\portion{2}},
+    source = Oma Tilda
+]{Grießsuppe}\index{Griesssuppe@Grießsuppe}
+    \graph{
+        small=Griessuppe_1,
+        big=Griessuppe_0
+    }
+    \ingredients{
+        {\unit[2-4]{EL}}    & Grieß\\
+        {\unit[1]{l}}       & Wasser, lauwarm\\
+        {\unit[3]{TL}}      & Brühenpulver\\
+        1-2                 & Ei(er)
+    }
+    \preparation{
+        \step Grieß im Topf bräunen, Wasser dazugeben, mit Suppenwürfel zum Kochen bringen.
+        \step Wenn der Grieß weich ist, verquirltes Ei unter Rühren dazu geben; fertig!
+    }
+\end{recipe}
+\end{document}

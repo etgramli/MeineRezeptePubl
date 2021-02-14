@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[4]{Min}},
+    portion = {\portion{3}},
+    source = Lili
+]{Kaiserschmarrn}\index{Kaiserschmarrn}
+    \graph{
+        big=Kaiserschmarrn_0
+    }
+    \ingredients{
+        {\unit[150]{g}}    & Mehl\\
+        {\unit[200]{g}}    & Milch\\
+        4                  & Eier\\
+        {\unit[100]{g}}    & Frischkäse\\
+        {\unit[1]{EL}}      & Vanille-Zucker\\
+                            & \\
+                            & \\
+                            & \\
+                            &
+    }
+    \preparation{
+        \step 4 Eiklar mit dem Rühraufsatz 3~Minuten auf Stufe~4 schlagen, umfüllen und den Rühraufsatz entfernen.
+        \step 4 Eigelb, Zucker, Mehl und Frischkäse 1~Minute bei Stufe~3,5 vermischen.
+        \step Das Eiklar dazu geben und 20-30~Sekunden bei Stufe~3 mit dem Spatel vermischen.
+        \step In der Pfanne Butter auf mittlerer Hitze erwärmen und den Teig {\unit[1]{cm}} hoch einfüllen.
+        \step Ca. 4~Minuten stocken lassen, bis er bräunt; dann zerreißen und wenden.
+        \step Zum Schluss Puderzucker darauf verteilen und servieren.
+    }
+    \hint{%
+        Dazu schmeckt am besten Apfelmus.
+    }
+\end{recipe}
+\end{document}

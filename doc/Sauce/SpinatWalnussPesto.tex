@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[8]{Min}},
+    portion = {\portion{4}},
+    source = Etienne
+]{Spinat-Walnuss-Pesto}\index{Spinat-Walnuss-Pesto}\index{Pesto!Spinat-Walnuss-Pesto}
+    \graph{
+        small=SpinatWalnussPesto_1,
+        big=SpinatWalnussPesto_0
+    }
+    \ingredients{
+        {\unit[80]{g}}     & Walnusskerne\\
+        {\unit[200]{g}}    & Spinat\\
+        {\unit[50]{g}}     & Öl\\
+        {\unit[1]{TL}}     & Salz\\
+                           & Pfeffer
+    }
+    \preparation{
+        \step Die Walnusskerne anrösten, im Mixtopf 10 Sekunden auf Stufe 10 zerkleinern und umfüllen.
+        \step Den Spinat im Öl pürieren, Walnüsse und Salz dazu geben und vermischen. Mit Pfeffer abschmecken.
+        \step Auf Brot oder Nudeln zügig servieren oder in kleine Glasflaschen mit etwas Öl darauf abfüllen.
+    }
+    \hint{%
+        Kann man auch mit etwas Ricotta verfeinern.
+    }
+\end{recipe}
+\end{document}

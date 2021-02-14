@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[5]{Min}},
+    bakingtime = {\unit[15]{Min}},
+    portion = {\portion[Glas]{1}},
+    source = Etienne
+]{Chilipaste}\index{Chilipaste}
+    \graph{
+        small=Chilipaste_1,
+        big=Chilipaste_0
+    }
+    \ingredients{
+        6                     & Chilis\\
+        1                     & Zwiebel, klein\\
+        {\unit[10]{ml}}       & Öl\\
+        {\unit[4]{EL}}        & Tomatenmark\\
+        {\unit[100]{ml}}      & Wasser\\
+        {\unit[1]{Schuss}}    & Zitronensaft\\
+        {\unit[1]{TL}}        & Salz\\
+        {\unit[1]{EL}}        & Petersilie, gehackt
+    }
+    \preparation{
+        \step Chilis teilen, von den Kernen befreien und in kleine Würfel schneiden; das innere Weiße aufheben.
+        \step Zwiebel in feine Würfel schneiden, mit den Chilis in einen Topf geben und im Öl dünsten.
+        \step Tomatenmark, Wasser, Zitronensaft, Salz und das Weiße dazu geben und köcheln bis alles weich ist.
+        \step Sauce abkühlen lassen, mit Petersilie pürieren und in Gläser abfüllen. Kühl und dunkel aufbewahren.
+    }
+\end{recipe}
+\end{document}

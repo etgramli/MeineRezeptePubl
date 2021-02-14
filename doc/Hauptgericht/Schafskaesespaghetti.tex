@@ -1,0 +1,34 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[20]{Min}},
+    portion = {\portion{2}},
+    source = Lili
+]{Schafskäsespaghetti}\index{Schafskaesespaghetti@Schafskäsespaghetti}
+    \graph{
+        big=Schafskaesespaghetti_0
+    }
+    \ingredients{
+        {\unit[200]{g}}    & Spaghetti\\
+        1-2                & Knoblauchzehen\\
+        {\unit[200]{g}}    & Schafskäse\\
+                           & Basilikum\\
+                           & Olivenöl\\
+                           & Pfeffer, schwarz\\
+                           & Pfeffer, weiß
+    }
+    \preparation{
+        \step Wasser zum Kochen bringen, nur leicht salzen, und die Spaghetti darin kochen.
+        \step Währenddessen Knoblauch und Basilikum klein schneiden, in einer Pfanne in Olivenöl dünsten.
+        \step Den Schafskäse in der Pfanne zergehen lassen, wenn er zu zäh ist, noch Nudelwasser dazu geben.
+        \step Mit Pfeffer abschmecken, die Nudeln dazu geben und vermischen.
+    }
+    \hint{%
+        Dazu passt sehr gut (grüner) Salat, wenn man die Sauce über die Spaghetti kippt
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,39 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    bakingtime = {\unit[1]{h}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion{4}},
+    source = Lili
+]{Ossobuco con patate}\index{Ossobuco con patate}
+    \graph{
+        big=OssoBucoConPatate_0
+    }
+    \ingredients{
+        4                   & Kalbshaxenscheiben\\
+        5                   & Tomaten, gehackt\\
+        4                   & Zwiebeln\\
+        {\unit[50]{ml}}     & Rotwein\\
+        {\unit[250]{ml}}    & Wasser\\
+        8                   & Kartoffeln, mittel\\
+        {\unit[1]{Bund}}    & Petersilie\\
+                            & Creme Fraîche\\
+                            & Chilipulver\\
+                            & Salz\\
+                            & Pfeffer\\
+                            & Bio-Zitrone
+    }
+    \preparation{
+        \step Kalbshaxenscheiben in Öl von beiden Seiten anbraten und in gewürfelten Zwiebeln und Tomaten schmoren.
+        \step Mit Rotwein und Wasser ablöschen und mit geviertelte Kartoffeln in eine Backofenform geben.
+        \step Creme Fraîche unterrühren, mit Salz und Pfeffer abschmecken und Petersilie darüber streuen.
+        \step Etwa eine Stunde im vorgeheizten Ofen bei {\unit[180]{\celsius}} garen.
+        \step Mit Petersilie dekorieren und eventuell mit Zitronenschale garnieren.
+    }
+\end{recipe}
+\end{document}

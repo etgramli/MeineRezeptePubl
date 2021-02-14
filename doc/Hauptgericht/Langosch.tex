@@ -1,0 +1,40 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[90]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Langosch}\index{Langosch}
+    \graph{
+        big=Langosch_0
+    }
+    \ingredients{
+        Teig:                 & \\
+        {\unit[350]{ml}}      & Wasser, lauwarm\\
+        {\unit[1]{P.}}        & Trockenhefe\\
+        {\unit[1]{Prise}}     & Zucker\\
+        {\unit[500]{g}}       & Mehl\\
+        {\unit[1]{TL}}        & Salz\\
+                              & \\
+        Dip:                  & \\
+        {\unit[1]{Zehe}}      & Knoblauch\\
+        {\unit[2]{Becher}}    & Joghurt\\
+                              & Salz\\
+                              & Pfeffer
+    }
+    \preparation{
+        \step Hefe im Wasser und einer Prise Zucker auflösen und 15~Minuten gehen lassen.
+        \step Mehl, Salz und Hefewasser in die Brotbackmaschine geben, kneten und 1~Stunde gehen lassen.
+        \step Den Knoblauch pressen, mit dem Joghurt vermischen und mit Salz und etwas Pfeffer abschmecken.
+        \step Kleine, dünne Fladen formen und in heißem Öl ausbacken.
+        \step Noch warm mit der Knoblauchsauce servieren.
+    }
+    \hint{%
+        Es wird sehr viel Teig daraus! - Man kann aus dem Rest noch ein Brot (mit Kümmel und Salz) machen.
+    }
+\end{recipe}
+\end{document}

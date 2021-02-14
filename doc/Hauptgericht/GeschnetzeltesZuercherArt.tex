@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    bakingtime = {\unit[20]{Min}},
+    portion = {\portion{3}},
+    source = Etienne
+]{Geschnetzeltes Zürcher Art}\index{Geschnetzeltes Zuercher Art@Geschnetzeltes Zürcher Art}
+    \graph{
+        big=GeschnetzeltesZuercherArt_0
+    }
+    \ingredients{
+        {\unit[400]{g}}     & Kalbsgeschnetzeltes\\
+        {\unit[300]{g}}     & Champignons\\
+        1                   & Zwiebel, mittel\\
+        {\unit[200]{g}}     & Sahne\\
+        {\unit[200]{ml}}    & Wasser\\
+        {\unit[1]{EL}}      & Brühe\\
+                            & Petersilie\\
+                            & Salz\\
+                            & Pfeffer
+    }
+    \preparation{
+        \step Kalbsgeschnetzeltes anbraten, bis es leicht bräunt. Dann zur Seite stellen.
+        \step Champignons putzen und leicht anbraten, Zwiebel in kleine Würfel schneiden und andünsten.
+        \step Mit Sahne und Wasser ablöschen und die Brühe darin auflösen.
+        \step Fleisch und Petersilie dazugeben und köcheln, bis die Sauce eindickt.
+        \step Mit Salz und Pfeffer abschmecken.
+    }
+    \hint{%
+        Rösti oder Pommes Frittes passen gut dazu.
+    }
+\end{recipe}
+\end{document}

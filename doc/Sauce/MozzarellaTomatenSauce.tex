@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Mozzarella-Tomaten-Sauce}\index{Mozzarella-Tomaten-Sauce}
+    \graph{
+        big=MozzarellaTomatenSauce_0
+    }
+    \ingredients{
+        {\unit[4]{EL}}          & Olivenöl\\
+        {\unit[125]{g}}         & Mozzarella\\
+        {\unit[2]{EL}}          & Tomatenmark\\
+        {\unit[6]{EL}}          & Wasser\\
+        {\unit[1]{Priese}}      & Salz\\
+        {\unit[1]{Priese}}      & Pfeffer, schwarz\\
+        {\unit[1]{handvoll}}    & Basilikumblätter
+    }
+    \preparation{
+        \step Den Mozzarella im Olivenöl in einer Pfanne schmelzen.
+        \step Tomatenmark in Wasser auflösen, mit Salz und Pfeffer abschmecken und unter den Mozzarella heben.
+        \step Die Sauce mit den Nudeln vermischen, mit Basilikumblättern garnieren und servieren.
+    }
+    \hint{%
+        Statt dem Tomatenmark kann man auch eine halbe Ochsenherztomate weich kochen und dann den Mozzarella zugeben.
+    }
+\end{recipe}
+\end{document}

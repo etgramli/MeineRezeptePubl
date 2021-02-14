@@ -1,0 +1,36 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[8]{Min}},
+    portion = {\portion{3}},
+    source = Etienne
+]{Kartoffelpuffer}\index{Kartoffelpuffer}
+    \graph{
+        small=Kartoffelpuffer_1,
+        big=Kartoffelpuffer_0
+    }
+    \ingredients{
+        {\unit[1]{kg}}    & Kartoffeln\\
+        2                 & Zwiebeln\\
+        {\unit[1]{TL}}    & Johannisbrotkernmehl\\
+                          & Öl\\
+                          & Salz\\
+                          & Pfeffer
+    }
+    \preparation{
+        \step Zwiebeln in Würfel schneiden und andünsten. Währenddessen Kartoffeln schälen, waschen und raspeln.
+        \step Kartoffeln und Zwiebeln mit dem Johannisbrotkernmehl vermischen und würzen.
+        \step Masse portionsweise in eine Pfanne mit viel Öl geben, zu Fladen zerdrücken und goldbraun ausbacken.
+        \step Noch warm mit Salz und Pfeffer servieren und eventuell nachwürzen.
+    }
+    \hint{%
+        Etwas Würfelspeck passt gut dazu, auch direkt in der Masse.\newline
+        Kann man kalt gut statt einer Brötchenhälfte für Lachsbrötchen benutzen.
+    }
+\end{recipe}
+\end{document}

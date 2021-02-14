@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[40]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    source = Lili
+]{Rhabarberkuchen mit Mürbteig}\index{Rhabarberkuchen}
+    \graph{
+        small=RabarberkuchenQuarkoelteig_1,
+        big=RabarberkuchenQuarkoelteig_0
+    }
+    \ingredients{
+        Teig:                             & \\
+        {\unit[200]{g}}                   & Mehl\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Backpulver\\
+        {\unit[80]{g}}                    & Zucker\\
+        {\unit[1]{P.}}                    & Vanille-Zucker\\
+        {\unit[100]{g}}                   & Butter, kalt\\
+        1                                 & Ei\\
+                                          & \\
+        Guss:                             & \\
+        {\unit[4]{St.}}                   & Rhabarber\\
+        3                                 & Eier\\
+        {\unit[3]{EL}}                    & Zucker\\
+        {\unit[1]{P.}}                    & Vanille-Zucker\\
+        {\unit[200]{g}}                   & Quark / Schmand\\
+                                          & Zitronenaroma
+    }
+    \preparation{
+        \step Mürbteig in Springform mit Rand drücken; im vorgeheizten Backofen ca. 10 Minuten vor-backen.
+        \step Rhabarber schneiden und auf den Teig geben; Guss darauf und oben weitere 30 Minuten backen.
+    }
+\end{recipe}
+\end{document}

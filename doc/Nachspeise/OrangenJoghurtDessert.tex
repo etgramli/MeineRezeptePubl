@@ -1,0 +1,31 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion={\portion[Portionen]{2}},
+    source = Etienne
+]{Orangen-Joghurt-Dessert}\index{Orangen-Joghurt-Dessert}
+    \graph{
+        big=OrangenJoghurtDessert_0
+    }
+    \ingredients{
+        1                     & Orange\\
+        {\unit[2]{EL}}        & Straight Bourbon\\
+        {\unit[1]{EL}}        & Honig\\
+        {\unit[1]{Becher}}    & Naturjoghurt\\
+        {\unit[2]{Zweige}}    & Minze
+    }
+    \preparation{
+        \step Die Orange halbieren, von einer Hälfte 2 Scheiben mit einem Filetier-Messer abschneiden.
+        \step Die verbliebenen Hälften pressen und den Saft mit Honig und Bourbon vermischen.
+        \step Den süßen Saft mit dem Fruchtfleisch, Minz-Blättern und Joghurt mischen.
+        \step Die Masse in zwei Schalen verteilen und mit den Orangenfilets und den Minz-Spitzen dekorieren.
+    }
+    \hint{%
+        Ein schönes Sommer-Dessert, den Alkohol schmeckt man gar nicht.
+    }
+\end{recipe}
+\end{document}

@@ -1,0 +1,38 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion{4}},
+    source = Lili
+]{Spaghetti mit Zucchini und Auberginen}\index{Spaghetti mit Zucchini und Auberginen}
+    \graph{
+        small=SpaghettiMitZucchiniUndAubergine_1,
+        big=SpaghettiMitZucchiniUndAubergine_0
+    }
+    \ingredients{
+        {\unit[600]{g}}    & Spaghetti\\
+        1                  & Zucchini, klein\\
+        1                  & Aubergine, klein\\
+        1                  & Knoblauchzehe\\
+                           & Olivenöl\\
+                           & Weißwein\\
+                           & Salz\\
+                           & Pfeffer\\
+                           & Basilikum
+    }
+    \preparation{
+        \step Die Zucchini und Aubergine waschen, abtrocknen und würfeln. Währenddessen Spaghetti kochen.
+        \step Knobi klein würfeln, im Olivenöl dünsten, dann Zucchini und Aubergine anbraten.
+        \step Mit Salz, Pfeffer und Basilikum würzen, mit Schuss Weißwein 10-20 Minuten schmoren.
+        \step Die Spaghetti mit der Sauce mischen und servieren.
+    }
+    \hint{%
+        Um die Aubergine weniger bitter zu machen kann man sie salzen, ziehen lassen und dann abbrausen.\newline
+        War zu salzig, da wir die Auberginen nicht abgebraust haben
+    }
+\end{recipe}
+\end{document}

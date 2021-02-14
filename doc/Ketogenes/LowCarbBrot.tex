@@ -1,0 +1,37 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[15]{Min}},
+    bakingtime = {\unit[90]{Min}},
+    bakingtemperature = {\unit[180]{\celsius}},
+    portion = {\portion[Leib]{1}},
+    source = Lili
+]{Low-Carb-Brot}\index{Low-Carb-Brot}\index{Brot!Low-Carb-Brot}
+    \graph{
+        big=LowCarbBrot_0
+    }
+    \ingredients{
+        {\unit[250]{g}}     & Kerne, Saaten, Nüsse\\
+        {\unit[70]{g}}      & Leinsamen\\
+        {\unit[30]{g}}      & Flohsamenschalen\\
+        {\unit[20]{g}}      & Sesam\\
+        {\unit[20]{TL}}     & Mohn\\
+        {\unit[1]{TL}}      & Xanthan\\
+        {\unit[1]{TL}}      & Kümmel\\
+        {\unit[1]{TL}}      & Sesam, schwarz\\
+        {\unit[1]{TL}}      & Backpulver\\
+        {\unit[1]{TL}}      & Meersalz\\
+        {\unit[30]{g}}      & Oliven- oder Kokosöl\\
+        {\unit[450]{ml}}    & Wasser, warm
+    }
+    \preparation{
+        \step Kerne, Saaten, Nüsse mit den Leinsamen 6 bis 8~Sekunden auf Stufe~8 mahlen.
+        \step Die anderen Zutaten dazu geben, gut vermischen und {\unit[10]{Minuten}} ruhen lassen.
+        \step In einer Brotkastenform 90~Minuten bei {\unit[180]{\celsius}} backen.
+    }
+\end{recipe}
+\end{document}

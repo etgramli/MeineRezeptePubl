@@ -1,0 +1,44 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[50]{Min}},
+    bakingtime = {\unit[20]{Min}},
+    portion = {\portion[Stück]{12}},
+    source = Etienne
+]{Schwäbische Maultaschen}\index{Schwaebische Maultaschen@Schwäbische Maultaschen}
+    \graph{
+        small=SchwaebischeMaultaschen_1,
+        big=SchwaebischeMaultaschen_0
+    }
+    \ingredients{
+        {\unit[300]{g}}      & Mehl\\
+        2                    & Eier\\
+        {\unit[60]{ml}}      & Wasser\\
+        {\unit[1]{Prise}}    & Muskat\\
+        {\unit[$\nicefrac{1}{2}$]{TL}}    & Salz\\
+        {\unit[1]{EL}}       & Öl\\
+        1                    & Zwiebel, groß\\
+        1                    & Brötchen, altbacken\\
+        {\unit[2]{TL}}       & Bärlauch-Pesto\\
+        {\unit[125]{g}}      & Brät oder Hackfleisch\\
+        {\unit[125]{g}}      & Blattspinat\\
+        {\unit[1]{Prise}}    & Muskat\\
+        1                    & Ei\\
+        {\unit[1]{TL}}       & Salz\\
+                             & Pfeffer
+    }
+    \preparation{
+        \step Aus Mehl, Eiern, Wasser, Muskat, Salz und Öl einen geschmeidigen Nudelteig zubereiten.
+        \step Zwiebel schälen, würfeln und glasig anschwitzen, währenddessen das Brötchen einweichen und ausdrücken.
+        \step Dann alle Zutaten für die Füllung vermischen und mit Salz und gut mit Pfeffer abschmecken.
+        \step Teig auf einer bemehlten Fläche auswallen und in Rechtecke schneiden.
+        \step Füllung auf eine Hälfte geben und die andere Hälfte des Rechtecks darüber schlagen.
+        \step Leicht andrücken, damit die Luft entweicht, dann fest andrücken, dass die Ränder aneinander haften.
+        \step In viel Salzwasser etwa {\unit[20]{Minuten}} garen und dann abtropfen lassen.
+    }
+\end{recipe}
+\end{document}

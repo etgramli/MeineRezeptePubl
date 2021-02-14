@@ -1,0 +1,37 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime={\unit[15]{Min}},
+    portion = {\portion[ml]{600}},
+    source = Etienne
+]{Whisky-Kräuter-Likör}\index{Whisky-Kräuter-Likoer@Whisky-Kräuter-Likör}
+    \graph{
+        small=WhiskyKraeuterLikoer_1,
+        big=WhiskyKraeuterLikoer_0
+    }
+    \ingredients{
+        {\unit[$\nicefrac{1}{2}$]{l}}    & Whisky (\unit[46]{\%})\\
+        {\unit[3]{EL}}                   & Honig\\
+        {\unit[2]{Zweige}}               & Thymian\\
+        1                                & Sternanis\\
+        3                                & Nelken\\
+        {\unit[3]{Nadeln}}               & Rosmarin\\
+        {\unit[1]{Streifen}}             & Orangenschale\\
+        {\unit[100]{ml}}                 & Wasser, destilliert
+    }
+    \preparation{
+        \step Honig im Whisky auflösen und mit Thymian, Anis, Nelken und Rosmarin in eine saubere Flasche füllen.
+        \step Eine Woche an einem dunklen und kühlen Ort ziehen lassen, dann die Orangenschale in die Flasche geben.
+        \step Noch eine Woche ziehen lassen, dann die Gewürze absieben und mit dem Wasser verdünnen.
+        \step Weiterhin kühl und dunkel lagern.
+    }
+    \hint{%
+        Man kann einen milden, süßen Whisky oder einen (leicht) rauchigen verwenden.\newline
+        Zum Schluss hat der Likör etwa \unit[38]{\%}.
+    }
+\end{recipe}
+\end{document}
