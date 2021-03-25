@@ -9,14 +9,12 @@ SUBDIRTMPFILES :=$(foreach dir,$(wildcard $(SRCDIR)/*/),$(addprefix $(dir),$(TMP
 
 # Image parameters (height in pixels, size in kb)
 IMAGEHEIGHT    :=560
-BIGIMAGESIZE   :=85
-SMALLIMAGESIZE :=65
 
 # Programs and arguments
 LATEXMK        :=latexmk
 LATEXMKARGS    :=-pdf
 CONVERT        :=convert
-CONVERTARGS    :=-strip -sampling-factor 4:2:0 -filter Lanczos -resize x$(IMAGEHEIGHT)\> -adaptive-sharpen 0x0.6
+CONVERTARGS    :=-strip -colorspace sRGB -sampling-factor 4:2:0 -filter Lanczos -resize x$(IMAGEHEIGHT)\> -adaptive-sharpen 0x0.6 -interlace JPEG -quality 85
 
 # Image files (left hand side - right hand side)
 SOURCEIMGSBIG  :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*_0.jpg))
@@ -64,15 +62,11 @@ $(SMALLIMGDIR)/Gsicht.png: $(IMGDIR)/Gsicht.png $(SMALLIMGDIR)/.dirstamp
 
 # Scale down left hand side images
 $(SMALLIMGDIR)/%_0.jpg: $(IMGDIR)/%_0.jpg $(SMALLIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -define jpeg:extent="$(BIGIMAGESIZE)kb" $@
+	$(CONVERT) $< $(CONVERTARGS) $@
 
 # Scale down right hand side image
 $(SMALLIMGDIR)/%_1.jpg: $(IMGDIR)/%_1.jpg $(SMALLIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -define jpeg:extent="$(SMALLIMAGESIZE)kb" $@
-
-# Allow this one image a larger file size
-$(SMALLIMGDIR)/LammbratenSherrySauce_1.jpg: $(IMGDIR)/LammbratenSherrySauce_1.jpg $(SMALLIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -define jpeg:extent="$(BIGIMAGESIZE)kb" $@
+	$(CONVERT) $< $(CONVERTARGS) $@
 
 # Helper to test if image directory is created
 $(SMALLIMGDIR)/.dirstamp:
