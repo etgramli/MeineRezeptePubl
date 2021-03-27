@@ -16,15 +16,9 @@ LATEXMKARGS    :=-pdf
 CONVERT        :=convert
 CONVERTARGS    :=-strip -colorspace sRGB -sampling-factor 4:2:0 -filter Lanczos -resize x$(IMAGEHEIGHT)\> -adaptive-sharpen 0x0.6 -interlace JPEG -quality 85
 
-# Image files (left hand side - right hand side)
-SOURCEIMGSBIG  :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*_0.jpg))
-SOURCEIMGSSMALL:=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*_1.jpg))
-SOURCEIMGS     :=$(SOURCEIMGSBIG) $(SOURCEIMGSSMALL)
-
-# Down-scaled versions of images
-TARGETIMGSBIG  :=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGSBIG))
-TARGETIMGSSMALL:=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGSSMALL))
-TARGETIMGS     :=$(TARGETIMGSBIG) $(TARGETIMGSSMALL)
+# Image files and down-scaled versions
+SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
+TARGETIMGS     :=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGS))
 
 # Targets, used for creating single recipes and autocompletion
 SUBSRC         :=$(wildcard $(SRCDIR)/*/*.tex)
@@ -60,12 +54,8 @@ $(TEXFILE)-mobile.pdf: $(SOURCES) $(PACKAGES) $(TARGETIMGS) $(SMALLIMGDIR)/Gsich
 $(SMALLIMGDIR)/Gsicht.png: $(IMGDIR)/Gsicht.png $(SMALLIMGDIR)/.dirstamp
 	@cp $(IMGDIR)/Gsicht.png $(SMALLIMGDIR)
 
-# Scale down left hand side images
-$(SMALLIMGDIR)/%_0.jpg: $(IMGDIR)/%_0.jpg $(SMALLIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) $@
-
-# Scale down right hand side image
-$(SMALLIMGDIR)/%_1.jpg: $(IMGDIR)/%_1.jpg $(SMALLIMGDIR)/.dirstamp
+# Scale down images for mobile use
+$(SMALLIMGDIR)/%.jpg: $(IMGDIR)/%.jpg $(SMALLIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) $@
 
 # Helper to test if image directory is created
