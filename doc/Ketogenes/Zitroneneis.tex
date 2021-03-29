@@ -1,0 +1,25 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion = {\portion[Portionen]{4}},
+    source = Lili
+]{Zitroneneis}\index{Zitroneneis}\index{Eis!Zitroneneis}
+    \graph{
+        big=Zitroneneis_0
+    }
+    \ingredients{
+        {\unit[100]{g}}     & Sahne\\
+        {\unit[100]{g}}     & Griechischer Joghurt\\
+        {\unit[50]{g}}      & Xylit / Erythrit\\
+        {\unit[5]{EL}}      & Zitronensaft\\
+        {\unit[1]{Msp.}}    & Johannisbrotkernmehl
+    }
+    \preparation{
+        \step Alles in einem hohen Messbecher mit einem Stabmixer vermischen und in der Eismaschine zubereiten.
+    }
+\end{recipe}
+\end{document}
