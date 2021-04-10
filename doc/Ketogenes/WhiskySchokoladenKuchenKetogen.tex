@@ -1,0 +1,42 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    bakingtime = {\unit[30]{Min}},
+    bakingtemperature = {\unit[160]{\celsius}},
+    source = Lili
+]{Whisky-Schokoladen-Kuchen (ketogen)}\index{Whisky-Schokoladen-Kuchen}
+    \graph{
+        big=WhiskySchokoladenKuchenKetogen_0
+    }
+    \ingredients{
+        2                                 & Eier\\
+        {\unit[80]{g}}                    & Zucker\\
+        {\unit[125]{g}}                   & Butter\\
+        {\unit[1]{Msp.}}                  & Bourbon-Vanille\\
+        {\unit[1]{TL}}                    & Zimt\\
+        {\unit[1]{TL}}                    & Kakao\\
+        {\unit[1]{Msp.}}                  & Nelke\\
+        {\unit[1]{Msp.}}                  & Kardamon\\
+        {\unit[1]{Msp.}}                  & Ingwer\\
+        {\unit[65]{g}}                    & Mandelmehl\\
+        {\unit[1]{TL}}                    & Johannisbrotkernmehl\\
+        {\unit[$\nicefrac{1}{2}$]{P.}}    & Backpulver\\
+        {\unit[60]{g}}                    & Rosinen\\
+        {\unit[60]{ml}}                   & Whisky\\
+        {\unit[50]{g}}                    & Schokolade\\
+        {\unit[1]{TL}}                    & Kokosöl\\
+        {\unit[3]{TL}}                    & Xucker\\
+    }
+    \preparation{
+        \step Die Rosinen im Whisky einlegen, bis sie vollgesogen sind.
+        \step Butter, Zucker, Vanille-Zucker und Eier schaumig rühren.
+        \step Die trockenen Zutaten vermischen, unterrühren und in eine gut gefettete 17-cm-Springform füllen.
+        \step Bei {\unit[160]{\celsius}} im vorgeheizten Backofen ca. 30 Minuten backen.
+        \step Schokolade mit Kokosöl und Xucker bei ca. {\unit[50]{\celsius}} schmelzen und den abgekühlten Kuchen glasieren.
+    }
+\end{recipe}
+\end{document}
