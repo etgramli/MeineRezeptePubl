@@ -1,0 +1,27 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    portion = {\portion[Portionen]{4}},
+    source = Lili
+]{Minz-Eis}\index{Minz-Eis}\index{Eis!Minz-Eis}
+    \graph{
+        big=MinzEis_0
+    }
+    \ingredients{
+        {\unit[150]{g}}      & Griechischer Joghurt\\
+        {\unit[150]{g}}      & Sahne\\
+        {\unit[60]{g}}       & Xucker/Erythrit \\
+        {\unit[5-6]{Tr.}}    & Pfefferminzöl\\
+        {\unit[2]{Msp.}}     & Johannisbrotkernmehl\\
+        {\unit[20]{g}}       & Schokolade, geraspelt
+    }
+    \preparation{
+        \step Alle Zutaten, bis auf die Schokolade, vermischen und in der Eismaschine zubereiten.
+        \step Zum Schluss die geraspelte Schokolade einrühren.
+    }
+\end{recipe}
+\end{document}
