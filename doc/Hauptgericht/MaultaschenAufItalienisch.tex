@@ -1,0 +1,32 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[20]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Maultaschen auf italienisch}\index{Maultaschen auf italienisch}
+    \graph{
+        big=MaultaschenAufItalienisch_0
+    }
+    \ingredients{
+        1                      & Zwiebel\\
+        6                      & Maultaschen\\
+        1                      & Knoblauchzehe\\
+        {\unit[1]{D.}}         & Tomaten, gehackt\\
+        {\unit[125]{g}}        & Mozzarella\\
+                               & Salz\\
+                               & Pfeffer\\
+        {\unit[2]{Spitzen}}    & Basilikum
+    }
+    \preparation{
+        \step Die Zwiebel in Ringe schneiden und glasig dünsten; die Maultaschen dazu geben und anbraten.
+        \step Knoblauch dazu pressen und kurz andünsten. Mit den Tomaten ablöschen und aufkochen.
+        \step Mit Salz und Pfeffer würzen, Mozzarella in Scheiben auf die Maultaschen legen und schmelzen lassen.
+        \step Die Maultaschen servieren und mit dem Basilikum garnieren.
+    }
+\end{recipe}
+\end{document}
