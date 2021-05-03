@@ -1,0 +1,27 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[10]{Min}},
+    portion = {\portion{2}},
+    source = Etienne
+]{Fleischsalat}\index{Fleischsalat}
+    \graph{
+        big=Fleischsalat_0
+    }
+    \ingredients{
+        {\unit[200]{g}}    & Lyoner\\
+        {\unit[200]{g}}    & Gewürzgurken\\
+        {\unit[200]{g}}    & Mayonnaise\\
+        {\unit[2]{EL}}     & Schnittlauch\\
+        {\unit[1]{EL}}     & Petersilie
+    }
+    \preparation{
+        \step Die Lyoner und Gurken in Stifte schneiden und mit der Mayonnaise vermischen.
+        \step Nach Belieben etwas Gurkenwasser dazu tun, mit den Kräutern garnieren und servieren.
+    }
+\end{recipe}
+\end{document}
