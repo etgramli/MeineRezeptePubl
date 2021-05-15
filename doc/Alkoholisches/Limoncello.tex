@@ -1,0 +1,27 @@
+\makeatletter
+\def\input@path{{../../}}
+\makeatother
+\providecommand{\main}{../../}
+\documentclass[MeineRezepte.tex]{subfiles}
+\begin{document}
+\begin{recipe}[
+    preparationtime = {\unit[4]{Wochen}},
+    portion = {\portion[l]{$1\nicefrac{1}{4}$}},
+    source = Lili
+]{Limoncello}\index{Limoncello}
+    \graph{
+        big=Limoncello_0
+    }
+    \ingredients{
+        5                                & Zitronen, nur Schale\\
+        {\unit[$\nicefrac{1}{2}$]{l}}    & Prima Spirit (\unit[70]{\%})\\
+        {\unit[$\nicefrac{3}{4}$]{l}}    & Wasser)\\
+        {\unit[200]{g}}                  & Xucker
+    }
+    \preparation{
+        \step Die Zitronen schälen - es sollte nichts vom Weißen dabei sein - und die Schale in ein Glas legen.
+        \step Prima Spirit zu der Schale geben und 4~Wochen einlegen.
+        \step Die Schalen abgießen und den Alkohol mit Wasser verdünnen und den Xucker darin auflösen.´
+    }
+\end{recipe}
+\end{document}
