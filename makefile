@@ -39,11 +39,6 @@ mobile: $(TEXFILE)-mobile.pdf
 %.pdf: %.tex
 	$(LATEXMK) $(LATEXMKARGS) $<
 
-# Target for individual recipes
-$(SUBTARGETS): %.pdf: %.tex $(TEXFILE).tex $(PACKAGES) $(SOURCEIMGS)
-	cd $(dir $<); sed '5a\\\graphicspath{{pics/}{../../pics/}}' < $(notdir $<) > $(notdir $<)_temp.tex; $(LATEXMK) $(LATEXMKARGS) $(notdir $<)_temp.tex; rm $(notdir $<)_temp.tex
-	@cp $(dir $@)/$(notdir $<)_temp.pdf ./$(notdir $@).pdf
-
 # Specific rule for normal pdf with full size images as dependencies
 $(TEXFILE).pdf: $(SOURCES) $(PACKAGES) $(SOURCEIMGS) git-commit-time.tex
 

@@ -98,7 +98,6 @@ Bekannte Probleme oder bewusst eingegangene Kompromisse:
 
 
 ## ToDos:
-- Falls Update von [subfiles](https://github.com/gsalzer/subfiles/issues/3): entferne Fix im Makefile der Subfile targets
 - Falls Update von xcookybooky: entferne manuellen Fix in recipy_book.sty
 - Fix LuaLaTeX warnings:
 -- Missing font shapes
