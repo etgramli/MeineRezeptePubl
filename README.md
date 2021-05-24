@@ -98,6 +98,5 @@ Bekannte Probleme oder bewusst eingegangene Kompromisse:
 
 
 ## ToDos:
-- Falls Update von xcookybooky: entferne manuellen Fix in recipy_book.sty
 - Fix LuaLaTeX warnings:
 -- Missing font shapes
