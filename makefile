@@ -3,7 +3,9 @@ TEXFILE        :=MeineRezepte
 SRCDIR         :=doc
 IMGDIR         :=pics
 SMALLIMGPREFIX :=mobile
+WEBIMGPREFIX   :=web
 SMALLIMGDIR    :=$(SMALLIMGPREFIX)/$(IMGDIR)
+WEBIMGDIR      :=$(WEBIMGPREFIX)/$(IMGDIR)
 TMPFILEENDINGS :=*.aux *.bbl *.fdb_latexmk *.fls *.glg *.glo *.gls *.idx *.ilg *.ind *.ist *.log *.lol *.out *.synctex.gz
 SUBDIRTMPFILES :=$(foreach dir,$(wildcard $(SRCDIR)/*/),$(addprefix $(dir),$(TMPFILEENDINGS)))
 
@@ -14,11 +16,12 @@ IMAGEHEIGHT    :=560
 LATEXMK        :=latexmk
 LATEXMKARGS    :=-pdf
 CONVERT        :=convert
-CONVERTARGS    :=-strip -colorspace sRGB -sampling-factor 4:2:0 -filter Lanczos -resize x$(IMAGEHEIGHT)\> -adaptive-sharpen 0x0.6 -interlace JPEG -quality 85
+CONVERTARGS    :=-strip -colorspace sRGB -filter Lanczos -resize x$(IMAGEHEIGHT)\> -adaptive-sharpen 0x0.6 -quality 85
 
 # Image files and down-scaled versions
 SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
 TARGETIMGS     :=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGS))
+WEBIMGS        :=$(addprefix $(WEBIMGPREFIX)/, $(SOURCEIMGS:.jpg=.webp))
 
 # Targets, used for creating single recipes and autocompletion
 SUBSRC         :=$(wildcard $(SRCDIR)/*/*.tex)
@@ -33,6 +36,8 @@ SOURCES        :=$(TEXFILE).tex $(SUBSRC)
 # Generates pdf with original images (printing) and down-scaled images (mobile usage)
 main:   $(TEXFILE).pdf
 mobile: $(TEXFILE)-mobile.pdf
+
+webpimages: $(WEBIMGS)
 
 
 # Implicit pdf rule for PDFs
@@ -51,11 +56,19 @@ $(SMALLIMGDIR)/Gsicht.png: $(IMGDIR)/Gsicht.png $(SMALLIMGDIR)/.dirstamp
 
 # Scale down images for mobile use
 $(SMALLIMGDIR)/%.jpg: $(IMGDIR)/%.jpg $(SMALLIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) $@
+	$(CONVERT) $< $(CONVERTARGS) -sampling-factor 4:2:0 -interlace JPEG $@
 
 # Helper to test if image directory is created
 $(SMALLIMGDIR)/.dirstamp:
 	@mkdir --parents $(SMALLIMGDIR) && touch $@
+
+# Scale down images for web use
+$(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) $@
+
+# Helper to test if image directory is created
+$(WEBIMGDIR)/.dirstamp:
+	@mkdir --parents $(WEBIMGDIR) && touch $@
 
 # Retrieve the date from the commit's hash
 git-commit-time.tex: .git
@@ -63,7 +76,7 @@ git-commit-time.tex: .git
 
 .PHONY: all main mobile clean cleanup numberOfRecipes
 
-all: mobile main
+all: main mobile webpimages
 
 clean:
 	latexmk -c
@@ -74,6 +87,7 @@ cleanup: clean
 	latexmk -C
 	rm -f *.pdf doc/*/*.pdf
 	rm -rf $(SMALLIMGPREFIX)
+	rm -rf $(WEBIMGPREFIX)
 
 numberOfRecipes:
 	@echo "$(SUBSRC)" | wc -w

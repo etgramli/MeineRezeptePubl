@@ -16,5 +16,6 @@
 git-commit-time.tex
 
 mobile/*
+web/*
 *.sh
 *.txt
