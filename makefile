@@ -9,14 +9,16 @@ WEBIMGDIR      :=$(WEBIMGPREFIX)/$(IMGDIR)
 TMPFILEENDINGS :=*.aux *.bbl *.fdb_latexmk *.fls *.glg *.glo *.gls *.idx *.ilg *.ind *.ist *.log *.lol *.out *.synctex.gz
 SUBDIRTMPFILES :=$(foreach dir,$(wildcard $(SRCDIR)/*/),$(addprefix $(dir),$(TMPFILEENDINGS)))
 
-# Image parameters (height in pixels, size in kb)
+# Image parameters (in pixels)
 IMAGEHEIGHT    :=560
 
 # Programs and arguments
 LATEXMK        :=latexmk
 LATEXMKARGS    :=-pdf
 CONVERT        :=convert
-CONVERTARGS    :=-strip -colorspace sRGB -filter Lanczos -resize x$(IMAGEHEIGHT)\> -adaptive-sharpen 0x0.6 -quality 85
+CONVERTARGS    :=-strip -colorspace sRGB -filter Lanczos -adaptive-sharpen 0x0.6 -quality 85
+JPEGARGS       :=-resize x$(IMAGEHEIGHT)\> -sampling-factor 4:2:0 -interlace JPEG
+WEBPARGS       :=-resize 1120x688^ -gravity Center -extent 1120x688
 
 # Image files and down-scaled versions
 SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
@@ -56,7 +58,7 @@ $(SMALLIMGDIR)/Gsicht.png: $(IMGDIR)/Gsicht.png $(SMALLIMGDIR)/.dirstamp
 
 # Scale down images for mobile use
 $(SMALLIMGDIR)/%.jpg: $(IMGDIR)/%.jpg $(SMALLIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -sampling-factor 4:2:0 -interlace JPEG $@
+	$(CONVERT) $< $(CONVERTARGS) $(JPEGARGS) $@
 
 # Helper to test if image directory is created
 $(SMALLIMGDIR)/.dirstamp:
@@ -64,7 +66,7 @@ $(SMALLIMGDIR)/.dirstamp:
 
 # Scale down images for web use
 $(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) $@
+	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGS) $@
 
 # Helper to test if image directory is created
 $(WEBIMGDIR)/.dirstamp:
@@ -74,7 +76,7 @@ $(WEBIMGDIR)/.dirstamp:
 git-commit-time.tex: .git
 	@git rev-parse HEAD | git show -s --format=%ct | awk '{print "@"$$1}' | date -f - +'%d. %b %Y' >$@
 
-.PHONY: all main mobile clean cleanup numberOfRecipes
+.PHONY: all main mobile webpimages clean cleanup numberOfRecipes
 
 all: main mobile webpimages
 
