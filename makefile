@@ -18,7 +18,6 @@ LATEXMKARGS    :=-pdf
 CONVERT        :=convert
 CONVERTARGS    :=-strip -colorspace sRGB -filter Lanczos -adaptive-sharpen 0x0.6 -quality 85
 JPEGARGS       :=-resize x$(IMAGEHEIGHT)\> -sampling-factor 4:2:0 -interlace JPEG
-WEBPARGS       :=-resize 1120x688^ -gravity Center -extent 1120x688
 
 # Image files and down-scaled versions
 SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
@@ -39,7 +38,13 @@ SOURCES        :=$(TEXFILE).tex $(SUBSRC)
 main:   $(TEXFILE).pdf
 mobile: $(TEXFILE)-mobile.pdf
 
-webpimages: $(WEBIMGS)
+webpimages: $(SOURCEIMGS)
+	mkdir --parents $(WEBIMGDIR)/w1280
+	mogrify -path $(WEBIMGDIR)/w1280 $(CONVERTARGS) -resize 1280x784^ -gravity Center -extent 1280x784 -format webp $?
+	mkdir --parents $(WEBIMGDIR)/w1080
+	mogrify -path $(WEBIMGDIR)/w1080 $(CONVERTARGS) -resize 1080x656^ -gravity Center -extent 1080x656 -format webp $?
+	mkdir --parents $(WEBIMGDIR)/w720
+	mogrify -path $(WEBIMGDIR)/w720 $(CONVERTARGS) -resize 720x448^ -gravity Center -extent 720x448 -format webp $?
 
 
 # Implicit pdf rule for PDFs
@@ -63,14 +68,6 @@ $(SMALLIMGDIR)/%.jpg: $(IMGDIR)/%.jpg $(SMALLIMGDIR)/.dirstamp
 # Helper to test if image directory is created
 $(SMALLIMGDIR)/.dirstamp:
 	@mkdir --parents $(SMALLIMGDIR) && touch $@
-
-# Scale down images for web use
-$(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGS) $@
-
-# Helper to test if image directory is created
-$(WEBIMGDIR)/.dirstamp:
-	@mkdir --parents $(WEBIMGDIR) && touch $@
 
 # Retrieve the date from the commit's hash
 git-commit-time.tex: .git
