@@ -95,8 +95,3 @@ Ein Latexmk-File liegt auch im Repository, das Regeln für die zwei Hauptdateien
 Bekannte Probleme oder bewusst eingegangene Kompromisse:
 - Underfull box warnings bei "Johannisbrotkernmehl" und "Cremetortenpulver" - sie lassen sich nicht gut trennen und die Zutatenmengen lassen sich nicht verkürzen, sodass eine Worttrennung ohne Warnung gegeben wäre
 - Das Rezeptbuch lässt sich mit XeLaTeX und LuaLaTeX erstellen, entspricht dann aber nicht mehr einer validen PDF/A-Datei (laut VeraPDF).
-
-
-## ToDos:
-- Fix LuaLaTeX warnings:
--- Missing font shapes
