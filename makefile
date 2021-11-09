@@ -16,9 +16,9 @@ IMAGEHEIGHT    :=560
 LATEXMK        :=latexmk
 LATEXMKARGS    :=-pdf
 CONVERT        :=convert
-CONVERTARGS    :=-strip -colorspace sRGB -filter Lanczos -adaptive-sharpen 0x0.6 -quality 85
+CONVERTARGS    :=-strip -colorspace sRGB -filter Lanczos -adaptive-sharpen 0x0.6 -quality 70
 JPEGARGS       :=-resize x$(IMAGEHEIGHT)\> -sampling-factor 4:2:0 -interlace JPEG
-WEBPARGS       :=-resize 1120x688^ -gravity Center -extent 1120x688
+WEBPARGS       :=-resize 1280x720^ -gravity Center -extent 1280x720
 
 # Image files and down-scaled versions
 SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
@@ -44,6 +44,8 @@ webpimages: $(WEBIMGS)
 #	mogrify -path $(WEBIMGDIR)/w1280 $(CONVERTARGS) -resize 1280x784^ -gravity Center -extent 1280x784 -format webp $?
 #	mkdir --parents $(WEBIMGDIR)/w1080
 #	mogrify -path $(WEBIMGDIR)/w1080 $(CONVERTARGS) -resize 1080x656^ -gravity Center -extent 1080x656 -format webp $?
+#	mkdir --parents $(WEBIMGDIR)/w960
+#	mogrify -path $(WEBIMGDIR)/w960 $(CONVERTARGS) -resize 960x592^ -gravity Center -extent 960x592 -format webp $?
 #	mkdir --parents $(WEBIMGDIR)/w720
 #	mogrify -path $(WEBIMGDIR)/w720 $(CONVERTARGS) -resize 720x448^ -gravity Center -extent 720x448 -format webp $?
 
