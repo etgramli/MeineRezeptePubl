@@ -18,12 +18,22 @@ LATEXMKARGS    :=-pdf
 CONVERT        :=convert
 CONVERTARGS    :=-strip -colorspace sRGB -filter Lanczos -adaptive-sharpen 0x0.6 -quality 70
 JPEGARGS       :=-resize x$(IMAGEHEIGHT)\> -sampling-factor 4:2:0 -interlace JPEG
-WEBPARGS       :=-resize 1280x720^ -gravity Center -extent 1280x720
+WEBPARGSLARGE  :=-resize 1280x720^ -gravity Center -extent 1280x720
+WEBPARGSBIG    :=-resize 1080x608^ -gravity Center -extent 1080x608
+WEBPARGSMEDIUM :=-resize 960x540^ -gravity Center -extent 960x540
+WEBPARGSSMALL  :=-resize 720x400^ -gravity Center -extent 720x400
 
 # Image files and down-scaled versions
 SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
 TARGETIMGS     :=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGS))
-WEBIMGS        :=$(addprefix $(WEBIMGPREFIX)/, $(SOURCEIMGS:.jpg=.webp))
+WEBDIRLARGE    :=$(WEBIMGPREFIX)/w1280
+WEBDIRBIG      :=$(WEBIMGPREFIX)/w1080
+WEBDIRMEDIUM   :=$(WEBIMGPREFIX)/w960
+WEBDIRSMALL    :=$(WEBIMGPREFIX)/w720
+WEBIMGSLARGE   :=$(addprefix $(WEBDIRLARGE)/, $(notdir $(SOURCEIMGS:.jpg=.webp)))
+WEBIMGSBIG     :=$(addprefix $(WEBDIRBIG)/, $(notdir $(SOURCEIMGS:.jpg=.webp)))
+WEBIMGSMEDIUM  :=$(addprefix $(WEBDIRMEDIUM)/, $(notdir $(SOURCEIMGS:.jpg=.webp)))
+WEBIMGSSMALL   :=$(addprefix $(WEBDIRSMALL)/, $(notdir $(SOURCEIMGS:.jpg=.webp)))
 
 # Targets, used for creating single recipes and autocompletion
 SUBSRC         :=$(wildcard $(SRCDIR)/*/*.tex)
@@ -39,15 +49,7 @@ SOURCES        :=$(TEXFILE).tex $(SUBSRC)
 main:   $(TEXFILE).pdf
 mobile: $(TEXFILE)-mobile.pdf
 
-webpimages: $(WEBIMGS)
-#	mkdir --parents $(WEBIMGDIR)/w1280
-#	mogrify -path $(WEBIMGDIR)/w1280 $(CONVERTARGS) -resize 1280x784^ -gravity Center -extent 1280x784 -format webp $?
-#	mkdir --parents $(WEBIMGDIR)/w1080
-#	mogrify -path $(WEBIMGDIR)/w1080 $(CONVERTARGS) -resize 1080x656^ -gravity Center -extent 1080x656 -format webp $?
-#	mkdir --parents $(WEBIMGDIR)/w960
-#	mogrify -path $(WEBIMGDIR)/w960 $(CONVERTARGS) -resize 960x592^ -gravity Center -extent 960x592 -format webp $?
-#	mkdir --parents $(WEBIMGDIR)/w720
-#	mogrify -path $(WEBIMGDIR)/w720 $(CONVERTARGS) -resize 720x448^ -gravity Center -extent 720x448 -format webp $?
+webpimages: $(WEBIMGSLARGE) $(WEBIMGSBIG) $(WEBIMGSMEDIUM) $(WEBIMGSSMALL)
 
 
 # Implicit pdf rule for PDFs
@@ -68,17 +70,34 @@ $(SMALLIMGDIR)/Gsicht.png: $(IMGDIR)/Gsicht.png $(SMALLIMGDIR)/.dirstamp
 $(SMALLIMGDIR)/%.jpg: $(IMGDIR)/%.jpg $(SMALLIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) $(JPEGARGS) $@
 
+# Scale down images for web use
+$(WEBDIRLARGE)/%.webp: $(IMGDIR)/%.jpg $(WEBDIRLARGE)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGSLARGE) $@
+
+$(WEBDIRBIG)/%.webp: $(IMGDIR)/%.jpg $(WEBDIRBIG)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGSBIG) $@
+
+$(WEBDIRMEDIUM)/%.webp: $(IMGDIR)/%.jpg $(WEBDIRMEDIUM)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGSMEDIUM) $@
+
+$(WEBDIRSMALL)/%.webp: $(IMGDIR)/%.jpg $(WEBDIRSMALL)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGSSMALL) $@
+
 # Helper to test if image directory is created
 $(SMALLIMGDIR)/.dirstamp:
 	@mkdir --parents $(SMALLIMGDIR) && touch $@
 
-# Scale down images for web use
-$(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGS) $@
+$(WEBDIRLARGE)/.dirstamp:
+	@mkdir --parents $(WEBDIRLARGE) && touch $@
 
-# Helper to test if image directory is created
-$(WEBIMGDIR)/.dirstamp:
-	@mkdir --parents $(WEBIMGDIR) && touch $@
+$(WEBDIRBIG)/.dirstamp:
+	@mkdir --parents $(WEBDIRBIG) && touch $@
+
+$(WEBDIRMEDIUM)/.dirstamp:
+	@mkdir --parents $(WEBDIRMEDIUM) && touch $@
+
+$(WEBDIRSMALL)/.dirstamp:
+	@mkdir --parents $(WEBIMGSSMALL) && touch $@
 
 # Retrieve the date from the commit's hash
 git-commit-time.tex: .git
