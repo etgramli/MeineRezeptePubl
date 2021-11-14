@@ -23,7 +23,8 @@ WEBPARGS       :=-resize 1280x720^ -gravity Center -extent 1280x720
 # Image files and down-scaled versions
 SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
 TARGETIMGS     :=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGS))
-WEBIMGS        :=$(addprefix $(WEBIMGPREFIX)/, $(SOURCEIMGS:.jpg=.webp))
+WEBIMGSSRC     :=$(wildcard $(IMGDIR)/*_0.jpg)
+WEBIMGS        :=$(addprefix $(WEBIMGPREFIX)/, $(WEBIMGSSRC:.jpg=.webp))
 
 # Targets, used for creating single recipes and autocompletion
 SUBSRC         :=$(wildcard $(SRCDIR)/*/*.tex)
