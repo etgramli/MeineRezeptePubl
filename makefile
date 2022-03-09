@@ -41,14 +41,6 @@ main:   $(TEXFILE).pdf
 mobile: $(TEXFILE)-mobile.pdf
 
 webpimages: $(WEBIMGS)
-#	mkdir --parents $(WEBIMGDIR)/w1280
-#	mogrify -path $(WEBIMGDIR)/w1280 $(CONVERTARGS) -resize 1280x784^ -gravity Center -extent 1280x784 -format webp $?
-#	mkdir --parents $(WEBIMGDIR)/w1080
-#	mogrify -path $(WEBIMGDIR)/w1080 $(CONVERTARGS) -resize 1080x656^ -gravity Center -extent 1080x656 -format webp $?
-#	mkdir --parents $(WEBIMGDIR)/w960
-#	mogrify -path $(WEBIMGDIR)/w960 $(CONVERTARGS) -resize 960x592^ -gravity Center -extent 960x592 -format webp $?
-#	mkdir --parents $(WEBIMGDIR)/w720
-#	mogrify -path $(WEBIMGDIR)/w720 $(CONVERTARGS) -resize 720x448^ -gravity Center -extent 720x448 -format webp $?
 
 
 # Implicit pdf rule for PDFs
@@ -76,6 +68,33 @@ $(SMALLIMGDIR)/.dirstamp:
 # Scale down images for web use
 $(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGS) $@
+
+$(WEBIMGDIR)/AprikosenSahneDessert_0.webp: $(IMGDIR)/AprikosenSahneDessert_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x288 -extent 1280x720 $@
+
+$(WEBIMGDIR)/Bananenmilch_0.webp: $(IMGDIR)/Bananenmilch_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
+
+$(WEBIMGDIR)/KaesekuchenLuftigUndZart_0.webp: $(IMGDIR)/KaesekuchenLuftigUndZart_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
+
+$(WEBIMGDIR)/Mohrenkopftorte_0.webp: $(IMGDIR)/Mohrenkopftorte_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x32 -extent 1280x720 $@
+
+$(WEBIMGDIR)/SaftigeMuffins_0.webp: $(IMGDIR)/SaftigeMuffins_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
+
+$(WEBIMGDIR)/SchwarzwaelderKirschtorte_0.webp: $(IMGDIR)/SchwarzwaelderKirschtorte_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
+
+$(WEBIMGDIR)/WhiskyKraeuterLikoer_0.webp: $(IMGDIR)/WhiskyKraeuterLikoer_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x320 -extent 1280x720 $@
+
+$(WEBIMGDIR)/ZitronenkuchenLammUndHase_0.webp: $(IMGDIR)/ZitronenkuchenLammUndHase_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x32 -extent 1280x720 $@
+
+$(WEBIMGDIR)/Zwetschgenkernlikoer_0.webp: $(IMGDIR)/Zwetschgenkernlikoer_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
 
 # Helper to test if image directory is created
 $(WEBIMGDIR)/.dirstamp:
