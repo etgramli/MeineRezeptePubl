@@ -78,6 +78,9 @@ $(WEBIMGDIR)/Bananenmilch_0.webp: $(IMGDIR)/Bananenmilch_0.jpg $(WEBIMGDIR)/.dir
 $(WEBIMGDIR)/KaesekuchenLuftigUndZart_0.webp: $(IMGDIR)/KaesekuchenLuftigUndZart_0.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
 
+$(WEBIMGDIR)/Kokosmakronen_0.webp: $(IMGDIR)/Kokosmakronen_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
+
 $(WEBIMGDIR)/Mohrenkopftorte_0.webp: $(IMGDIR)/Mohrenkopftorte_0.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x32 -extent 1280x720 $@
 
