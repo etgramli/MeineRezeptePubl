@@ -90,6 +90,9 @@ $(WEBIMGDIR)/SaftigeMuffins_0.webp: $(IMGDIR)/SaftigeMuffins_0.jpg $(WEBIMGDIR)/
 $(WEBIMGDIR)/SchwarzwaelderKirschtorte_0.webp: $(IMGDIR)/SchwarzwaelderKirschtorte_0.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
 
+$(WEBIMGDIR)/Traubenfisch_0.webp: $(IMGDIR)/Traubenfisch_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
+
 $(WEBIMGDIR)/WhiskyKraeuterLikoer_0.webp: $(IMGDIR)/WhiskyKraeuterLikoer_0.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x320 -extent 1280x720 $@
 
