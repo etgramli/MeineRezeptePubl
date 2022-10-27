@@ -25,7 +25,7 @@ SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
 TARGETIMGS     :=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGS))
 SOURCEWEBIMGS  :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*_0.jpg))
 WEBIMGS        :=$(addprefix $(WEBIMGPREFIX)/, $(SOURCEWEBIMGS:.jpg=.webp))
-WEBIMGSGNORTH  :=AprikosenSahneDessert_0.webp Bananenmilch_0.webp Berliner_0.webp Bratkartoffeln_0.webp Chilipaste_0.webp GefuelltePaprika_0.webp KaesekuchenLuftigUndZart_0.webp Kokosmakronen_0.webp Leber_0.webp Mohrenkopftorte_0.webp PestoGenovese_0.webp SaftigeMuffins_0.webp Quarkinis_0.webp QuicheAusQuarkOElTeig_0.webp Rueblekuchen_0.webp RuebleNachRita_0.webp SchwarzwaelderKirschtorte_0.webp SpaghettiMitFleischbaellchen_0.webp Tomatensauce_0.webp Traubenfisch_0.webp WalnussTomatenPesto_0.webp WhiskySahneSauce_0.webp ZitronenkuchenLammUndHase_0.webp Zwetschgenkernlikoer_0.webp ZwetschgenkuchenMuerbteig_0.webp
+WEBIMGSGNORTH  :=AprikosenSahneDessert_0.webp Bananenmilch_0.webp Berliner_0.webp Bratkartoffeln_0.webp BruschettaMitOliven_0.webp Chilipaste_0.webp GefuelltePaprika_0.webp KaesekuchenLuftigUndZart_0.webp Kokosmakronen_0.webp Leber_0.webp Mohrenkopftorte_0.webp PestoGenovese_0.webp SaftigeMuffins_0.webp Quarkinis_0.webp QuicheAusQuarkOElTeig_0.webp Rueblekuchen_0.webp RuebleNachRita_0.webp SchwarzwaelderKirschtorte_0.webp SpaghettiMitFleischbaellchen_0.webp Tomatensauce_0.webp Traubenfisch_0.webp WalnussTomatenPesto_0.webp WhiskySahneSauce_0.webp ZitronenkuchenLammUndHase_0.webp Zwetschgenkernlikoer_0.webp ZwetschgenkuchenMuerbteig_0.webp
 WEBIMGSGNORTHT :=$(addprefix $(WEBIMGPREFIX)/$(IMGDIR)/, $(WEBIMGSGNORTH))
 WEBIMGSGSOUTH  :=DrunkenCrumble_0.webp Salzzitronen_0.webp
 WEBIMGSGSOUTHT :=$(addprefix $(WEBIMGPREFIX)/$(IMGDIR)/, $(WEBIMGSGSOUTH))
