@@ -25,6 +25,8 @@ SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
 TARGETIMGS     :=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGS))
 WEBIMGSSRC     :=$(wildcard $(IMGDIR)/*_0.jpg)
 WEBIMGS        :=$(addprefix $(WEBIMGPREFIX)/, $(WEBIMGSSRC:.jpg=.webp))
+WEBIMGSGNORTH  :=AprikosenSahneDessert_0.webp Bananenmilch_0.webp KaesekuchenLuftigUndZart_0.webp Kokosmakronen_0.webp Mohrenkopftorte_0.webp SaftigeMuffins_0.webp SchwarzwaelderKirschtorte_0.webp Traubenfisch_0.webp ZitronenkuchenLammUndHase_0.webp Zwetschgenkernlikoer_0.webp
+WEBIMGSGNORTHT :=$(addprefix $(WEBIMGPREFIX)/$(IMGDIR)/, $(WEBIMGSGNORTH))
 
 # Targets, used for creating single recipes and autocompletion
 SUBSRC         :=$(wildcard $(SRCDIR)/*/*.tex)
@@ -69,38 +71,11 @@ $(SMALLIMGDIR)/.dirstamp:
 $(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) $(WEBPARGS) $@
 
-$(WEBIMGDIR)/AprikosenSahneDessert_0.webp: $(IMGDIR)/AprikosenSahneDessert_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x288 -extent 1280x720 $@
-
-$(WEBIMGDIR)/Bananenmilch_0.webp: $(IMGDIR)/Bananenmilch_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
-
-$(WEBIMGDIR)/KaesekuchenLuftigUndZart_0.webp: $(IMGDIR)/KaesekuchenLuftigUndZart_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
-
-$(WEBIMGDIR)/Kokosmakronen_0.webp: $(IMGDIR)/Kokosmakronen_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
-
-$(WEBIMGDIR)/Mohrenkopftorte_0.webp: $(IMGDIR)/Mohrenkopftorte_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x32 -extent 1280x720 $@
-
-$(WEBIMGDIR)/SaftigeMuffins_0.webp: $(IMGDIR)/SaftigeMuffins_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
-
-$(WEBIMGDIR)/SchwarzwaelderKirschtorte_0.webp: $(IMGDIR)/SchwarzwaelderKirschtorte_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
-
-$(WEBIMGDIR)/Traubenfisch_0.webp: $(IMGDIR)/Traubenfisch_0.jpg $(WEBIMGDIR)/.dirstamp
+$(WEBIMGSGNORTHT): $(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
 
 $(WEBIMGDIR)/WhiskyKraeuterLikoer_0.webp: $(IMGDIR)/WhiskyKraeuterLikoer_0.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x320 -extent 1280x720 $@
-
-$(WEBIMGDIR)/ZitronenkuchenLammUndHase_0.webp: $(IMGDIR)/ZitronenkuchenLammUndHase_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x32 -extent 1280x720 $@
-
-$(WEBIMGDIR)/Zwetschgenkernlikoer_0.webp: $(IMGDIR)/Zwetschgenkernlikoer_0.jpg $(WEBIMGDIR)/.dirstamp
-	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
 
 # Helper to test if image directory is created
 $(WEBIMGDIR)/.dirstamp:
