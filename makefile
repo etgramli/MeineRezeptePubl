@@ -25,8 +25,10 @@ SOURCEIMGS     :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*.jpg))
 TARGETIMGS     :=$(addprefix $(SMALLIMGPREFIX)/, $(SOURCEIMGS))
 SOURCEWEBIMGS  :=$(foreach dir,$(IMGDIR), $(wildcard $(dir)/*_0.jpg))
 WEBIMGS        :=$(addprefix $(WEBIMGPREFIX)/, $(SOURCEWEBIMGS:.jpg=.webp))
-WEBIMGSGNORTH  :=AprikosenSahneDessert_0.webp Bananenmilch_0.webp KaesekuchenLuftigUndZart_0.webp Kokosmakronen_0.webp Mohrenkopftorte_0.webp SaftigeMuffins_0.webp SchwarzwaelderKirschtorte_0.webp Traubenfisch_0.webp ZitronenkuchenLammUndHase_0.webp Zwetschgenkernlikoer_0.webp
+WEBIMGSGNORTH  :=AprikosenSahneDessert_0.webp Bananenmilch_0.webp Berliner_0.webp KaesekuchenLuftigUndZart_0.webp Kokosmakronen_0.webp Mohrenkopftorte_0.webp SaftigeMuffins_0.webp Quarkinis_0.webp RuebleNachRita_0.webp SchwarzwaelderKirschtorte_0.webp Traubenfisch_0.webp ZitronenkuchenLammUndHase_0.webp Zwetschgenkernlikoer_0.webp
 WEBIMGSGNORTHT :=$(addprefix $(WEBIMGPREFIX)/$(IMGDIR)/, $(WEBIMGSGNORTH))
+WEBIMGSSOUTH   :=DrunkenCrumble_0.webp
+WEBIMGSSOUTHT  :=$(addprefix $(WEBIMGPREFIX)/$(IMGDIR)/, $(WEBIMGSSOUTH))
 
 # Targets, used for creating single recipes and autocompletion
 SUBSRC         :=$(wildcard $(SRCDIR)/*/*.tex)
@@ -73,6 +75,9 @@ $(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
 
 $(WEBIMGSGNORTHT): $(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -extent 1280x720 $@
+
+$(WEBIMGSSOUTHT): $(WEBIMGDIR)/%.webp: $(IMGDIR)/%.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity South -extent 1280x720 $@
 
 $(WEBIMGDIR)/WhiskyKraeuterLikoer_0.webp: $(IMGDIR)/WhiskyKraeuterLikoer_0.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x320 -extent 1280x720 $@
