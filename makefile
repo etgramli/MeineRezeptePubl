@@ -85,6 +85,9 @@ $(WEBIMGDIR)/EingelegterSchafskaese_0.webp: $(IMGDIR)/EingelegterSchafskaese_0.j
 $(WEBIMGDIR)/WhiskyKraeuterLikoer_0.webp: $(IMGDIR)/WhiskyKraeuterLikoer_0.jpg $(WEBIMGDIR)/.dirstamp
 	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x320 -extent 1280x720 $@
 
+$(WEBIMGDIR)/ZwetschgenkuchenQuarkoelteig_0.webp: $(IMGDIR)/ZwetschgenkuchenQuarkoelteig_0.jpg $(WEBIMGDIR)/.dirstamp
+	$(CONVERT) $< $(CONVERTARGS) -resize 1280x720^ -gravity North -chop 0x32 -extent 1280x720 $@
+
 # Helper to test if image directory is created
 $(WEBIMGDIR)/.dirstamp:
 	@mkdir --parents $(WEBIMGDIR) && touch $@
